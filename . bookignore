@@ -4,3 +4,6 @@
 WinGitPush.bat
 gpall.sh
 LICENSE
+
+# 其他目录
+000-asserts/

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "README.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -95,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SUMMARY.md"
+                "file": "README.md"
               }
             }
           },
@@ -149,8 +149,8 @@
   },
   "active": "01816fbeee768bcb",
   "lastOpenFiles": [
-    "300-tech/课程/Vue 的构造选项.md",
     "SUMMARY.md",
+    "300-tech/课程/Vue 的构造选项.md",
     "300-tech/课程/Vue 起手式.md",
     "300-tech/课程/Webpack 性能优化.md",
     "300-tech/课程/WebPack 的使用.md",

@@ -160,8 +160,14 @@
       "remotely-save:Remotely Save": false
     }
   },
-  "active": "53d3a4f990f58b5c",
+  "active": "1a894e9b237b81e9",
   "lastOpenFiles": [
+    "010-temp/test.md",
+    "010-temp/blog.md",
+    "010-temp/meta.md",
+    "010-temp/template.md",
+    "010-temp/temporary.md",
+    "010-temp",
     "SUMMARY.md",
     "001-inbox/临时内容.md",
     "001-inbox",
@@ -174,15 +180,9 @@
     "000-asserts/videos/抖店侧边导航.mp4",
     "000-asserts/videos/京东云官网视觉升级.mp4",
     "000-asserts/ppt/Win & Mac述职PPT模板.ppt",
-    "000-asserts/ppt/Mac述职 Keynote模板.key",
     "300-web/课程/Vue 的构造选项.md",
     "300-web/课程/Webpack 性能优化.md",
     "300-web/课程/WebPack 的使用.md",
-    "010-temp/test.md",
-    "010-temp/temporary.md",
-    "010-temp/template.md",
-    "010-temp/meta.md",
-    "010-temp/blog.md",
     "300-web/课程/Vue 起手式.md",
     "300-web/课程/018-JS 事件.md",
     "300-web/课程/019-BOM.md",
@@ -196,7 +196,6 @@
     "100-life/vim简单使用教程.md",
     "100-life/博客设计.md",
     "100-life/工具/RIME 小鹤双拼快速设置.md",
-    "100-life/工具/个人输入法调教之 Rime.md",
-    "300-web/工具/iTerm2.md"
+    "100-life/工具/个人输入法调教之 Rime.md"
   ]
 }

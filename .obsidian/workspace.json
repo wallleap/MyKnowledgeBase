@@ -130,8 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 207.5,
-    "collapsed": true
+    "width": 207.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -150,7 +149,19 @@
   },
   "active": "1a894e9b237b81e9",
   "lastOpenFiles": [
+    "000-asserts/videos/酷家乐主站3.0，让一切更简单.mp4",
+    "000-asserts/videos/群核设计系统Manycore Design——平台解决方案.mp4",
+    "000-asserts/videos/表格操作交互视频.mp4",
+    "000-asserts/videos/盒马营销设计数字化工作台.mp4",
+    "000-asserts/videos/数据可视化大屏设计经验分享【高级篇】.mp4",
+    "000-asserts/videos/抖店侧边导航.mp4",
+    "000-asserts/videos/京东云官网视觉升级.mp4",
+    "000-asserts/ppt/Win & Mac述职PPT模板.ppt",
+    "000-asserts/ppt/Mac述职 Keynote模板.key",
+    "000-asserts/source/用户画像-愚者秦.sketch",
+    "000-asserts/images/2022中国数据智能产业图谱.jfif",
     "SUMMARY.md",
+    "README.md",
     "300-web/课程/Vue 的构造选项.md",
     "300-web/课程/Webpack 性能优化.md",
     "300-web/课程/WebPack 的使用.md",
@@ -173,9 +184,6 @@
     "100-life/博客设计.md",
     "100-life/工具/RIME 小鹤双拼快速设置.md",
     "100-life/工具/个人输入法调教之 Rime.md",
-    "300-web/工具/iTerm2.md",
-    "100-life/工具/macOS 个性化定制.md",
-    "100-life/工具/打造个性化 GitHub 主页.md",
-    "300-web/资源"
+    "300-web/工具/iTerm2.md"
   ]
 }

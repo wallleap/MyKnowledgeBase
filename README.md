@@ -1,5 +1,9 @@
 # Inbox —— All in this . MOC
 
+Luwang 的个人知识库
+
+使用 GitHub 仓库进行备份，Obsidian 进行本地管理，GitHub 网上阅读，图片使用 PicGo + COS 图床
+
 本知识库约定：
 
 - 目录最多使用 **3 层**（第一层分类目录不计入）
@@ -16,6 +20,14 @@
 - 图片全部上传至 COS，且链接以 `https://cdn.wallleap.cn/img/pic/illustration/` 开头，图片没有特殊描述就置空
 - 其他资源，例如视频均放至 `asserts` 目录，且大小不应超过 50MB
 - 重要文件在此文档加上链接，其他使用 DataView 获取
+- 其他 GitBook 的说明
+	- 链接是 `https://用户名或团队名/gitbook.io/空间名`，需要公开的就放到团队中，并且在设置中开启 Publish to Web
+	- 仓库必须有 README.md 文件（可以当成是仓库首页）和 SUMMARY.md 文件（目录），目录的写法为二级标题+列表+链接（全都是 markdown 语法）
+	- 不需要显示的文件或目录放到 `.bookignore` 文件中，语法和 `.gitigore` 一样
+
+## 目录
+
+为了所有地方都可以看到所有文件，在这里再重新以 markdown 语法写一遍
 
 ## 文章内图标使用（emoji）
 

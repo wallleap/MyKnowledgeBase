@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "SUMMARY.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -95,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "SUMMARY.md"
               }
             }
           },
@@ -149,41 +149,41 @@
   },
   "active": "53d3a4f990f58b5c",
   "lastOpenFiles": [
+    "200-work/Office/0-PPT学习.md",
+    "README.md",
     "SUMMARY.md",
+    "200-work/Office/PPT页面排版.md",
+    "200-work/广告/在搭建信息流广告时的一些小技巧.md",
+    "200-work/广告/创意课程合集.md",
+    "200-work/前端/项目发布流程.md",
+    "200-work/前端/配置记录.md",
+    "200-work/前端/常用网站.md",
+    "200-work/前端/互联网公司角色.md",
+    "200-work/前端/前端工作内容.md",
+    "200-work/前端/项目发布流程 2.md",
+    "200-work/前端/常用网站 2.md",
+    "100-person/工具/macOS 个性化定制.md",
+    "200-work/Office/PPT页面排版 2.md",
+    "200-work/Office/0-PPT学习 2.md",
+    "200-work/前端/前端工作内容 2.md",
+    "200-work/前端/互联网公司角色 2.md",
+    "200-work/广告",
+    "200-work/前端",
+    "200-work/Office",
+    "200-work",
     "100-person/vim 简单使用教程.md",
     "().md",
     "100-person/备忘录.md",
-    "100-person/工具/macOS 个性化定制.md",
     "100-person/工具/mac 打包 DMG.md",
     "100-person/工具/RIME 小鹤双拼快速设置.md",
     "100-person/工具/自由输入法 RIME 简明配置指南.md",
     "100-person/工具/个人输入法调教之 Rime.md",
     "100-person/工具/翻翻教程.md",
-    "100-person/工具/打造个性化 GitHub 主页.md",
-    "100-person/工具/常用工具和软件.md",
-    "README.md",
-    "100-person/笔记/GitHub emoji.md",
-    "100-person/笔记/GitHub.md",
-    "100-person/笔记/康奈尔笔记法.md",
-    "100-person/康奈尔笔记法.md",
-    "100-person/笔记/测试用.md",
-    "100-person/工具/Clash for Windows 中文汉化教程：使用Clash订阅.md",
-    "100-person/工具/国内如何注册使用 ChatGPT.md",
-    "100-person/知识管理/知识管理流程.md",
-    "100-person/知识管理/知识管理.md",
-    "100-person/知识管理/知识.md",
-    "100-person/知识管理/费曼学习法.md",
-    "100-person/知识管理/obsidian 使用/10.其他用法.md",
-    "100-person/知识管理/obsidian 使用/10.其他用法 2.md",
     "100-person/知识管理/obsidian 使用",
     "100-person/知识管理",
     "100-person/工具",
     "100-person/笔记",
     "100-person",
-    "100-life",
-    "未命名文件夹",
-    "010-temp",
-    "001-inbox",
-    "000-asserts/videos/酷家乐主站3.0，让一切更简单.mp4"
+    "100-life"
   ]
 }

@@ -1,24 +1,3 @@
----
-title: README
-date: 2022-11-10 11:26
-updated: 2023-02-27 11:00
-cover: //cdn.wallleap.cn/img/pic.jpg
-author: Luwang
-comments: true
-aliases:
-  - 仓库整合
-rating: 0
-tags:
-  - 整理
-category: home
-keywords:
-  - Obsidian
-  - 整理
-description: 显示本知识库所有内容
-source: null
-url: null
----
-
 # Inbox —— All in this . MOC
 
 本知识库约定：

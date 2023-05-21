@@ -1,0 +1,10 @@
+{
+  "findText": "如何更好的统一颜色规范？这个方法正在成为新趋势！",
+  "replaceText": "",
+  "useRegEx": true,
+  "selOnly": false,
+  "caseInsensitive": false,
+  "processLineBreak": false,
+  "processTab": false,
+  "prefillFind": false
+}

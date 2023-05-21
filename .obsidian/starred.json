@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "title": "备忘录",
+      "path": "100-life/备忘录.md"
+    },
+    {
+      "type": "file",
+      "title": "常用推荐",
+      "path": "100-life/常用推荐.md"
+    },
+    {
+      "type": "file",
+      "title": "面试必备",
+      "path": "100-life/面试必备.md"
+    }
+  ]
+}

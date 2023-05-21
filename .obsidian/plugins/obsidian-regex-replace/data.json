@@ -1,0 +1,10 @@
+{
+  "findText": "[](https://www.antmoe.com/posts/f59ea689/*)",
+  "replaceText": "",
+  "useRegEx": true,
+  "selOnly": false,
+  "caseInsensitive": false,
+  "processLineBreak": false,
+  "processTab": false,
+  "prefillFind": false
+}

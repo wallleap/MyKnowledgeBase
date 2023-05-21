@@ -1,0 +1,181 @@
+{
+  "main": {
+    "id": "9b801bf05df074bb",
+    "type": "split",
+    "children": [
+      {
+        "id": "ded2dbd6bf8797b5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "53d3a4f990f58b5c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ],
+        "stacked": true
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "28a94fec0b2bc43f",
+    "type": "split",
+    "children": [
+      {
+        "id": "5fb380a33311f79d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1a894e9b237b81e9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "cd9c2252ac27f581",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d488638e994d7d06",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "f1d6fef81c05701c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 301.5
+  },
+  "right": {
+    "id": "ff952d28c1918849",
+    "type": "split",
+    "children": [
+      {
+        "id": "6f35e5143e8840b1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b92e5196ce90fd8f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          },
+          {
+            "id": "081928919b6c3ad2",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "fb66bc3a04e24cd6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8802705ab5095eb2",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 207.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "canvas:新建白板": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "audio-recorder:开始/结束录音": false,
+      "workspaces:管理工作区布局": false,
+      "obsidian-weread-plugin:Weread": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "remotely-save:Remotely Save": false
+    }
+  },
+  "active": "1a894e9b237b81e9",
+  "lastOpenFiles": [
+    "SUMMARY.md",
+    "300-web/课程/Vue 的构造选项.md",
+    "300-web/课程/Webpack 性能优化.md",
+    "300-web/课程/WebPack 的使用.md",
+    "010-temp/test.md",
+    "010-temp/temporary.md",
+    "010-temp/template.md",
+    "010-temp/meta.md",
+    "010-temp/blog.md",
+    "300-web/课程/Vue 起手式.md",
+    "300-web/课程/018-JS 事件.md",
+    "300-web/课程/019-BOM.md",
+    "300-web/课程/020-内存图1.md",
+    "100-life/常用 DNS 服务器.md",
+    "200-work/前端/配置.md",
+    "300-web/工具/VSCode 自用设置.md",
+    "300-web/课程/021-内存图2-调用栈.md",
+    "300-web/三件套/CSS 世界笔记.md",
+    "300-web/web前端知识体系.md",
+    "100-life/vim简单使用教程.md",
+    "100-life/博客设计.md",
+    "100-life/工具/RIME 小鹤双拼快速设置.md",
+    "100-life/工具/个人输入法调教之 Rime.md",
+    "300-web/工具/iTerm2.md",
+    "100-life/工具/macOS 个性化定制.md",
+    "100-life/工具/打造个性化 GitHub 主页.md",
+    "300-web/资源"
+  ]
+}

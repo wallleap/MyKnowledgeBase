@@ -113,7 +113,7 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "frequency",
+                "sortOrder": "alphabetical",
                 "useHierarchy": true
               }
             }
@@ -130,7 +130,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 207.5
+    "width": 316.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -149,6 +150,7 @@
   },
   "active": "01816fbeee768bcb",
   "lastOpenFiles": [
+    "README.md",
     "SUMMARY.md",
     "300-tech/课程/Vue 的构造选项.md",
     "300-tech/课程/Vue 起手式.md",
@@ -174,7 +176,6 @@
     "300-tech/课程/004-接触 CSS.md",
     "300-tech/课程/003-Git 学习.md",
     "300-tech/课程/003-Git.md",
-    "300-tech/课程/002-HTML.md",
     "300-tech/项目/山竹记账/vue",
     "300-tech/项目/山竹记账/react",
     "300-tech/项目/山竹记账/rails",

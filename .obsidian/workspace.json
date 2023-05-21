@@ -13,20 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "001-inbox/临时内容.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "801c4bd77102146d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "001-inbox/临时内容.md",
+                "file": "README.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -108,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "001-inbox/临时内容.md"
+                "file": "README.md"
               }
             }
           },
@@ -160,42 +147,43 @@
       "remotely-save:Remotely Save": false
     }
   },
-  "active": "1a894e9b237b81e9",
+  "active": "53d3a4f990f58b5c",
   "lastOpenFiles": [
-    "010-temp/test.md",
-    "010-temp/blog.md",
-    "010-temp/meta.md",
-    "010-temp/template.md",
-    "010-temp/temporary.md",
-    "010-temp",
     "SUMMARY.md",
-    "001-inbox/临时内容.md",
-    "001-inbox",
+    "100-person/vim 简单使用教程.md",
+    "().md",
+    "100-person/备忘录.md",
+    "100-person/工具/macOS 个性化定制.md",
+    "100-person/工具/mac 打包 DMG.md",
+    "100-person/工具/RIME 小鹤双拼快速设置.md",
+    "100-person/工具/自由输入法 RIME 简明配置指南.md",
+    "100-person/工具/个人输入法调教之 Rime.md",
+    "100-person/工具/翻翻教程.md",
+    "100-person/工具/打造个性化 GitHub 主页.md",
+    "100-person/工具/常用工具和软件.md",
     "README.md",
-    "000-asserts/videos/酷家乐主站3.0，让一切更简单.mp4",
-    "000-asserts/videos/群核设计系统Manycore Design——平台解决方案.mp4",
-    "000-asserts/videos/表格操作交互视频.mp4",
-    "000-asserts/videos/盒马营销设计数字化工作台.mp4",
-    "000-asserts/videos/数据可视化大屏设计经验分享【高级篇】.mp4",
-    "000-asserts/videos/抖店侧边导航.mp4",
-    "000-asserts/videos/京东云官网视觉升级.mp4",
-    "000-asserts/ppt/Win & Mac述职PPT模板.ppt",
-    "300-web/课程/Vue 的构造选项.md",
-    "300-web/课程/Webpack 性能优化.md",
-    "300-web/课程/WebPack 的使用.md",
-    "300-web/课程/Vue 起手式.md",
-    "300-web/课程/018-JS 事件.md",
-    "300-web/课程/019-BOM.md",
-    "300-web/课程/020-内存图1.md",
-    "100-life/常用 DNS 服务器.md",
-    "200-work/前端/配置.md",
-    "300-web/工具/VSCode 自用设置.md",
-    "300-web/课程/021-内存图2-调用栈.md",
-    "300-web/三件套/CSS 世界笔记.md",
-    "300-web/web前端知识体系.md",
-    "100-life/vim简单使用教程.md",
-    "100-life/博客设计.md",
-    "100-life/工具/RIME 小鹤双拼快速设置.md",
-    "100-life/工具/个人输入法调教之 Rime.md"
+    "100-person/笔记/GitHub emoji.md",
+    "100-person/笔记/GitHub.md",
+    "100-person/笔记/康奈尔笔记法.md",
+    "100-person/康奈尔笔记法.md",
+    "100-person/笔记/测试用.md",
+    "100-person/工具/Clash for Windows 中文汉化教程：使用Clash订阅.md",
+    "100-person/工具/国内如何注册使用 ChatGPT.md",
+    "100-person/知识管理/知识管理流程.md",
+    "100-person/知识管理/知识管理.md",
+    "100-person/知识管理/知识.md",
+    "100-person/知识管理/费曼学习法.md",
+    "100-person/知识管理/obsidian 使用/10.其他用法.md",
+    "100-person/知识管理/obsidian 使用/10.其他用法 2.md",
+    "100-person/知识管理/obsidian 使用",
+    "100-person/知识管理",
+    "100-person/工具",
+    "100-person/笔记",
+    "100-person",
+    "100-life",
+    "未命名文件夹",
+    "010-temp",
+    "001-inbox",
+    "000-asserts/videos/酷家乐主站3.0，让一切更简单.mp4"
   ]
 }

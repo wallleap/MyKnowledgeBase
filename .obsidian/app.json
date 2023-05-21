@@ -2,5 +2,6 @@
   "trashOption": "local",
   "showFrontmatter": true,
   "alwaysUpdateLinks": true,
-  "vimMode": true
+  "vimMode": true,
+  "promptDelete": false
 }

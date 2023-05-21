@@ -1,5 +1,6 @@
 # GitBook 忽略文件，语法和 .gitignore 一致
 .obsidian/
+.trash/
 .gitignore
 WinGitPush.bat
 gpall.sh

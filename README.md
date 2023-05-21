@@ -1,6 +1,8 @@
 # Inbox —— All in this . MOC
 
-Luwang 的个人知识库
+> ✨ Luwang 的个人知识库
+
+[![](https://img.shields.io/badge/GitHub-MyKownlegeBase-blue?style=for-the-badge&logo=github)](https://github.com/wallleap/MyKnowledgeBase)  [![GITBOOK: GARDEN (shields.io)](https://img.shields.io/badge/GitBook-garden-orange?style=for-the-badge&logo=gitbook)](https://wallleap.gitbook.io/garden/)  
 
 使用 GitHub 仓库进行备份，Obsidian 进行本地管理，GitHub 网上阅读，图片使用 PicGo + COS 图床
 
@@ -23,13 +25,29 @@ Luwang 的个人知识库
 - 其他 GitBook 的说明
 	- 链接是 `https://用户名或团队名/gitbook.io/空间名`，需要公开的就放到团队中，并且在设置中开启 Publish to Web
 	- 仓库必须有 README.md 文件（可以当成是仓库首页）和 SUMMARY.md 文件（目录），目录的写法为二级标题+列表+链接（全都是 markdown 语法）
+	```md
+	# 目录
+
+	## 目录1
+
+	- 有子目录的
+		- [可以跳转的](链接)
+		- 不可以跳转的
+    - [没有子目录可跳转的](链接)
+	```
 	- 不需要显示的文件或目录放到 `.bookignore` 文件中，语法和 `.gitigore` 一样
+
+> 📌 重要提示：
+> - 所有看过、学过的东西最好记录（视频、文字、语音）下来，不然下次就找不到了！
+> - 收集的内容也别忘记去看、去梳理，不然记了也白记
 
 ## 目录
 
 为了所有地方都可以看到所有文件，在这里再重新以 markdown 语法写一遍
 
 ## 文章内图标使用（emoji）
+
+全部使用 GitHub 支持的 emoji
 
 - 举个例子、例子、举例 `🌰`
 - 亮点 `✨`
@@ -91,10 +109,11 @@ Luwang 的个人知识库
 
 - 整个知识库是一个数据库，可以使用命令进行查询，默认设置即可
 
-### Emoji Toolbar
+### ~~Emoji Toolbar~~
 
 - 自己设置快捷键或者 <kbd>Ctrl</kbd> + <kbd>P</kbd> 搜索 emoji 👍，但是好像网不好不显示☹️
 - 搭配 Obsidian Icon Folder 插件可以修改文件（夹）图标 😘
+- 删掉，用着在 Obsidian 迁移的时候会很难受
 
 ### Image auto upload Plugin
 
@@ -107,6 +126,7 @@ Luwang 的个人知识库
 
 ### Mind Map
 
+- 生成思维导图
 - 标题、列表、代码等会显示，可以设定快捷键
 
 ### Minimal Theme Settings
@@ -145,6 +165,7 @@ git push -f
 
 ### Obsius Publish
 
+- 临时分享文章给别人看必备
 - 文件列表中选中文件右击选择 Publish to Obsius
 - 自动复制好链接，可以分享给其他人查看 <https://obsius.site/1p3t376x6w5c530k4v45>
 

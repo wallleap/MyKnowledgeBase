@@ -13,7 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "001-inbox/临时内容.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "801c4bd77102146d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "001-inbox/临时内容.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -95,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "001-inbox/临时内容.md"
               }
             }
           },
@@ -147,8 +160,12 @@
       "remotely-save:Remotely Save": false
     }
   },
-  "active": "1a894e9b237b81e9",
+  "active": "53d3a4f990f58b5c",
   "lastOpenFiles": [
+    "SUMMARY.md",
+    "001-inbox/临时内容.md",
+    "001-inbox",
+    "README.md",
     "000-asserts/videos/酷家乐主站3.0，让一切更简单.mp4",
     "000-asserts/videos/群核设计系统Manycore Design——平台解决方案.mp4",
     "000-asserts/videos/表格操作交互视频.mp4",
@@ -158,10 +175,6 @@
     "000-asserts/videos/京东云官网视觉升级.mp4",
     "000-asserts/ppt/Win & Mac述职PPT模板.ppt",
     "000-asserts/ppt/Mac述职 Keynote模板.key",
-    "000-asserts/source/用户画像-愚者秦.sketch",
-    "000-asserts/images/2022中国数据智能产业图谱.jfif",
-    "SUMMARY.md",
-    "README.md",
     "300-web/课程/Vue 的构造选项.md",
     "300-web/课程/Webpack 性能优化.md",
     "300-web/课程/WebPack 的使用.md",

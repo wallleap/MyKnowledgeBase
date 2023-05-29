@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ef4bbe1dc8725d1d",
+        "id": "37e4df7bf4de1aaa",
         "type": "tabs",
         "children": [
           {
-            "id": "01816fbeee768bcb",
+            "id": "a8f961a9f8dad0c1",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -16,7 +16,7 @@
                 "file": "README.md",
                 "mode": "source",
                 "backlinks": false,
-                "source": false
+                "source": true
               }
             }
           }
@@ -148,8 +148,13 @@
       "remotely-save:Remotely Save": false
     }
   },
-  "active": "01816fbeee768bcb",
+  "active": "a8f961a9f8dad0c1",
   "lastOpenFiles": [
+    "未命名.md",
+    "010-temp/temporary.md",
+    "010-temp/template.md",
+    "010-temp/meta.md",
+    "010-temp/blog.md",
     "README.md",
     "SUMMARY.md",
     "300-tech/课程/Vue 的构造选项.md",
@@ -171,11 +176,6 @@
     "300-tech/课程/009-数字和字符串.md",
     "300-tech/课程/008-JS 基本概念.md",
     "300-tech/课程/007-CSS 补充.md",
-    "300-tech/课程/006-布局相关.md",
-    "300-tech/课程/005-深入 CSS.md",
-    "300-tech/课程/004-接触 CSS.md",
-    "300-tech/课程/003-Git 学习.md",
-    "300-tech/课程/003-Git.md",
     "300-tech/项目/山竹记账/vue",
     "300-tech/项目/山竹记账/react",
     "300-tech/项目/山竹记账/rails",

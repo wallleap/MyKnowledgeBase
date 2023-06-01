@@ -58,6 +58,7 @@
 			- [ES 6 入门教程大纲](300-tech/三件套/ES%206%20入门教程大纲.md)
 			- [ES 6 入门教程-阮一峰](300-tech/三件套/ES%206%20入门教程-阮一峰.md)
 			- [老姚浅谈：怎么学 JavaScript？](300-tech/三件套/老姚浅谈：怎么学%20JavaScript？.md)
+			- [重新认识 JavaScript 中的 Date](300-tech/%E4%B8%89%E4%BB%B6%E5%A5%97/%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%86%20JavaScript%20%E4%B8%AD%E7%9A%84%20Date.md)
 	- 框架
 		- Vue
 		- React
@@ -124,6 +125,8 @@
 	- [Vue2 组件库和文档](300-tech/项目/Vue2%20组件库和文档.md)
 	- [VuePress 搭建组件库文档](300-tech/项目/VuePress%20搭建组件库文档.md)
 	- [使用 Vuepress 搭建基于 Vue 3.2 的组件库](300-tech/项目/使用%20Vuepress%20搭建基于%20Vue%203.2%20的组件库.md)
+	- [几行代码教你解决微信生成海报及二维码](300-tech/%E9%A1%B9%E7%9B%AE/%E5%87%A0%E8%A1%8C%E4%BB%A3%E7%A0%81%E6%95%99%E4%BD%A0%E8%A7%A3%E5%86%B3%E5%BE%AE%E4%BF%A1%E7%94%9F%E6%88%90%E6%B5%B7%E6%8A%A5%E5%8F%8A%E4%BA%8C%E7%BB%B4%E7%A0%81.md)
+	- [前端 QRCode.js 生成二维码插件](300-tech/%E9%A1%B9%E7%9B%AE/%E5%89%8D%E7%AB%AF%20QRCode.js%20%E7%94%9F%E6%88%90%E4%BA%8C%E7%BB%B4%E7%A0%81%E6%8F%92%E4%BB%B6.md)
 - [编程学习之道](300-tech/编程学习之道.md)
 
 ## 设计

@@ -19,6 +19,13 @@
     {
       "modifiers": [
         "Alt",
+        "Shift"
+      ],
+      "key": "F"
+    },
+    {
+      "modifiers": [
+        "Alt",
         "Mod"
       ],
       "key": "P"

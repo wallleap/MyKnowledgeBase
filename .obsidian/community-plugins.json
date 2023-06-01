@@ -18,5 +18,6 @@
   "table-editor-obsidian",
   "obsidian-regex-replace",
   "remotely-save",
-  "obsidian-vimrc-support"
+  "obsidian-vimrc-support",
+  "obsidian-linter"
 ]

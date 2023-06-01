@@ -40,13 +40,13 @@
       "yaml-sort-order-for-other-keys": "None"
     },
     "yaml-timestamp": {
-      "enabled": false,
+      "enabled": true,
       "date-created": true,
-      "date-created-key": "create",
-      "force-retention-of-create-value": false,
+      "date-created-key": "date",
+      "force-retention-of-create-value": true,
       "date-modified": true,
       "date-modified-key": "updated",
-      "format": "YYYY-MM-DD HH:mm:ss"
+      "format": "YYYY-MM-DD HH:mm"
     },
     "yaml-title": {
       "enabled": true,

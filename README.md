@@ -1,5 +1,7 @@
 ---
 title: README
+date: 2023-05-21 19:06
+updated: 2023-06-01 14:11
 ---
 
 ## Inbox —— All in this . MOC
@@ -255,9 +257,9 @@ title: README
 - 搭配 Picgo 使用，直接粘贴就能上传图片
 - Picgo 建议使用 COS 作为图床，以后方便迁移（自己设定 CDN 地址）
 
-#### Markdown prettifier
+#### ~~Markdown prettifier~~ → Linter
 
-- 个人主要需要使用的是 YAML 中 `updated` 字段更新时间，可以设定快捷键
+- 个人主要需要使用的是 YAML 中 `updated` 字段更新时间，直接 <kbd>Ctrl</kbd> + <kbd>S</kbd> 就可以对文档进行格式化
 
 #### Mind Map
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "300-tech/项目/后台/Vue2 版/005-封装请求库.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -79,7 +79,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5
+    "width": 301.5,
+    "collapsed": true
   },
   "right": {
     "id": "ff952d28c1918849",
@@ -95,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "300-tech/项目/后台/Vue2 版/005-封装请求库.md"
               }
             }
           },
@@ -130,7 +131,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 316.5,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -148,34 +149,36 @@
       "remotely-save:Remotely Save": false
     }
   },
-  "active": "a8f961a9f8dad0c1",
+  "active": "1a894e9b237b81e9",
   "lastOpenFiles": [
-    "SUMMARY.md",
-    "200-work/Office/PPT页面排版.md",
-    "200-work/Office/0-PPT学习.md",
-    "200-work/前端/互联网公司角色.md",
-    "200-work/前端/常用网站.md",
-    "200-work/广告/在搭建信息流广告时的一些小技巧.md",
-    "200-work/广告/创意课程合集.md",
-    "300-tech/鱼皮-前端学习路线.md",
-    "README.md",
-    "300-tech/编程学习之道.md",
-    "300-tech/前端编码规范.md",
-    "300-tech/前端面试押题-方方版.md",
-    "300-tech/web 前端知识体系.md",
-    "300-tech/项目/前端 QRCode.js 生成二维码插件.md",
-    "300-tech/项目/几行代码教你解决微信生成海报及二维码.md",
-    "300-tech/三件套/重新认识 JavaScript 中的 Date.md",
-    "300-tech/工具/VSCode 自用设置.md",
-    "100-person/工具/RIME 小鹤双拼快速设置.md",
-    "100-person/工具/macOS 个性化定制.md",
+    "300-tech/课程/Vue 的构造选项.md",
+    "300-tech/项目/后台/Vue2 版/003-ESLint 代码检查.md",
+    "300-tech/项目/后台/Vue2 版/002-项目目录结构.md",
+    "300-tech/项目/后台/Vue2 版/001-项目初始化.md",
+    "300-tech/项目/后台/Vue2 版/008-Vuex 状态管理模式.md",
+    "300-tech/项目/后台/Vue2 版/007-注册登录.md",
+    "300-tech/项目/后台/Vue2 版/005-封装请求库.md",
+    "300-tech/项目/后台/Vue2 版/013-文章管理.md",
+    "300-tech/项目/后台/Vue2 版/012-个人中心.md",
+    "300-tech/项目/后台/Vue2 版/011-首页.md",
+    "300-tech/项目/后台/Vue2 版/009-登录后跳转页面.md",
+    "300-tech/项目/后台/Vue2 版/000-开发环境.md",
+    "300-tech/项目/后台/Vue2 版/006-git 版本管理.md",
+    "300-tech/项目/后台/Vue2 版/004-配置 UI 组件库.md",
+    "300-tech/项目/后台/Vue2 版/打包发布.md",
+    "300-tech/项目/后台/Vue2 版/010-axios 拦截器及访问控制.md",
+    "300-tech/课程/Vue 表单输入绑定.md",
+    "300-tech/项目/后台/Vue2 版",
+    "300-tech/项目/后台",
     "100-person/工具/mac 打包 DMG.md",
-    "100-person/工具/Clash for Windows 中文汉化教程：使用Clash订阅.md",
-    "100-person/工具/自由输入法 RIME 简明配置指南.md",
-    "100-person/工具/国内如何注册使用 ChatGPT.md",
-    "100-person/工具/个人输入法调教之 Rime.md",
+    "100-person/工具/使用 Cloudflare Workers 让 OpenAI API 绕过 GFW 且避免被封禁.md",
+    "300-tech/课程/Vue 中的数据响应式.md",
     "100-person/工具/常用工具和软件.md",
-    "200-work/前端/配置记录.md",
+    "100-person/工具/打造个性化 GitHub 主页.md",
+    "100-person/工具/翻翻教程.md",
+    "100-person/工具/安卓应用在各平台上架流程.md",
+    "100-person/工具/2022 mac Apps.md",
+    "300-tech/三件套/响应式布局.md",
     "300-tech/项目/山竹记账/vue",
     "300-tech/项目/山竹记账/react",
     "300-tech/项目/山竹记账/rails",
@@ -184,8 +187,6 @@
     "300-tech/项目",
     "300-tech/资源",
     "300-tech/课程",
-    "300-tech/源码",
-    "300-tech/框架",
-    "300-tech/工具"
+    "300-tech/源码"
   ]
 }

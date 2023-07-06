@@ -3,5 +3,9 @@
   "showFrontmatter": true,
   "alwaysUpdateLinks": true,
   "vimMode": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "strictLineBreaks": true,
+  "showLineNumber": true,
+  "useTab": false,
+  "tabSize": 2
 }

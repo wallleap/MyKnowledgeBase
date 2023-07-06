@@ -1,7 +1,5 @@
 
-## [#](https://xugaoyi.com/pages/8309a5b876fc95e3/#meta-元素)<meta> 元素
-
-### [#](https://xugaoyi.com/pages/8309a5b876fc95e3/#概要)概要
+## [#](https://xugaoyi.com/pages/8309a5b876fc95e3/#概要)概要
 
 meta标签提供关于HTML文档的元数据。元数据不会显示在页面上，但是对于机器是可读的。它可用于浏览器（如何显示内容或重新加载页面），搜索引擎（关键词），或其他 web 服务。
 
@@ -19,7 +17,7 @@ meta标签提供关于HTML文档的元数据。元数据不会显示在页面上
 | name       | author / description / keywords / generator / revised / others | 把 content 属性关联到一个name。     |
 | content    | some text                                                    | 定义用于翻译 content 属性值的格式。 |
 
-### [#](https://xugaoyi.com/pages/8309a5b876fc95e3/#网页相关)网页相关
+## [#](https://xugaoyi.com/pages/8309a5b876fc95e3/#网页相关)网页相关
 
 - **申明编码**
 
@@ -87,7 +85,7 @@ url="url" 后者代表当前PC页所对应的手机页URL，两者必须是一�
 ```
 
 
-### [#](https://xugaoyi.com/pages/8309a5b876fc95e3/#seo优化)SEO优化
+## [#](https://xugaoyi.com/pages/8309a5b876fc95e3/#seo优化)SEO优化
 
 [参考文档(opens new window)](http://msdn.microsoft.com/zh-cn/library/ff724016)
 
@@ -137,7 +135,7 @@ url="url" 后者代表当前PC页所对应的手机页URL，两者必须是一�
 ```
 
 
-### [#](https://xugaoyi.com/pages/8309a5b876fc95e3/#移动设备)移动设备
+## [#](https://xugaoyi.com/pages/8309a5b876fc95e3/#移动设备)移动设备
 
 - **viewport**：能优化移动浏览器的显示。如果不是响应式网站，不要使用initial-scale或者禁用缩放。
 
@@ -184,7 +182,6 @@ url="url" 后者代表当前PC页所对应的手机页URL，两者必须是一�
 <meta name="apple-mobile-web-app-title" content="标题">
 ```
 
-1
 
 - **忽略数字自动识别为电话号码**
 
@@ -192,7 +189,6 @@ url="url" 后者代表当前PC页所对应的手机页URL，两者必须是一�
 <meta content="telephone=no" name="format-detection" />
 ```
 
-1
 
 - **忽略识别邮箱**
 
@@ -234,8 +230,35 @@ url="url" 后者代表当前PC页所对应的手机页URL，两者必须是一�
 ```
 
 
+## 图标显示
 
-### [#](https://xugaoyi.com/pages/8309a5b876fc95e3/#一个常用的移动端页面meta设置)一个常用的移动端页面meta设置
+[Favicon Generator for perfect icons on all browsers (realfavicongenerator.net)](https://realfavicongenerator.net/)
+
+```html
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+```
+
+微信缩略图
+
+首先准备一张300*300的图片作为缩略图。
+
+在head头部添加一个div，包含img标签。
+
+```Html
+<div style="display:none;"><img src="/img/wechat.png" alt=""></div>
+<meta property="og:image" content="https://*.***.***/*.png">
+```
+
+第一行src、第二行content更改为图片地址即可，第二行的图片地址必须为完整地址。
+
+## [#](https://xugaoyi.com/pages/8309a5b876fc95e3/#一个常用的移动端页面meta设置)一个常用的移动端页面meta设置
 
 ```html
 <meta charset="utf-8">

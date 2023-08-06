@@ -1,7 +1,7 @@
 ---
 title: 003-ESLint 代码检查
-date: 2023-06-19 11:31
-updated: 2023-06-28 16:53
+date: '2023-06-19 11:31'
+updated: '2023-06-28 16:53'
 cover: //cdn.wallleap.cn/img/post/1.jpg
 image-auto-upload: true
 author: Luwang
@@ -17,8 +17,15 @@ keywords:
   - 关键词2
   - 关键词3
 description: 文章描述
-source: #
+source: null
 url: //myblog.wallleap.cn/post/1
+gists:
+  - id: 34086cbddd6e3a2072aadfd109193a02
+    url: 'https://gist.github.com/wallleap/34086cbddd6e3a2072aadfd109193a02'
+    createdAt: '2023-08-01T14:23:54Z'
+    updatedAt: '2023-08-01T14:23:54Z'
+    filename: 003-ESLint 代码检查.md
+    isPublic: true
 ---
 
 ## ESLint 是什么

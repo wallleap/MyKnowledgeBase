@@ -109,35 +109,32 @@ Compact Folders 取消复选框
 > Monokai pro 提示需要license解决办法
 
 1. 找到Monokai pro插件安装的路径：
-		`C:\Users\用户名\.vscode\extensions\monokai.theme-monokai-pro-vscode-1.1.18\js`
+
+`C:\Users\用户名\.vscode\extensions\monokai.theme-monokai-pro-vscode-1.1.18\js`
 
 2. 打开`app.js`，搜索`"isValidLicense"`，找到如下地方，注释掉原来的代码，保存即可。
 
-		`````
-		 ````
-		  ```js
-		      key: "isValidLicense",
-		      value: function()
-		      {
-		          var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
-		              t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
-		          //if (!e || !t) return !1; 注释掉原来的代码
-		          if (!e || !t) return 1;
-		          var o = s()("".concat(i.APP.UUID).concat(e)),
-		              r = o.match(/.{1,5}/g),
-		              n = r.slice(0, 5).join("-");
-		          //return t === n  注释掉原来的代码
-		          return 1
-		      }
-		  ```
-		 ````
-		`````
+```js
+  key: "isValidLicense",
+  value: function()
+  {
+      var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
+          t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
+      //if (!e || !t) return !1; 注释掉原来的代码
+      if (!e || !t) return 1;
+      var o = s()("".concat(i.APP.UUID).concat(e)),
+          r = o.match(/.{1,5}/g),
+          n = r.slice(0, 5).join("-");
+      //return t === n  注释掉原来的代码
+      return 1
+  }
+```
 
 之后重启 VSCode 即可
 
 还有第二种方法
 
-1. Windows快捷键 <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>p</kbd>，MAC快捷键 <kbd>Command⌘</kbd>+<kbd>shift</kbd>+<kbd>p</kbd>
+1. Windows快捷键 <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>p</kbd>，MAC快捷键 <kbd>Command⌘</kbd> + <kbd>shift</kbd> + <kbd>p</kbd>
 2. 输入 `Monokai Pro: enter license`，回车，输入：`id@chinapyg.com`
 3. 输入`lincese key`，回车，输入：`d055c-36b72-151ce-350f4-a8f69`（*激活码来自 **飘云阁***）
 
@@ -153,10 +150,118 @@ Compact Folders 取消复选框
 
 ![Material Icon Theme](https://cdn.wallleap.cn/img/pic/illustrtion/202208121648789.png)
 
-Format Document ——> <kbd>Alt</kbd> + <kbd>F</kbd>
-
 ### Vim
+
+允许连续按键
+
+```sh
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+```
+
+一些配置（settings.json）
+
+```json
+{
+    "editor.tabSize": 2,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorBlinking": "expand",
+    "editor.lineNumbers":"relative",
+    "vim.leader": "<space>",
+    "vim.easymotion": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "z",
+                "z",
+            ],
+            "commands": [
+                "editor.fold"
+            ]
+        },
+        {
+            "before": ["z", "o"],
+            "commands": ["editor.unfold"]
+        },
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": ["<mouse-drag>", "<mouse-up>"],
+            "after": ["<mouse-drag>", "<mouse-up>"],
+            "commands": []
+        },
+    ],
+    "vim.commandLineModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "z",
+                "z",
+            ],
+            "commands": [
+                "editor.toggleFold"
+            ]
+        },
+    ],
+    "vim.operatorPendingModeKeyBindings": [],
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": true,
+        "<D-c>": false
+    },
+}
+```
+
+- <kbd>⌘</kbd> + <kbd>c</kbd> 在插入模式的时候并不会回到正常模式
+- <kbd>j</kbd> + <kbd>j</kbd> 插入模式下退出
+- <kbd>z</kbd> + <kbd>z</kbd> 折叠代码块
+- <kbd>z</kbd> + <kbd>o</kbd> 展开代码块
+- 用鼠标选择的时候，很多则不会退回到正常模式
 
 ## Code Spell Checker
 
 用于检查代码单词是否写错，写错会有波浪线
+
+## 快捷键
+
+<kbd>⌘</kbd> + <kbd>j</kbd> 显示隐藏控制台（终端）
+
+<kbd>⌘</kbd> + <kbd>b</kbd> 显示隐藏侧边栏
+
+<kbd>⌘</kbd> + <kbd>\</kbd> 拆分多列
+
+<kbd>⌘</kbd> + <kbd>`</kbd> 在工作区中切换
+
+<kbd>⌘</kbd> + <kbd>p</kbd>  检索文件 <kbd>⌘</kbd> + <kbd>f</kbd>  搜索当前文件中关键词  <kbd>⌘</kbd> + <kbd>shift</kbd> + <kbd>f</kbd>  搜索全部文件 <kbd>⌘</kbd> + <kbd>t</kbd> 搜索打开文件
+
+<kbd>⌃</kbd> + <kbd>1</kbd> 聚焦到第一个 Tab（支持 1-5）
+
+<kbd>⌘</kbd> + <kbd>shift</kbd> + <kbd>t</kbd> 重新打开一个关闭的页面
+
+<kbd>F2</kbd> 重命名符号（变量）
+
+Format Document ——> <kbd>Alt</kbd> + <kbd>F</kbd>
+
+<kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>[</kbd> 或 <kbd>]</kbd> 折叠或展开
+
+## `.vscode` 文件夹的作用
+
+为了统一团队的 vscode 配置，我们可以在项目的根目录下建立`.vscode`目录，在里面放置一些配置内容，比如：
+
+- `settings.json`：工作空间设置、代码格式化配置、插件配置。
+    
+- `sftp.json`：ftp 文件传输的配置。
+    
+
+`.vscode`目录里的配置只针对当前项目范围内生效。将`.vscode`提交到代码仓库，大家统一配置时，会非常方便。
+

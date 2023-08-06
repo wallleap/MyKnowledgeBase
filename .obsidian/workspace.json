@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "300-tech/项目/后台/Vue2 版/005-封装请求库.md",
+                "file": "300-tech/三件套/JavaScript/js 中以 ... 为前缀到底有几种用法？.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -79,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5,
-    "collapsed": true
+    "width": 278.5
   },
   "right": {
     "id": "ff952d28c1918849",
@@ -96,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "300-tech/项目/后台/Vue2 版/005-封装请求库.md"
+                "file": "300-tech/三件套/JavaScript/js 中以 ... 为前缀到底有几种用法？.md"
               }
             }
           },
@@ -131,8 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 275.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -145,48 +143,49 @@
       "audio-recorder:开始/结束录音": false,
       "workspaces:管理工作区布局": false,
       "obsidian-weread-plugin:Weread": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "remotely-save:Remotely Save": false
+      "companion:Toggle completion": false
     }
   },
-  "active": "1a894e9b237b81e9",
+  "active": "a8f961a9f8dad0c1",
   "lastOpenFiles": [
-    "300-tech/课程/Vue 的构造选项.md",
-    "300-tech/项目/后台/Vue2 版/003-ESLint 代码检查.md",
-    "300-tech/项目/后台/Vue2 版/002-项目目录结构.md",
-    "300-tech/项目/后台/Vue2 版/001-项目初始化.md",
-    "300-tech/项目/后台/Vue2 版/008-Vuex 状态管理模式.md",
-    "300-tech/项目/后台/Vue2 版/007-注册登录.md",
-    "300-tech/项目/后台/Vue2 版/005-封装请求库.md",
-    "300-tech/项目/后台/Vue2 版/013-文章管理.md",
-    "300-tech/项目/后台/Vue2 版/012-个人中心.md",
-    "300-tech/项目/后台/Vue2 版/011-首页.md",
-    "300-tech/项目/后台/Vue2 版/009-登录后跳转页面.md",
-    "300-tech/项目/后台/Vue2 版/000-开发环境.md",
-    "300-tech/项目/后台/Vue2 版/006-git 版本管理.md",
-    "300-tech/项目/后台/Vue2 版/004-配置 UI 组件库.md",
-    "300-tech/项目/后台/Vue2 版/打包发布.md",
-    "300-tech/项目/后台/Vue2 版/010-axios 拦截器及访问控制.md",
-    "300-tech/课程/Vue 表单输入绑定.md",
-    "300-tech/项目/后台/Vue2 版",
-    "300-tech/项目/后台",
-    "100-person/工具/mac 打包 DMG.md",
-    "100-person/工具/使用 Cloudflare Workers 让 OpenAI API 绕过 GFW 且避免被封禁.md",
-    "300-tech/课程/Vue 中的数据响应式.md",
-    "100-person/工具/常用工具和软件.md",
-    "100-person/工具/打造个性化 GitHub 主页.md",
-    "100-person/工具/翻翻教程.md",
-    "100-person/工具/安卓应用在各平台上架流程.md",
-    "100-person/工具/2022 mac Apps.md",
-    "300-tech/三件套/响应式布局.md",
-    "300-tech/项目/山竹记账/vue",
-    "300-tech/项目/山竹记账/react",
-    "300-tech/项目/山竹记账/rails",
-    "300-tech/项目/山竹记账",
-    "300-tech/三件套/CSS Functions.jpg",
-    "300-tech/项目",
-    "300-tech/资源",
-    "300-tech/课程",
-    "300-tech/源码"
+    "300-tech/项目/技巧/vite3+vue3+ts+pinia + Naive UI 项目实战 —— 国际化配置.md",
+    "300-tech/三件套/JavaScript/js 中以 ... 为前缀到底有几种用法？.md",
+    "300-tech/项目/技巧/Vue 超长列表渲染性能优化实战.md",
+    "300-tech/框架/Vue 2/30 道 Vue 面试题，内含详细讲解.md",
+    "300-tech/框架/Vue 2/教你一步一步实现双向绑定.md",
+    "300-tech/框架/Vue 2/揭密 Vue 的双向绑定.md",
+    "300-tech/框架/Vue 2/vue 双向数据绑定原理.md",
+    "300-tech/项目/技巧/前后端分离使用 Token 登录解决方案.md",
+    "300-tech/三件套/JavaScript/前端进阶之必会的 JavaScript 技巧总结.md",
+    "300-tech/框架/Vue 3/根据公司的业务需求我是这样封装组件.md",
+    "300-tech/源码/Vue 3 源码导读.md",
+    "300-tech/框架/Vue 3/vue 3 保姆级教程.md",
+    "300-tech/项目/技巧/一篇拒绝低级封装 axios 的文章.md",
+    "300-tech/三件套/JavaScript/JavaScript 中 new 操作符的原理.md",
+    "300-tech/三件套/JavaScript/JavaScript 骚操作.md",
+    "300-tech/三件套/JavaScript/JavaScript 骚操作之操作符.md",
+    "300-tech/项目/移动端/postcss-px-to-viewport 移动端适配方案.md",
+    "300-tech/项目/移动端/viewport 移动端适配.md",
+    "300-tech/网络/知识/前端缓存最佳实践.md",
+    "300-tech/前端劝退之前端知识体系.md",
+    "300-tech/三件套/JavaScript/如何使用 Web Worker 为 JS 创造多线程环境？.md",
+    "300-tech/网络/知识/输入 URL 到页面显示的前端体系知识.md",
+    "300-tech/项目/构建/为什么第二次打开页面快？五步吃透前端缓存，让页面飞起.md",
+    "300-tech/框架/Vue 3/聊一聊 Vue 3 的 9 个知识点.md",
+    "300-tech/框架/Vue 3/Vue 3 的 8 种和 Vue 2 的 12 种组件通信.md",
+    "300-tech/框架/Vue 3/保姆级 Vue 3 开发文档.md",
+    "300-tech/网络/知识",
+    "300-tech/网络",
+    "300-tech/项目/移动端",
+    "300-tech/数据结构与算法",
+    "300-tech/项目/组件",
+    "300-tech/项目/技巧",
+    "300-tech/工具/Git",
+    "Pasted image 20230803160252.png",
+    "Pasted image 20230803160100.png",
+    "200-work/Office/PPT/学习",
+    "200-work/Office/PPT/案例",
+    "200-work/Office/PPT",
+    "300-tech/三件套/CSS Functions.jpg"
   ]
 }

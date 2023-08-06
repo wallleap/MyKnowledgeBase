@@ -1,6 +1,17 @@
 {
-  "accentColor": "#1434d7",
+  "accentColor": "#2970ff",
   "theme": "moonstone",
-  "cssTheme": "own",
-  "baseFontSize": 15
+  "cssTheme": "",
+  "baseFontSize": 18,
+  "interfaceFontFamily": "MiSans",
+  "textFontFamily": "MiSans",
+  "monospaceFontFamily": "JetBrains Mono",
+  "enabledCssSnippets": [
+    "heading",
+    "base",
+    "block",
+    "inline"
+  ],
+  "showViewHeader": true,
+  "translucency": false
 }

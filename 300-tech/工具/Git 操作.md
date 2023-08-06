@@ -1,7 +1,7 @@
 ---
 title: Git 操作
 date: 2022-11-11 09:48
-updated: 2022-11-11 17:31
+updated: 2023-07-26 16:58
 cover: //cdn.wallleap.cn/img/pic.jpg
 author: Luwang
 comments: true
@@ -25,9 +25,9 @@ url: //wallleap.github.io/learnGit/
 
 ## 1、初始化环境
 
- 下载Git、注册Github等账号
+ 下载 Git、注册 Github 等账号
 
- 配置本地Git信息
+ 配置本地 Git 信息
 
 ```zsh
 git config --global user.name "Your Name"
@@ -98,7 +98,7 @@ ssh -T git@github.com
 	- `git pull --rebase` = `git fetch` + `git rebase`
 	- 只有远程分⽀和本地分⽀历史相同时，才能 push
 
-## 3、了解Git基本命令
+## 3、了解 Git 基本命令
 
 ### 初始化仓库
 
@@ -111,6 +111,16 @@ git init
 ```zsh
 git clone 仓库链接
 ```
+
+在使用 git clone 命令时，可以使用 "--exclude" 选项排除特定的文件夹
+
+例如，如果要排除文件夹 "folder"，可以使用以下命令：
+
+```sh
+git clone --exclude=folder [repository-url] [重命名]
+```
+
+请注意，这个选项只在 Git 版本 2.9 及更高版本中可用。如果您的 Git 版本较低，可以考虑克隆整个仓库，然后删除不需要的文件夹
 
 ### 创建 .gitignore 文件
 
@@ -246,6 +256,15 @@ git merge 分支名
 git branch -d dev
 ```
 
+### 新建空白分支
+
+```sh
+git checkout --orphan gh-pages
+git rm -rf .
+```
+
+通常用来新建一个分支，存放文档官网等文件，GitHub Pages 就是这样做的。
+
 ## 4、冲突解决
 
 ### git merge 与冲突解决
@@ -263,10 +282,8 @@ git branch -d dev
 
 - merge：直接将两个状态合并，并产生一个合并提交
 	- 将两个或多个开发历史交汇在一起
-
 - rebase：将某个状态上的变更（commit）挨个重演
 	- 在另外一个分支的基础上重演提交
-
 - merge 的优缺点
 	- 优点
 		- 简单，易于理解
@@ -275,7 +292,6 @@ git branch -d dev
 	- 缺点
 		- 历史杂乱无章
 		- 对 bisect 不友好
-
 - rebase 的优缺点
 	- 优点
 		- 分支历史是一条直线，清楚直观
@@ -286,18 +302,14 @@ git branch -d dev
 		- ~~会干扰别人？（和别人共享的分支永远不要 force push）~~
 	- 使用场景
 		- 定时将你的分支和主干进行同步
-
 - `git merge --squash`
 	- 优点
 		- 把所有变更合在一起，更容易阅读，bisect 友好
 		- 想要回滚或者 revert 非常方便
 	- 缺点
 		- 丢失了所有的历史记录
-
 - 充分了解 merge 和 rebase，然后看自己的喜好
-
 - 在任何需要和其他人共享的分支上，不要用 force push
-
 - 在自己独占的分支上，尽量使用 rebase
 
 ### git checkout
@@ -314,7 +326,7 @@ git branch -d dev
 
 ### git reset
 
-- 强⾏将当前分⽀HEAD指针移动到指定状态
+- 强⾏将当前分⽀ HEAD 指针移动到指定状态
 	- `git reset HEAD --hard`
 	- `git reset origin/master`
 	- `git reset 3da2dfe`
@@ -415,27 +427,27 @@ gp -f # push 到远端
 - 好处：
 	- 清楚直观
 	- 每个提交代表⼀个单独的完整的功能点，⽅便回滚
-	- 每个提交都是稳定的，⽅便进⾏bisect
+	- 每个提交都是稳定的，⽅便进⾏ bisect
 - 临时性的功能分⽀
 	- feature
 	- bugfix
 	- release
 
-### 8、⾃⾏搭建Git服务器
+### 8、⾃⾏搭建 Git 服务器
 
 - gogs
 	- 轻量，简单
 	- `docker run -v ~git/gogs:/data -p 127.0.0.1:10022:22 - p 3000:3000 gogs/gogs`
 - As root
-	- 【安装docker】`apt-get update && apt-get install docker.io`
-	- 【创建git⽤户】`adduser git`
-	- 【使git⽤户可以运⾏docker】`usermod -aG docker git`
-	- 【创建gogs运⾏⽬录】`mkdir -p /app/gogs`
+	- 【安装 docker】`apt-get update && apt-get install docker.io`
+	- 【创建 git ⽤户】`adduser git`
+	- 【使 git ⽤户可以运⾏ docker】`usermod -aG docker git`
+	- 【创建 gogs 运⾏⽬录】`mkdir -p /app/gogs`
 	- 【改变⽬录的所有⼈】`chown git:git /app/gogs`
 - As git
-	- 【创建SSH⽬录】`mkdir -p ~/gogs/git/.ssh`
+	- 【创建 SSH ⽬录】`mkdir -p ~/gogs/git/.ssh`
 	- `ln -s ~/gogs/git/.ssh ~/.ssh`
-	- 【⽣成SSH key】`ssh-keygen -t rsa -P ''`
+	- 【⽣成 SSH key】`ssh-keygen -t rsa -P ''`
 	- `cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys`
 	- 【更严格的权限】`chmod 700 ~/.ssh && chmod 600 ~/.ssh/*`
 	- `cat >/app/gogs/gogs <<'END' #!/bin/sh ssh -p 10022 -o StrictHostKeyChecking=no git@127.0.0.1 \ "SSH_ORIGINAL_COMMAND="$SSH_ORIGINAL_COMMAND" $0 $@" END`

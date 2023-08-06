@@ -37,7 +37,7 @@
 	- Word
 	- Excel
 	- PPT
-		- [PPT页面排版](200-work/Office/PPT页面排版.md)
+		- [PPT页面排版](PPT页面排版.md)
 
 ## 技术
 
@@ -120,13 +120,13 @@
 	- [前端优质学习资源](300-tech/资源/前端优质学习资源.md)
 - 项目
 	- 山竹记账
-	- [一篇文章搞定 GitHub API 调用](300-tech/项目/一篇文章搞定%20GitHub%20API%20调用.md)
-	- [基于 GitHub API 的个人博客](300-tech/项目/基于%20GitHub%20API%20的个人博客.md)
-	- [Vue2 组件库和文档](300-tech/项目/Vue2%20组件库和文档.md)
-	- [VuePress 搭建组件库文档](300-tech/项目/VuePress%20搭建组件库文档.md)
-	- [使用 Vuepress 搭建基于 Vue 3.2 的组件库](300-tech/项目/使用%20Vuepress%20搭建基于%20Vue%203.2%20的组件库.md)
-	- [几行代码教你解决微信生成海报及二维码](300-tech/%E9%A1%B9%E7%9B%AE/%E5%87%A0%E8%A1%8C%E4%BB%A3%E7%A0%81%E6%95%99%E4%BD%A0%E8%A7%A3%E5%86%B3%E5%BE%AE%E4%BF%A1%E7%94%9F%E6%88%90%E6%B5%B7%E6%8A%A5%E5%8F%8A%E4%BA%8C%E7%BB%B4%E7%A0%81.md)
-	- [前端 QRCode.js 生成二维码插件](300-tech/%E9%A1%B9%E7%9B%AE/%E5%89%8D%E7%AB%AF%20QRCode.js%20%E7%94%9F%E6%88%90%E4%BA%8C%E7%BB%B4%E7%A0%81%E6%8F%92%E4%BB%B6.md)
+	- [一篇文章搞定 Github API 调用](一篇文章搞定%20Github%20API%20调用.md)
+	- [基于 GitHub API 的个人博客](基于%20GitHub%20API%20的个人博客.md)
+	- [Vue2 组件库和文档](Vue2%20组件库和文档.md)
+	- [VuePress 搭建组件库文档](VuePress%20搭建组件库文档.md)
+	- [使用 Vuepress 搭建基于 Vue 3.2 的组件库](使用%20Vuepress%20搭建基于%20Vue%203.2%20的组件库.md)
+	- [几行代码教你解决微信生成海报及二维码](几行代码教你解决微信生成海报及二维码.md)
+	- [前端 QRCode.js 生成二维码插件](前端%20QRCode.js%20生成二维码插件.md)
 - [编程学习之道](300-tech/编程学习之道.md)
 
 ## 设计

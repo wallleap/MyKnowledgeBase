@@ -309,7 +309,7 @@ export default new Vuex.Store({
 
 store 只能是唯一的一个
 
-stae 里定义全局状态变量
+state 里定义全局状态变量
 
 mutations 里唯一同步修改 state 里的值
 

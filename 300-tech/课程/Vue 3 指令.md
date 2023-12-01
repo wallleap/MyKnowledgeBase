@@ -1,0 +1,188 @@
+---
+title: Vue 3 指令
+date: 2023-08-15 10:47
+updated: 2023-08-15 10:47
+cover: //cdn.wallleap.cn/img/post/1.jpg
+image-auto-upload: true
+author: Luwang
+comments: true
+aliases:
+  - Vue 3 指令
+rating: 1
+tags:
+  - Vue
+  - web
+category: web
+keywords:
+  - 关键词1
+  - 关键词2
+  - 关键词3
+description: 文章描述
+source: #
+url: //myblog.wallleap.cn/post/1
+---
+
+## 条件渲染
+
+- `v-if="isShow"` 创建/删除元素、`v-show="isShow"` 展示/隐藏元素（display）
+- `v-if` 会创建/销毁组件、`v-show` 切换在创建完组件后只会隐藏（`display: none`）
+- `v-if` 后面的元素可以直接接 `v-else-if`、`v-else`，`v-show` 则不能
+- 对于多个元素的控制可以用 `<template>` 包裹
+
+## 列表渲染
+
+- `v-for` 可以渲染数组和对象 `v-for="item in array"`、`v-for="(item, index) in arry"`（第二个是下标）、`v-for="value in obj"`、`v-for="(value, key) in obj"`（第二个是键）除了用 `in` 还可以用 `of`
+- 可以使用值的范围 `v-for="n in 10"`（1~10）
+- 可以在组件上循环渲染
+- `v-for` 默认使用“就地更新”策略，数据项的顺序被改变，Vue 将不会移动 DOM 元素来匹配数据项的顺序，而是就地更新每个元素
+- 如果需要跟踪每个节点的身份，重用和重新排序现有元素，提升性能，需要动态绑定 `key` 属性，它的值需要确保是唯一的，例如 `:key="item.id"`
+
+## 事件处理
+
+- `v-on:事件="操作"` 指令缩写 `@事件="操作"`（`v-on:click="onClick"`、`@click="onClick('参数')"`）
+- `@click` 的值既可以是 methods 里的函数名，执行函数时参数是点击事件
+- 也可以是函数的调用，执行函数时参数是调用时传入的参数，可以传递固定值、 data 的属性、`$event`，例如 `@click="sayHi($event),sayHello('me')"`
+- 可以使用修饰符，例如 `@click.once="onClick"`
+
+## 双向绑定
+
+使用 `v-model` 实现双向绑定
+
+```html
+<div id="app">
+  <fieldset>
+    <legend> value 和 input </legend>
+    <!-- value 和 input -->
+    <input v-model="message" /> {{ message }}
+  </fieldset>
+  <fieldset>
+    <legend> value 和 change </legend>
+    <!-- value 和 change -->
+    <textarea v-model.lazy="message"></textarea> {{ message }}
+  </fieldset>
+  <fieldset>
+    <legend> 复选框 </legend>
+    <input type="checkbox" v-model="checked" /> {{checked}}
+  </fieldset>
+  <fieldset>
+    <legend> 多个复选框 </legend>
+    <input type="checkbox" value="a" v-model="list" />
+    <input type="checkbox" value="b" v-model="list" /> {{list}}
+  </fieldset>
+  <fieldset>
+    <legend> 单选框 </legend>
+    <input type="radio" value="a" v-model="theme" />
+    <input type="radio" value="b" v-model="theme" /> {{theme}}
+  </fieldset>
+
+  <fieldset>
+    <legend> select </legend>
+    <select v-model="selected" multiple>
+      <option value="AA">A</option>
+      <option value="BB">B</option>
+      <option value="CC">C</option>
+    </select>
+    <br />
+    <span>Selected: {{ selected }}</span>
+  </fieldset>
+
+</div>
+
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+  Vue.createApp({
+    data() {
+      return {
+         message:  'aa',
+         checked: false,
+         list: [],
+         theme: '',
+         selected: []
+      }
+    }
+  }).mount('#app')
+</script>
+```
+
+## 组件的创建与数据传递
+
+- 每个组件维护独立的数据
+- 注册组件：`app.component('组件名', {})`
+- 通过 Props 向子组件传递数据
+- 子组件触发事件向父组件传递
+
+```html
+<div id="app">
+  <font-size step="1" :val="fontSize" @plus="fontSize += $event"    
+             @minus="fontSize -= $event"></font-size>
+  <font-size step="3" :val="fontSize" @plus="fontSize += $event" 
+             @minus="fontSize -= $event"></font-size>
+  <p :style="{fontSize:fontSize+'px'}">Hello {{fontSize}}</p>
+</div>
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+  const app = Vue.createApp({
+    data() { return { fontSize: 18 } }
+  })
+  app.component('font-size', {
+    props: ['val', 'step'],
+    template: `
+      <div>step: {{step}}
+        <button @click="onPlus">+</button>
+        <button @click="$emit('minus', step)">-</button>
+      </div>`,
+    methods: {
+      onPlus() { this.$emit('plus', parseInt(this.step)) }
+    }
+  })
+  app.mount('#app')
+</script>
+```
+
+## 组件的双向绑定
+
+`<input v-model="text" />` 等价于 `<input :value="text" @input="text=$event.target.value" />`
+
+- 父组件通过 `v-model="属性"` 把属性传递给子组件
+- 子组件内有一个 modelValue 的 Prop，接收父组件传递的数据
+- 子组件通过触发 `update:modelValue` 修改父组件绑定的属性
+
+```html
+<div id="app">
+  <font-size step="1" v-model="fontSize"></font-size>
+  <font-size step="4" v-model="fontSize"></font-size>
+  <p :style="{fontSize:fontSize+'px'}">Hello {{fontSize}}</p>
+</div>
+<script src="https://unpkg.com/vue@next"></script>
+<script>
+  const app = Vue.createApp({
+    data() { return { fontSize: 16 } }
+  })
+  app.component('font-size', {
+    props: ['modelValue', 'step'],
+    template: `
+      <div>step: {{modelValue}}
+        <button @click="$emit('update:modelValue', +step+modelValue)">+</button>
+        <button @click="$emit('update:modelValue', modelValue-step)">-</button>
+      </div>`
+  })
+  app.mount('#app')
+</script>
+```
+
+很多框架都使用单向数据流，指的是父组件能直接传递数据给子组件，子组件不能随意修改父组件状态
+
+为什么要单向
+
+- 单向数据流的目的是让数据的传递变得简单、可控、可追溯
+- 假设都是使用双向数据流，父组件维护一个状态，并且传递给所有的子组件
+- 当其中一个子组件通过双向数据流直接修改父组件的这个状态时，其他子组件也会被修改
+- 当这个结果产生时我们无法得知是哪个子组件修改了数据，在项目庞大时数据的管理和追溯变得更复杂
+
+如何使用双向
+
+- 一般来说，父组件可以通过设置子组件的 props 直接传递数据给子组件
+- 子组件想传递数据给父组件时，可以在内部 emit 一个自定义事件，父组件可在子组件上绑定该事件的监听，来处理子组件 emit 的事件和数据
+- 在 Vue 里，v-model 实现的所谓双向绑定，本质上就是这种方式
+
+

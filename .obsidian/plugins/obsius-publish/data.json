@@ -19,6 +19,14 @@
     "100-person/工具/打造个性化 GitHub 主页.md": {
       "id": "66656r0f672o282r3w0x",
       "secret": "6w3z1e2y5e6u3759671o"
+    },
+    "300-tech/项目/构建/根据 push 的 md 文件自动创建 issue.md": {
+      "id": "19040o4a525y0t3m712a",
+      "secret": "2k2y2x6p006d3s4f1w3x"
+    },
+    "100-person/服务器/Trojan + 宝塔面板，完美运行！Nginx 分流，复用 443 端口！.md": {
+      "id": "2q5q4s0j555i0b0x1f09",
+      "secret": "05232k42290i0e4v491o"
     }
   }
 }

@@ -1,7 +1,7 @@
 ---
 title: VSCode 自用设置
 date: 2022-11-15 14:54
-updated: 2022-11-15 15:04
+updated: 2023-09-06 10:16
 cover: //cdn.wallleap.cn/img/post/1.jpg
 author: Luwang
 comments: true
@@ -40,13 +40,13 @@ Win 入口：
 
 ![缩进](https://cdn.wallleap.cn/img/pic/illustrtion/202208121559184.png)
 
-2. 然后搜索`Detect Indentation`，将这个属性的**勾去掉**或者设为**false**
+1. 然后搜索 `Detect Indentation`，将这个属性的**勾去掉**或者设为**false**
 
 ![禁用](https://cdn.wallleap.cn/img/pic/illustrtion/202208121601320.png)
 
 ### 2、字体
 
-大家推荐的是`JetBrainsMono`，这里提供下载地址
+大家推荐的是 `JetBrainsMono`，这里提供下载地址
 
 [JetBrainsMono-1.0.3.zip - 蓝奏云 (lanzoub.com)](https://wallleap.lanzoub.com/ipzYE09frpli)
 
@@ -58,7 +58,7 @@ Win 入口：
 "editor.fontFamily": "JetBrains Mono, Fira Code, Consolas, 'Courier New', monospace",
 ```
 
-字体大小一般默认14就行，需要调整可以直接在窗口中使用快捷键<kbd>Ctrl</kbd>+<kbd>+</kbd>和<kbd>Ctrl</kbd>+<kbd>-</kbd>调节整体的缩放
+字体大小一般默认 14 就行，需要调整可以直接在窗口中使用快捷键<kbd>Ctrl</kbd>+<kbd>+</kbd>和<kbd>Ctrl</kbd>+<kbd>-</kbd>调节整体的缩放
 
 开启连字
 
@@ -106,13 +106,13 @@ Compact Folders 取消复选框
 
 ![Monokai Pro](https://cdn.wallleap.cn/img/pic/illustrtion/202208121638611.png)
 
-> Monokai pro 提示需要license解决办法
+> Monokai pro 提示需要 license 解决办法
 
-1. 找到Monokai pro插件安装的路径：
+1. 找到 Monokai pro 插件安装的路径：
 
 `C:\Users\用户名\.vscode\extensions\monokai.theme-monokai-pro-vscode-1.1.18\js`
 
-2. 打开`app.js`，搜索`"isValidLicense"`，找到如下地方，注释掉原来的代码，保存即可。
+1. 打开 `app.js`，搜索 `"isValidLicense"`，找到如下地方，注释掉原来的代码，保存即可。
 
 ```js
   key: "isValidLicense",
@@ -134,9 +134,9 @@ Compact Folders 取消复选框
 
 还有第二种方法
 
-1. Windows快捷键 <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>p</kbd>，MAC快捷键 <kbd>Command⌘</kbd> + <kbd>shift</kbd> + <kbd>p</kbd>
+1. Windows 快捷键 <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>p</kbd>，MAC 快捷键 <kbd>Command⌘</kbd> + <kbd>shift</kbd> + <kbd>p</kbd>
 2. 输入 `Monokai Pro: enter license`，回车，输入：`id@chinapyg.com`
-3. 输入`lincese key`，回车，输入：`d055c-36b72-151ce-350f4-a8f69`（*激活码来自 **飘云阁***）
+3. 输入 `lincese key`，回车，输入：`d055c-36b72-151ce-350f4-a8f69`（*激活码来自 **飘云阁***）
 
 #### (2) Flatland Monokai Theme
 
@@ -232,6 +232,8 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 用于检查代码单词是否写错，写错会有波浪线
 
+你可以安装 [es6-string-html](https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html) 扩展，然后在字符串前加上一个前缀注释 `/*html*/` 以高亮语法。
+
 ## 快捷键
 
 <kbd>⌘</kbd> + <kbd>j</kbd> 显示隐藏控制台（终端）
@@ -256,12 +258,10 @@ Format Document ——> <kbd>Alt</kbd> + <kbd>F</kbd>
 
 ## `.vscode` 文件夹的作用
 
-为了统一团队的 vscode 配置，我们可以在项目的根目录下建立`.vscode`目录，在里面放置一些配置内容，比如：
+为了统一团队的 vscode 配置，我们可以在项目的根目录下建立 `.vscode` 目录，在里面放置一些配置内容，比如：
 
 - `settings.json`：工作空间设置、代码格式化配置、插件配置。
-    
+
 - `sftp.json`：ftp 文件传输的配置。
-    
 
-`.vscode`目录里的配置只针对当前项目范围内生效。将`.vscode`提交到代码仓库，大家统一配置时，会非常方便。
-
+`.vscode` 目录里的配置只针对当前项目范围内生效。将 `.vscode` 提交到代码仓库，大家统一配置时，会非常方便。

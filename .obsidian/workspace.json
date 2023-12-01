@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "37e4df7bf4de1aaa",
+        "id": "69fb4a3267fe2622",
         "type": "tabs",
         "children": [
           {
-            "id": "a8f961a9f8dad0c1",
+            "id": "ef7efe7ef063edcd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "300-tech/三件套/JavaScript/js 中以 ... 为前缀到底有几种用法？.md",
+                "file": "300-tech/工具/AI/Stable Diffusion 安装.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -95,7 +95,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "300-tech/三件套/JavaScript/js 中以 ... 为前缀到底有几种用法？.md"
+                "file": "300-tech/工具/AI/Stable Diffusion 安装.md"
               }
             }
           },
@@ -125,12 +125,23 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
+          },
+          {
+            "id": "59405ef9ad122444",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 275.5
+    "width": 275.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,46 +157,46 @@
       "companion:Toggle completion": false
     }
   },
-  "active": "a8f961a9f8dad0c1",
+  "active": "ef7efe7ef063edcd",
   "lastOpenFiles": [
-    "300-tech/项目/技巧/vite3+vue3+ts+pinia + Naive UI 项目实战 —— 国际化配置.md",
-    "300-tech/三件套/JavaScript/js 中以 ... 为前缀到底有几种用法？.md",
-    "300-tech/项目/技巧/Vue 超长列表渲染性能优化实战.md",
-    "300-tech/框架/Vue 2/30 道 Vue 面试题，内含详细讲解.md",
-    "300-tech/框架/Vue 2/教你一步一步实现双向绑定.md",
-    "300-tech/框架/Vue 2/揭密 Vue 的双向绑定.md",
-    "300-tech/框架/Vue 2/vue 双向数据绑定原理.md",
-    "300-tech/项目/技巧/前后端分离使用 Token 登录解决方案.md",
-    "300-tech/三件套/JavaScript/前端进阶之必会的 JavaScript 技巧总结.md",
-    "300-tech/框架/Vue 3/根据公司的业务需求我是这样封装组件.md",
-    "300-tech/源码/Vue 3 源码导读.md",
-    "300-tech/框架/Vue 3/vue 3 保姆级教程.md",
-    "300-tech/项目/技巧/一篇拒绝低级封装 axios 的文章.md",
-    "300-tech/三件套/JavaScript/JavaScript 中 new 操作符的原理.md",
-    "300-tech/三件套/JavaScript/JavaScript 骚操作.md",
-    "300-tech/三件套/JavaScript/JavaScript 骚操作之操作符.md",
-    "300-tech/项目/移动端/postcss-px-to-viewport 移动端适配方案.md",
-    "300-tech/项目/移动端/viewport 移动端适配.md",
-    "300-tech/网络/知识/前端缓存最佳实践.md",
-    "300-tech/前端劝退之前端知识体系.md",
-    "300-tech/三件套/JavaScript/如何使用 Web Worker 为 JS 创造多线程环境？.md",
-    "300-tech/网络/知识/输入 URL 到页面显示的前端体系知识.md",
-    "300-tech/项目/构建/为什么第二次打开页面快？五步吃透前端缓存，让页面飞起.md",
-    "300-tech/框架/Vue 3/聊一聊 Vue 3 的 9 个知识点.md",
-    "300-tech/框架/Vue 3/Vue 3 的 8 种和 Vue 2 的 12 种组件通信.md",
-    "300-tech/框架/Vue 3/保姆级 Vue 3 开发文档.md",
-    "300-tech/网络/知识",
-    "300-tech/网络",
-    "300-tech/项目/移动端",
-    "300-tech/数据结构与算法",
-    "300-tech/项目/组件",
-    "300-tech/项目/技巧",
-    "300-tech/工具/Git",
+    "300-tech/工具/AI/SD 提示词.md",
+    "300-tech/工具/AI/Stable Diffusion 安装.md",
+    "200-work/广告/创意课程合集.md",
+    "300-tech/三件套/HTML/适配 Safari 书签页和 iOS 桌面图标.md",
+    "300-tech/工具/AI/未命名",
+    "300-tech/工具/AI",
+    "300-tech/三件套/HTML/微信分享链接缩略图设置.md",
+    "100-person/服务器/xui 与宝塔共存.md",
+    "100-person/工具/翻翻教程.md",
+    "100-person/服务器/Trojan + 宝塔面板，完美运行！Nginx 分流，复用 443 端口！.md",
+    "300-tech/三件套/JavaScript/滚动条不占用网页布局.md",
+    "300-tech/三件套/JavaScript/获取 IP 归属地.md",
+    "300-tech/课程/006-布局相关.md",
+    "300-tech/三件套/HTML",
+    "300-tech/课程/005-深入 CSS.md",
+    "100-person/面试必备.md",
+    "400-design/设计改版/产品升级/当FUI遇上数据可视化.md",
+    "400-design/设计改版/产品升级/腾讯篝火营地 - 品牌延展与线下应用视觉设计.md",
+    "400-design/设计改版/产品升级/小米智能门锁软硬件设计复盘.md",
+    "400-design/设计改版/产品升级/最右6.0升级.md",
+    "400-design/设计改版/产品升级/亿品赞产品体验设计.md",
+    "400-design/设计改版/产品升级/作业帮APP13.0.md",
+    "400-design/设计改版/产品升级/数字故宫设计总结.md",
+    "400-design/设计改版/产品升级/别样App 3.0 体验升级.md",
+    "400-design/设计改版/产品升级/顺丰速运APP9.0 设计复盘.md",
+    "400-design/设计改版/产品升级/飞书 5.0 品牌升级完整设计复盘.md",
+    "400-design/设计改版/产品升级/酷家乐主站3.0，让一切更简单.md",
+    "400-design/设计改版/产品升级/赶集2.0设计语言升级.md",
+    "400-design/设计改版/产品升级/音磁-电磁风说唱社区.md",
+    "000-asserts/videos/“有兴趣，更爱学”——瓜瓜龙启蒙品牌升级1.mp4",
+    "000-asserts/videos/“有兴趣，更爱学”——瓜瓜龙启蒙品牌升级.mp4",
+    "000-asserts/videos/京东APP9.0 新升级新体验.mp4",
+    "400-design/设计改版/产品升级",
+    "400-design/动效设计",
+    "400-design/B端设计",
+    "400-design/设计方法论",
     "Pasted image 20230803160252.png",
     "Pasted image 20230803160100.png",
-    "200-work/Office/PPT/学习",
-    "200-work/Office/PPT/案例",
-    "200-work/Office/PPT",
     "300-tech/三件套/CSS Functions.jpg"
   ]
 }

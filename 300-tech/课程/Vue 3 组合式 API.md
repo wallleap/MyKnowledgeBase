@@ -1,7 +1,7 @@
 ---
 title: Vue 3 组合式 API
 date: 2023-08-16 22:06
-updated: 2023-08-16 22:06
+updated: 2024-03-17 10:03
 cover: //cdn.wallleap.cn/img/post/1.jpg
 image-auto-upload: true
 author: Luwang
@@ -101,21 +101,21 @@ export default {
 
 ## 生命周期钩子函数
 
-| 选项式 API | Hook inside setup |
-|--------------|-----------------------|
-| `beforeCreate` | 不需要 |
-| `created` | 不需要 |
-| `beforeMount` | `onBeforeMount` |
-| `mounted` | `onMounted` |
-| `beforeUpdate` | `onBeforeUpdate` |
-| `updated` | `onUpdated` |
-| `beforeUnmount` | `onBeforeUnmount` |
-| `unmounted` | `onUnmounted` |
-| `errorCaptured` | `onErrorCaptured` |
-| `renderTracked` | `onRenderTracked` |
+| 选项式 API           | Hook inside setup   |
+| ----------------- | ------------------- |
+| `beforeCreate`    | 不需要                 |
+| `created`         | 不需要                 |
+| `beforeMount`     | `onBeforeMount`     |
+| `mounted`         | `onMounted`         |
+| `beforeUpdate`    | `onBeforeUpdate`    |
+| `updated`         | `onUpdated`         |
+| `beforeUnmount`   | `onBeforeUnmount`   |
+| `unmounted`       | `onUnmounted`       |
+| `errorCaptured`   | `onErrorCaptured`   |
+| `renderTracked`   | `onRenderTracked`   |
 | `renderTriggered` | `onRenderTriggered` |
-| `activated` | `onActivated` |
-| `deactivated` | `onDeactivated` |
+| `activated`       | `onActivated`       |
+| `deactivated`     | `onDeactivated`     |
 
 因为 `setup` 是围绕 `beforeCreate` 和 `created` 生命周期钩子运行的
 
@@ -254,4 +254,53 @@ export default {
   }
 }
 ```
- 
+
+## setup 语法糖
+
+```vue
+<script setup>
+import { ref, reactive, computed, watch, watchEffect } from 'vue'
+
+const refState = ref(0)
+const name = ref('Tom')
+const list = reactive([1, 2, 3, 4, 5])
+const obj = reactive({
+  name: 'Tom',
+  age: 18
+})
+
+console.log(refState.value, list) // 在 script 中 ref 需要 .value
+
+const newList = computed(() => {
+  return list.filter(item => item > 2)
+})
+
+watch(obj, (newVal, oldVal) => {
+  console.log(newVal, oldVal)
+}, {
+  inmmediate: true,
+  deep: true
+})
+// 精确监听
+watch(
+  () => obj.name,
+  () => {
+    console.log('name changed')
+  }
+)
+// 监听多个值
+watch([refState, name], ([newState, newName], [oldState, oldName]) => {
+  // console.log()
+})
+</script>
+<template>
+  <!-- ref 在这里不需要 .value -->
+  <div>{{refState}}, {{list}}, {{newList}}</div>
+</template>
+```
+
+- `computed` 中不应该有副作用（除了计算的其他任何操作，异步请求、操作 DOM 等），避免直接修改 `computed` 的值（默认是只读的）
+- `computed` 会进行计算，当原数据改变时会触发重新计算
+- `watch` 是监听/侦听某个数据的变化，还有两个参数
+	- `immediate`（立即执行）
+	- `deep`（深度监听）

@@ -38,3 +38,10 @@ url: //myblog.wallleap.cn/post/1
   rel="stylesheet"
 />
 ```
+
+## 淘宝 meta
+
+```html
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+```
+

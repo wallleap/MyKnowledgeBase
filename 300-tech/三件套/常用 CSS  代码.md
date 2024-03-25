@@ -128,3 +128,19 @@ overflow-wrap: break-word;
 ```
 
 如果屏幕比较窄而且长单词多，就不要用这个。
+
+## CSS mask 和 text
+
+```css
+background-image: linear-gradient(to bottom, #ec428c, #32d1d3); // 背景线性渐变
+color: #ffffff; // 兜底颜色，防止文字裁剪不生效
+background-clip: text;
+-webkit-background-clip: text; // 背景被裁减为文字的前景色
+-webkit-text-fill-color: transparent; // 文字填充为透明，优先级比color高。
+```
+
+webkit-mask
+
+```css
+-webkit-mask: linear-gradient(to bottom, transparent, #000);
+```

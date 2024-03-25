@@ -1,7 +1,7 @@
 ---
 title: README
 date: 2023-05-21 19:06
-updated: 2023-06-01 14:11
+updated: 2024-03-25 11:05
 ---
 
 ## Inbox —— All in this . MOC
@@ -10,7 +10,7 @@ updated: 2023-06-01 14:11
 
 [![](https://img.shields.io/badge/GitHub-MyKownlegeBase-blue?style=for-the-badge&logo=github)](https://github.com/wallleap/MyKnowledgeBase)  [![GITBOOK: GARDEN (shields.io)](https://img.shields.io/badge/GitBook-garden-orange?style=for-the-badge&logo=gitbook)](https://wallleap.gitbook.io/garden/)
 
-使用 GitHub 仓库进行备份，Obsidian 进行本地管理，GitHub 网上阅读，图片使用 PicGo + COS 图床
+使用 GitHub 仓库进行备份，Obsidian 进行本地管理，GitBook 网上阅读，图片使用 PicGo + COS 图床
 
 本知识库约定：
 
@@ -46,7 +46,6 @@ updated: 2023-06-01 14:11
 	- 不需要显示的文件或目录放到 `.bookignore` 文件中，语法和 `.gitigore` 一样
 
 > 📌 重要提示：
-> 
 > - 所有看过、学过的东西最好记录（视频、文字、语音）下来，不然下次就找不到了！
 > - 收集的内容也别忘记去看、去梳理，不然记了也白记！
 
@@ -96,7 +95,7 @@ updated: 2023-06-01 14:11
 - 前端
 	- 三件套
 		- HTML
-			- [常用 meta](300-tech/三件套/常用%20meta.md)
+			- [常用 meta](常用%20meta.md)
 			- [HTML](300-tech/三件套/HTML.md)
 		- CSS
 			- [CSS 世界笔记](300-tech/三件套/CSS%20世界笔记.md)
@@ -105,7 +104,7 @@ updated: 2023-06-01 14:11
 			- [只要一行代码，实现五种 CSS 经典布局](300-tech/三件套/只要一行代码，实现五种%20CSS%20经典布局.md)
 			- [用 HTML + CSS 制作前端简历](300-tech/三件套/用%20HTML%20+%20CSS%20制作前端简历.md)
 		- JavaScript
-			- [规范 JavaScript 命名](300-tech/三件套/规范%20JavaScript%20命名.md)
+			- [规范 JavaScript 命名](规范%20JavaScript%20命名.md)
 			- [手写 JS 常用 API](300-tech/三件套/手写%20JS%20常用%20API.md)
 			- [ES 6 入门教程大纲](300-tech/三件套/ES%206%20入门教程大纲.md)
 			- [ES 6 入门教程-阮一峰](300-tech/三件套/ES%206%20入门教程-阮一峰.md)
@@ -306,6 +305,10 @@ git push -f
 - 文件列表中选中文件右击选择 Publish to Obsius
 - 自动复制好链接，可以分享给其他人查看 <https://obsius.site/1p3t376x6w5c530k4v45>
 
+#### digital-garden
+
+[digital-garden](https://github.com/oleeskild/obsidian-digital-garden)
+
 #### Regex Find/Replace
 
 - 文字/字符替换，个人用于批量修改图片链接
@@ -387,7 +390,7 @@ from "400-design/动效设计"
 
 [[21天动效打卡教程]]
 
-## tech
+### tech
 
 ```dataview
 table
@@ -395,7 +398,7 @@ file.tags as "标签"
 from "300-tech"
 ```
 
-## work
+### work
 
 ```dataview
 table
@@ -403,7 +406,7 @@ file.tags as "标签"
 from "200-work"
 ```
 
-## person
+### person
 
 ```dataview
 table

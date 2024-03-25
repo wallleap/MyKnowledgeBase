@@ -1,0 +1,1 @@
+使用 `await` 或 Promise，记得一定要 `try {} catch() {}` 或 `.catch{}`

@@ -44,7 +44,7 @@
 - 前端
 	- 三件套
 		- HTML
-			- [常用 meta](300-tech/三件套/常用%20meta.md)
+			- [常用 meta](常用%20meta.md)
 			- [HTML](300-tech/三件套/HTML.md)
 		- CSS
 			- [CSS 世界笔记](300-tech/三件套/CSS%20世界笔记.md)
@@ -53,7 +53,7 @@
 			- [只要一行代码，实现五种 CSS 经典布局](300-tech/三件套/只要一行代码，实现五种%20CSS%20经典布局.md)
 			- [用 HTML + CSS 制作前端简历](300-tech/三件套/用%20HTML%20+%20CSS%20制作前端简历.md)
 		- JavaScript
-			- [规范 JavaScript 命名](300-tech/三件套/规范%20JavaScript%20命名.md)
+			- [规范 JavaScript 命名](规范%20JavaScript%20命名.md)
 			- [手写 JS 常用 API](300-tech/三件套/手写%20JS%20常用%20API.md)
 			- [ES 6 入门教程大纲](300-tech/三件套/ES%206%20入门教程大纲.md)
 			- [ES 6 入门教程-阮一峰](300-tech/三件套/ES%206%20入门教程-阮一峰.md)

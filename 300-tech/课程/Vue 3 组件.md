@@ -88,7 +88,7 @@ url: //myblog.wallleap.cn/post/1
 - PascalCase 多个首字母大写单词连接
 	- 声明时使用驼峰写法，模板里两者都可以
 
-## props
+## 父传子-props
 
 子组件通过 props 接收数据
 
@@ -136,9 +136,13 @@ props: {
     default: 'nickname'
   }
 }
+// 在 script setup 中直接使用 defineProps，不需要引入
+const props = defineProps({
+  msg: String
+})
 ```
 
-如果要传入的不是字符串，则需要使用 `v-bind` 绑定
+父组件中通过属性传递数据，如果要传入的不是字符串，则需要使用 `v-bind` 绑定
 
 ```html
 <User name="luwang" />
@@ -217,7 +221,7 @@ post: {
 </script>
 ```
 
-## 自定义事件
+## 子传父-自定义事件
 
 - 子组件内触发事件用 `this.$emit('my-event')`
 - 父组件使用子组件时绑定 `<child @my-event="doSomething"></child>`
@@ -282,6 +286,32 @@ post: {
     }
   }).mount('#app')
 </script>
+```
+
+setup 语法糖
+
+```vue
+<!-- 父组件 -->
+<script setup>
+import Child from './child.vue'
+const getMessage = (msg) => {
+  console.log(msg)
+}
+</script>
+<template>
+  <Child @get-message="getMessage" />
+</template>
+
+<!-- 子组件 -->
+<script setup>
+const emit = defineEmits(['get-message'])
+const sendMsg = () => {
+  emit('get-message', '传递的消息')
+}
+</script>
+<template>
+  <button @click="sendMsg">Click</button>
+</template>
 ```
 
 ## 插槽 slot
@@ -472,6 +502,16 @@ Provide Inject 适用与深度嵌套的组件，父组件可以为所有的子�
 </style>
 ```
 
+setup 语法糖
+
+```ts
+// 顶层组件提供
+provide('key', 顶层组件中的数据)
+
+// 底层组件获取
+const msg = inject('key)
+```
+
 ## 动态组件与 keep-alive
 
 动态组件：当前不确定，共用一个组件
@@ -558,3 +598,28 @@ Provide Inject 适用与深度嵌套的组件，父组件可以为所有的子�
   .active { background: #e0e0e0; }
 </style>
 ```
+
+## 通过 ref 获取真实的 DOM 对象或者组件实例对象
+
+```vue
+<script setup>
+import { onMounted, ref } from 'vue'
+import Child from './child.vue'
+const titleRef = ref(null) // 变量名和下面的 ref 属性值相同，在这里定义，但使用需要在 onMounted 中（等待 DOM 元素加载完）
+onMounted(() => {
+  console.log(titleRef.value)
+})
+</script>
+<template>
+  <h1 ref="titleRef">我是标题</h1>
+  <Child ref="comRef" />
+</template>
+
+<!-- 如果需要暴露数据，可以在子组件中使用 define -->
+const name = ref('test name')
+defineExpose({
+  name
+})
+```
+
+

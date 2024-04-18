@@ -1,7 +1,7 @@
 ---
-title: WebPack
+title: WebPack 的使用
 date: 2023-05-15 09:30
-updated: 2023-05-15 09:51
+updated: 20243-3028 5-154 09:51
 cover: //cdn.wallleap.cn/img/post/1.jpg
 image-auto-upload: true
 author: Luwang
@@ -81,7 +81,9 @@ url: //myblog.wallleap.cn/post/1
 	- 先通看一遍，然后用的时候搜索关键词
 
 DOCUMENTATION
+
 webpack5
+
 - API
 - Concepts
 - Configuration
@@ -142,7 +144,7 @@ init 的时候会创建 `package.json`，安装好插件之后 `devDependencies`
 
 ## 创建 Webpack 配置文件
 
-在根目录下创建  `webpack.config.js` 文件
+在根目录下创建 `webpack.config.js` 文件
 
 ```js
 const path = require('path')
@@ -155,7 +157,7 @@ module.exports = {
 }
 ```
 
-CommonJS  的语法，导出了一个对象
+CommonJS 的语法，导出了一个对象
 
 配置了入口 entry 和 出口 output，入口默认是 `src/index.js`，出口路径使用到了 NodeJS 的 `path` 变量，需要导入（默认出口为 `dist/main.js`）
 
@@ -276,6 +278,7 @@ npx webpack serve --open
 ```
 
 会帮忙做以下事情
+
 - watch：监听文件的变化
 - build：文件一变就重新打包
 - server：开启 http server
@@ -367,11 +370,14 @@ import ReactDom from 'react-dom'
 `console.log()` 一下，看下导入是否是需要的东西
 
 总结：
+
 **安装依赖**：
+
 - 如果是开发时才会用的，就用命令 `pnpm install -D xxx@x.x.x`
 - 如果是用户浏览器上用的，就用 `pnpm install xxx@x.x.x`
 
 **引入**
+
 - `import x from 'xxx'`
 - `import {x} from 'xxx'`
 - `import x as y from 'xxx'`
@@ -514,7 +520,9 @@ pnpm add -D file-loader
 运行 serve，发现打印出来是个 URL，所以自己创建一个 img 标签，设置 src 为这个 logo，插入到页面中
 
 总结：
+
 loader load a file（加载一类文件）
+
 plugin extend webpack's ability（扩展 webpack 功能）
 
 ### 按需加载某些模块

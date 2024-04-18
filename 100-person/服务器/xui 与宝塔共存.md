@@ -1,7 +1,7 @@
 ---
 title: xui 与宝塔共存
 date: 2023-11-15 15:36
-updated: 2023-11-15 15:54
+updated: 2024-04-07 10:11
 ---
 
 [可以与宝塔共存的一个“魔法”服务器状态监控应用——xui | 爱玩实验室 (iwanlab.com)](https://iwanlab.com/xui/)
@@ -42,8 +42,16 @@ bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 
 ![](https://cdn.wallleap.cn/img/pic/illustration/202311151548964.png)
 
-```conf
-location /plogger { proxy_pass http://127.0.0.1:35714; proxy_redirect off; proxy_http_version 1.1; proxy_set_header Upgrade $http_upgrade; proxy_set_header Connection "upgrade"; proxy_set_header Host $http_host; proxy_read_timeout 300s; }
+```nginx
+location /plogger { 
+  proxy_pass http://127.0.0.1:35714;
+  proxy_redirect off;
+  proxy_http_version 1.1;
+  proxy_set_header Upgrade $http_upgrade;
+  proxy_set_header Connection "upgrade";
+  proxy_set_header Host $http_host;
+  proxy_read_timeout 300s;
+}
 ```
 
 修改两个地方 `/plogger` → 之前填的路径、`35714` → 前面的端口号

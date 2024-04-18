@@ -1,7 +1,7 @@
 ---
 title: 常用 JS 代码
 date: 2023-08-01 14:52
-updated: 2024-03-12 14:25
+updated: 2024-04-09 12:25
 cover: //cdn.wallleap.cn/img/post/1.jpg
 image-auto-upload: true
 author: Luwang
@@ -214,3 +214,9 @@ baseElement.setAttribute('target', '_blank');
 // 将 base 元素插入到页面的 head 元素中
 document.head.appendChild(baseElement);
 ```
+
+## 网络状态监听
+
+navigator.connection、navigator.onLine
+
+online、offline

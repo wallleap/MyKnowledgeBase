@@ -12,6 +12,53 @@ updated: 2024-03-25 10:20
 
 [最简单的 Git 服务器 - 阮一峰的网络日志 (ruanyifeng.com)](https://www.ruanyifeng.com/blog/2022/10/git-server.html)
 
+## 总结
+
+服务器端创建裸仓库
+
+```sh
+git init --bare sample.git
+```
+
+进入目录，再进入 `hooks`，新建文件，修改权限
+
+```sh
+touch post-receive
+chmod +x post-receive
+```
+
+`post-receive` 文件内容
+
+```sh
+#!/bin/bash
+
+# 设置目标目录和裸仓库目录
+target_dir="/www/wwwroot/myblog.wallleap.cn"
+bare_dir="/www/git/repos.git"
+
+# 清空目标目录下的文件
+rm -rf "$target_dir"/*
+
+# 同步裸仓库内容到目标目录
+git --work-tree="$target_dir" --git-dir="$bare_dir" checkout -f main
+
+# 记录同步日志
+echo "Synced files to $target_dir at $(date)" > "$bare_dir/log.txt"
+```
+
+给目标目录权限
+
+```sh
+chmod +x target_dir
+```
+
+本地直接上传
+
+```sh
+git remote add server ssh://root@server.wallleap.cn:10022/www/git/repos.git
+git push -f server main
+```
+
 ## 一、代码托管服务
 
 一般情况下，都不建议自己搭建 Git 服务器，而要使用现成的服务，也就是代码托管服务。它们都是免费的。

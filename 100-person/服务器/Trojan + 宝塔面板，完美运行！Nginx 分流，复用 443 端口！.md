@@ -1,7 +1,7 @@
 ---
 title: Trojan + 宝塔面板，完美运行！Nginx 分流，复用 443 端口！
 date: 2023-08-09 20:51
-updated: 2023-08-09 21:07
+updated: 2024-04-14 03:09
 cover: //cdn.wallleap.cn/img/post/1.jpg
 image-auto-upload: true
 author: Luwang
@@ -225,9 +225,10 @@ systemctl enable trojan   #设置Trojan开启自动启动
 systemctl restart trojan
 ```
 
+防火墙开放 10110、10111
+
 ### 10、搭建和设置完毕
 
 现在，你就可以连接你的 Trojan 节点了，网站也可以正常的访问了。
-
 
 安卓：[SS客户端 归档 – v2cross](https://v2cross.com/ss-client)

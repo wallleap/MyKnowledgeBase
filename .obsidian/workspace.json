@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "100-person/知识管理/obsidian 使用/Obsidian 实现免费第三方发布的安逸方案.md",
+                "file": "300-tech/工具/AI/SD 扩展.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -108,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "100-person/知识管理/obsidian 使用/Obsidian 实现免费第三方发布的安逸方案.md"
+                "file": "300-tech/工具/AI/SD 扩展.md"
               }
             }
           },
@@ -155,8 +155,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5,
-    "collapsed": true
+    "width": 275.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -172,44 +171,45 @@
       "companion:Toggle completion": false
     }
   },
-  "active": "9235aa8ae0678ae7",
+  "active": "1a894e9b237b81e9",
   "lastOpenFiles": [
-    "100-person/服务器/新购云服务器配置.md",
-    "100-person/知识管理/obsidian 使用/Obsidian 实现免费第三方发布的安逸方案.md",
-    "100-person/服务器/我的云服务器初始化做哪些.md",
-    "100-person/笔记/测试用.md",
-    "300-tech/项目/技巧/搭建 Github Pages & Issues 动态博客.md",
-    "100-person/备忘录.md",
-    "README.md",
-    "100-person/面试必备.md",
+    "400-design/视频剪辑/常用的效果.md",
+    "300-tech/工具/AI/SD 扩展.md",
+    "400-design/板绘手绘/学习/002-造型.md",
+    "400-design/视频剪辑",
+    "400-design/板绘手绘/学习/001-开始入门.md",
+    "400-design/板绘手绘/学习/imgs/Snipaste_2024-04-17_15-30-40.png",
+    "400-design/板绘手绘/学习/imgs",
+    "300-tech/项目/商城/007-二级分类页.md",
+    "400-design/板绘手绘/学习",
+    "400-design/板绘手绘",
+    "300-tech/项目/商城/006-一级分类页.md",
+    "300-tech/项目/商城/005-Home页.md",
+    "300-tech/课程/055-React Hooks 原理解析.md",
+    "300-tech/课程/056-React Hooks 各个击破.md",
+    "300-tech/课程/057-精通 Redux.md",
+    "300-tech/课程/054-React 函数组件.md",
+    "100-person/服务器/xui 与宝塔共存.md",
+    "100-person/服务器/Trojan + 宝塔面板，完美运行！Nginx 分流，复用 443 端口！.md",
+    "100-person/工具/K2P 小白刷机教程.md",
+    "300-tech/课程/061-Node.js 技术架构.md",
+    "100-person/张杰的歌.md",
+    "300-tech/三件套/常用 JS 代码.md",
     "100-person/服务器/搭建 Git 服务器.md",
+    "100-person/服务器/在 CentOS 上搭建 Git 服务器.md",
+    "100-person/服务器/新购云服务器配置.md",
+    "100-person/服务器/宝塔面板.md",
+    "100-person/服务器/宝塔面板 Docker 部署 Bitwarden 密码管理器.md",
+    "100-person/服务器/我的云服务器初始化做哪些.md",
+    "100-person/服务器/反向代理.md",
+    "300-tech/课程/060-TypeScript 联合类型及交叉类型.md",
+    "300-tech/课程/059-TypeScript 中的类型.md",
     "000-asserts/pdf/陈梓聪_简历_前端开发_4年经验_公开版.pdf",
     "000-asserts/pdf",
-    "300-tech/项目/技巧/网页长按保存及识别二维码.md",
-    "300-tech/框架/React/Vite + React + TypeScript 最佳实践.md",
-    "300-tech/SEO/现代 SEO 该做些什么.md",
-    "300-tech/数据库/IndexedDB.md",
     "300-tech/SEO",
-    "300-tech/工具/markdown-it.md",
-    "100-person/工具/33种免费获取SSL证书的方式.md",
-    "100-person/vim 简单使用教程.md",
-    "100-person/工具/macOS 终端利器 iTerm 2.md",
-    "100-person/服务器/宝塔面板 Docker 部署 Bitwarden 密码管理器.md",
-    "100-person/服务器/宝塔面板.md",
-    "300-tech/工具/Git/release 后缀.md",
-    "400-design/配色收集.md",
-    "100-person/服务器/反向代理.md",
-    "300-tech/工具/AI/GPT-SoVITS.md",
-    "300-tech/项目/Vue3造轮子/pnpm 创建 MonoRepo.md",
-    "300-tech/项目/商城/014-拓展部分.md",
-    "300-tech/项目/商城/013-会员中心.md",
     "300-tech/项目/商城",
     "300-tech/项目/博客主题",
     "200-work/应用文写作",
-    "300-tech/鸿蒙",
-    "300-tech/工具/AI/未命名",
-    "300-tech/工具/AI",
-    "300-tech/三件套/HTML",
     "Pasted image 20230803160252.png",
     "Pasted image 20230803160100.png",
     "300-tech/三件套/CSS Functions.jpg"

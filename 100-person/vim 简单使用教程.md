@@ -4,6 +4,13 @@ date: 2023-05-03 22:07
 updated: 2024-03-25 09:24
 ---
 
+```
+hC
+jC
+```
+
+
+
 nvim 集成：[NvChad](https://nvchad.com/)
 
  [vim简单使用教程](https://www.cnblogs.com/lijia0511/p/5644566.html)

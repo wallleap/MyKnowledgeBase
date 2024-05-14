@@ -1,7 +1,7 @@
 ---
 title: Trojan + 宝塔面板，完美运行！Nginx 分流，复用 443 端口！
 date: 2023-08-09 20:51
-updated: 2024-04-14 03:09
+updated: 2024-05-10 21:31
 cover: //cdn.wallleap.cn/img/post/1.jpg
 image-auto-upload: true
 author: Luwang
@@ -20,6 +20,8 @@ description: 文章描述
 source: https://v2rayssr.com/trojan-bt.html
 url: https://obsius.site/2q5q4s0j555i0b0x1f09
 ---
+
+安装 Trojan、随便生成一个域名的证书，然后修改配置文件，更改本地端口 41696，填入证书地址，重启 Trojan 服务
 
 ## 准备工作
 

@@ -1,7 +1,7 @@
 ---
-title: 2-Rails 创建 API
+title: 032-Rails 创建 API
 date: 2023-05-03 22:07
-updated: 2023-10-07 11:33
+updated: 20243-510- 20:4907 11:33
 ---
 
 Rails 路由，namespace
@@ -36,7 +36,7 @@ bin/rails routes
 bin/rails g model ValidationCode email:string kind:int code:string used:bool used_at: datetime
 ```
 
-生成的 `***_create_validation_codes.rb` ，修改一下 kind 字段，给定一个默认值，修改 code 字段，限制长度（最好不要给当前的6，留个余地）
+生成的 `***_create_validation_codes.rb` ，修改一下 kind 字段，给定一个默认值，修改 code 字段，限制长度（最好不要给当前的 6，留个余地）
 
 ```rb
 ……
@@ -137,9 +137,9 @@ end
 
 **如何实现分页**
 
-方案1:使用 page 和 per_page 参数，见 kaminari 或 pagy 库
+方案 1: 使用 page 和 per_page 参数，见 kaminari 或 pagy 库
 
-方案2:使用 start_id 和 limit 参数，需要 id 是自增数字
+方案 2: 使用 start_id 和 limit 参数，需要 id 是自增数字
 
 在 GitHub 搜到相应的库，查看使用方法，这里使用 kaminari
 
@@ -189,4 +189,3 @@ def index
   }}
 end
 ```
-

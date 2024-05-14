@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1e5e8aa8c297263b",
+        "id": "826e28fbbba41af6",
         "type": "tabs",
         "children": [
           {
-            "id": "9235aa8ae0678ae7",
+            "id": "3ea4fe1253b758c3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "300-tech/工具/AI/SD 扩展.md",
+                "file": "300-tech/项目/山竹记账/vue/01-开发环境.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -108,7 +108,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "300-tech/工具/AI/SD 扩展.md"
+                "file": "300-tech/项目/山竹记账/vue/01-开发环境.md"
               }
             }
           },
@@ -155,7 +155,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,47 +171,53 @@
       "companion:Toggle completion": false
     }
   },
-  "active": "1a894e9b237b81e9",
+  "active": "3ea4fe1253b758c3",
   "lastOpenFiles": [
-    "400-design/视频剪辑/常用的效果.md",
-    "300-tech/工具/AI/SD 扩展.md",
-    "400-design/板绘手绘/学习/002-造型.md",
+    "300-tech/项目/山竹记账/1-后端项目.md",
+    "300-tech/项目/山竹记账/rails/00-搭建后端项目.md",
+    "300-tech/项目/山竹记账/2-Vue 实现前端.md",
+    "300-tech/项目/山竹记账/3-用 React 实现前端.md",
+    "300-tech/项目/山竹记账/0-搭建开发环境.md",
+    "300-tech/项目/山竹记账/rails/05-网站部署上线.md",
+    "300-tech/项目/山竹记账/rails/04-后端单元测试 RSpec.md",
+    "300-tech/项目/山竹记账/rails/03-Rails 创建 API.md",
+    "300-tech/项目/山竹记账/rails/02-开始设计 API.md",
+    "300-tech/项目/山竹记账/rails/01-RESTful API.md",
+    "100-person/vim 简单使用教程.md",
+    "100-person/工具/mac 安装 ruby.md",
+    "300-tech/项目/山竹记账/项目简介.md",
+    "100-person/服务器/000-自己服务器配置.md",
+    "100-person/服务器/Trojan + 宝塔面板，完美运行！Nginx 分流，复用 443 端口！.md",
+    "100-person/服务器/xui 与宝塔共存.md",
+    "300-tech/工具/常用 API.md",
+    "300-tech/Node/Node.js 复制至剪贴板.md",
+    "300-tech/课程/036-Vue 起手式.md",
+    "300-tech/课程/035-脚手架的使用.md",
+    "300-tech/课程/034-MVC 架构.md",
+    "300-tech/课程/033-WebPack 的使用和性能优化.md",
+    "300-tech/课程/032-JS 模块化.md",
+    "300-tech/课程/031-ES 新语法.md",
+    "300-tech/课程/029-EventEmitter 和 Promise.md",
+    "300-tech/课程/028-请求、响应、Cookie、跨域.md",
+    "300-tech/项目/React 博客",
+    "100-person/生活",
+    "400-design/板绘手绘/学习/imgs/Snipaste_2024-04-18_16-51-04.png",
+    "400-design/板绘手绘/学习/imgs/Snipaste_2024-04-18_15-13-22.png",
+    "400-design/板绘手绘/学习/imgs/Snipaste_2024-04-18_14-30-44.png",
+    "400-design/板绘手绘/学习/imgs/Snipaste_2024-04-18_14-28-06.png",
+    "400-design/板绘手绘/学习/imgs/Snipaste_2024-04-18_14-27-18.png",
+    "400-design/板绘手绘/学习/imgs/Snipaste_2024-04-18_14-25-30.png",
+    "400-design/板绘手绘/学习/imgs/Snipaste_2024-04-18_14-21-24.png",
+    "400-design/板绘手绘/学习/imgs/Snipaste_2024-04-18_11-22-14.png",
     "400-design/视频剪辑",
-    "400-design/板绘手绘/学习/001-开始入门.md",
     "400-design/板绘手绘/学习/imgs/Snipaste_2024-04-17_15-30-40.png",
     "400-design/板绘手绘/学习/imgs",
-    "300-tech/项目/商城/007-二级分类页.md",
     "400-design/板绘手绘/学习",
     "400-design/板绘手绘",
-    "300-tech/项目/商城/006-一级分类页.md",
-    "300-tech/项目/商城/005-Home页.md",
-    "300-tech/课程/055-React Hooks 原理解析.md",
-    "300-tech/课程/056-React Hooks 各个击破.md",
-    "300-tech/课程/057-精通 Redux.md",
-    "300-tech/课程/054-React 函数组件.md",
-    "100-person/服务器/xui 与宝塔共存.md",
-    "100-person/服务器/Trojan + 宝塔面板，完美运行！Nginx 分流，复用 443 端口！.md",
-    "100-person/工具/K2P 小白刷机教程.md",
-    "300-tech/课程/061-Node.js 技术架构.md",
-    "100-person/张杰的歌.md",
-    "300-tech/三件套/常用 JS 代码.md",
-    "100-person/服务器/搭建 Git 服务器.md",
-    "100-person/服务器/在 CentOS 上搭建 Git 服务器.md",
-    "100-person/服务器/新购云服务器配置.md",
-    "100-person/服务器/宝塔面板.md",
-    "100-person/服务器/宝塔面板 Docker 部署 Bitwarden 密码管理器.md",
-    "100-person/服务器/我的云服务器初始化做哪些.md",
-    "100-person/服务器/反向代理.md",
-    "300-tech/课程/060-TypeScript 联合类型及交叉类型.md",
-    "300-tech/课程/059-TypeScript 中的类型.md",
     "000-asserts/pdf/陈梓聪_简历_前端开发_4年经验_公开版.pdf",
     "000-asserts/pdf",
     "300-tech/SEO",
     "300-tech/项目/商城",
-    "300-tech/项目/博客主题",
-    "200-work/应用文写作",
-    "Pasted image 20230803160252.png",
-    "Pasted image 20230803160100.png",
-    "300-tech/三件套/CSS Functions.jpg"
+    "Pasted image 20230803160252.png"
   ]
 }

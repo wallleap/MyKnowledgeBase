@@ -1,7 +1,7 @@
 ---
 title: 061-Node.js 技术架构
 date: 2024-04-03 10:58
-updated: 2024-04-05 10:11
+updated: 2024-04-30 14:55
 ---
 
 Node.js 版本
@@ -113,6 +113,8 @@ Node.js v0.10 的 deps（依赖）目录
 
 ## Event Loop
 
+[Event Loop、计时器、nextTick - 掘金 (juejin.cn)](https://juejin.cn/post/6844903582538399752)
+
 什么是 Event（事件）
 
 - 计时器到期了
@@ -123,21 +125,54 @@ Node.js v0.10 的 deps（依赖）目录
 
 - 循环，比如 `while(true)` 循环
 - 由于事件是分优先级的，所以处理起来也是分先后的
-  - 举例：三种不同的事件 `setTimeout(f1, 100)`、`fs.readFile('/1.txt', f2)`、`server.on('close', f3)` 如果同时触发，Node 会怎么办
-  - 人为规定顺序（优先级），并且轮询
+	- 举例：三种不同的事件 `setTimeout(f1, 100)`、`fs.readFile('/1.txt', f2)`、`server.on('close', f3)` 如果同时触发，Node 会怎么办
+	- 人为规定顺序（优先级），并且轮询
 - Node.js 需要按顺序轮询每种事件，这种轮询往往都是循环的
 
 Event Loop
 
 - 操作系统可以触发事件，JS 可以处理事件，Event Loop 就是对事件处理顺序的管理
 - 重点阶段
-  - timers 检查计时器
-  - poll 轮询，检查系统事件
-  - check 检查 setImmediate 回调
-  - 其他阶段用得比较少
+	- **timers** 检查计时器
+	- **poll** 轮询，检查系统事件
+	- check 检查 **setImmediate** 回调
+	- 其他阶段用得比较少
 - 大部分时间 Node.js 都停在 poll 轮询阶段，大部分事件都在 poll 阶段被处理，如文件、网络请求
 
+![](https://cdn.wallleap.cn/img/pic/illustration/202404301418097.png)
 
+举例来说，你设置了一个计时器在 100 毫秒后执行，然后你的脚本用了 95 毫秒来异步读取了一个文件：
+
+```js
+const fs = require('fs');
+
+function someAsyncOperation(callback) {
+  // 假设读取这个文件一共花费 95 毫秒
+  fs.readFile('/path/to/file', callback);
+}
+
+const timeoutScheduled = Date.now();
+
+setTimeout(() => {
+  const delay = Date.now() - timeoutScheduled;
+
+  console.log(`${delay}毫秒后执行了 setTimeout 的回调`);
+}, 100);
+
+// 执行一个耗时 95 毫秒的异步操作
+someAsyncOperation(() => {
+  const startCallback = Date.now();
+
+  // 执行一个耗时 10 毫秒的同步操作
+  while (Date.now() - startCallback < 10) {
+    // 什么也不做
+  }
+});
+```
+
+当 event loop 进入 poll 阶段，发现 poll 队列为空（因为文件还没读完），event loop 检查了一下最近的计时器，大概还有 100 毫秒时间，于是 event loop 决定这段时间就停在 poll 阶段。在 poll 阶段停了 95 毫秒之后，fs.readFile 操作完成，一个耗时 10 毫秒的回调函数被系统放入 poll 队列，于是 event loop 执行了这个回调函数。执行完毕后，poll 队列为空，于是 event loop 去看了一眼最近的计时器（译注：event loop 发现卧槽，已经超时 95 + 10 - 100 = 5 毫秒了），于是经由 check 阶段、close callbacks 阶段绕回到 timers 阶段，执行 timers 队列里的那个回调函数。这个例子中，100 毫秒的计时器实际上是在 105 毫秒后才执行的。
+
+注意：为了防止 poll 阶段占用了 event loop 的所有时间，libuv（Node.js 用来实现 event loop 和所有异步行为的 C 语言写成的库）对 poll 阶段的最长停留时间做出了限制，具体时间因操作系统而异。
 
 ## libuv
 
@@ -146,3 +181,54 @@ Event Loop
 libuv 会根据系统自动选择合适的方案
 
 功能：可以用于 TCP/UDP/DNS/文件等的异步操作
+
+## 总结
+
+- 用 libuv 进行异步 I/O 操作
+- 用 event loop 管理事件处理顺序
+- 用 C/C++ 库高效处理 DNS/HTTP..
+- 用 bindings 让 JS 能和 C/C++ 沟通
+- 用 V8 运行 JS
+- 用 Node.js 标准库简化 JS 代码
+
+这就是 Node.js
+
+## Node.js 工作流程
+
+![](https://cdn.wallleap.cn/img/pic/illustration/202404301437030.png)
+
+## Node.js API
+
+官方提供的函数
+
+文档地址：
+
+- nodejs.org/api/
+- nodejs.cn/api
+- <https://devdocs.io/>
+
+有哪些 API
+
+```js
+Assertion 断言               Path *
+Testing                     Performance Hooks
+Async Hooks                 Process *
+Buffer * 一小段缓存           Query Strings *
+Child Processes *           Readline
+Cluster *                   REPL
+Console                     Report
+Crypto                      Stream *
+Debugger *                  String Decoder
+DNS                         Timers *
+Errors                      TLS/SSL
+Events *                    Trace Events
+File System *               TTY
+Globals *                   UDP/Datagram
+HTTP *                      URL *
+HTTP/2                      Utilities
+HTTPS                       V8
+Inspector                   VM
+i18n                        Worker Threads *
+Net                         Zlib
+OS
+```

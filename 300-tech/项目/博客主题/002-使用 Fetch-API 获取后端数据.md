@@ -1,7 +1,7 @@
 ---
 title: 002-使用 Fetch-API 获取后端数据
 date: 2024-03-07 20:52
-updated: 2024-03-10 01:46
+updated: 2024-04-19 10:31
 ---
 
 ```js
@@ -20,5 +20,13 @@ const router = createRouter({
 ```nginx
 location / {
   try_files $uri $uri/ /index.html;
+}
+```
+
+如果是在 Vercel 上可以添加配置文件 `vercel.json`
+
+```json
+{
+  "rewrites": [{ "source": "/:path*", "destination": "/index.html" }]
 }
 ```

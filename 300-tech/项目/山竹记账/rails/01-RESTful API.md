@@ -1,7 +1,7 @@
 ---
-title: 0-RESTful API
+title: 01-RESTful API
 date: 2023-05-03 22:07
-updated: 2023-10-08 10:58
+updated: 2024-05-13 20:47
 ---
 
 后端返回 API 有多种风格
@@ -16,7 +16,7 @@ REpresentational State Transfer，是一种网络软件**架构风格**
 
 ## 怎么做？
 
-- 以**资源**为中心
+- 以**资源**为中心（名词）
 - 充分利用 **HTTP 现有功能**，如动词、状态码、头部字段
 - [GitHub API](https://docs.github.com/rest) 就比较符合 REST，值得学习
 

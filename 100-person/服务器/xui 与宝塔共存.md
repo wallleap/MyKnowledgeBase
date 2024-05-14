@@ -1,8 +1,131 @@
 ---
 title: xui 与宝塔共存
 date: 2023-11-15 15:36
-updated: 2024-04-07 10:11
+updated: 2024-04-19 15:08
 ---
+
+**这里是 trojan-docker 的**
+
+[EXP-Tools/trojan-docker: docker 一键部署 trojan 服务端 ：自建 VPS 科学上网 (github.com)](https://github.com/EXP-Tools/trojan-docker)
+
+教程：[trojan 睁眼看世界教程 | 眈眈探求 (exp-blog.com)](https://exp-blog.com/net/trojan-zheng-yan-kan-shi-jie-jiao-cheng/)
+
+先在宿主机完成 docker、docker-compose、certbot 的安装，并按前述说明申请域名的 HTTPS 证书。
+
+### Install Docker Compose
+
+#### Update Your System
+
+Before you begin, update your system to check that all packages are up to date.
+
+```bash
+sudo apt update
+```
+
+#### Get the Docker Compose repository
+
+Use curl to download the [Docker](https://cloudinfrastructureservices.co.uk/how-to-install-ansible-awx-using-docker-compose-awx-container-20-04/) Compose repo to the /usr/local/bin/docker-compose directory. You may also get Docker Compose from its [official Github repository](https://github.com/docker/compose).
+
+```bash
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.0.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+
+Output:
+
+```bash
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+
+                               Dload  Upload   Total   Spent    Left  Speed
+
+0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+```
+
+#### Modify File Permissions
+
+After downloading Docker Compose, run the following command to give permission and make the downloaded file executable.
+
+```bash
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+#### Check Docker Version
+
+Next, check the docker-[compose](https://cloudinfrastructureservices.co.uk/how-to-setup-ruby-docker-container-using-docker-compose/) version to ensure that the installation was successful.
+
+```bash
+docker-compose --version
+```
+
+Copy
+
+Output:
+
+```bash
+Docker Compose version v2.0.1
+```
+
+Copy
+
+This result shows that Docker Compose was successfully installed.
+
+**Also Read** 
+
+[How To Install and Use Docker Compose on CentOS 8 Tutorial](https://cloudinfrastructureservices.co.uk/how-to-install-and-use-docker-compose-on-centos-8/)
+
+
+安装 cerbot 以获取 SSL 证书
+
+```sh
+# 考虑到国内安装超时问题，已指定了安装源为清华源
+python3 -m pip install certbot --default-timeout=600 -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+申请证书（替换 YOUR_DOMAIN 为域名）
+
+```sh
+# 第一次执行该命令，需要根据交互步骤先注册邮箱（注意保存好），以后不再需要 # 该命令会占用 80 端口，执行前注意要停止相关进程（如 nginx） 
+/usr/local/bin/certbot certonly --standalone -d YOUR_DOMAIN -d www.YOUR_DOMAIN  
+```
+
+定时任务
+
+```sh
+# 编辑定时任务
+crontab -e
+
+# 每两个月更新一次证书
+0 0 1 */2 0 /usr/local/bin/certbot renew
+```
+
+certbot 申请的证书存储在 `/etc/letsencrypt` 目录:
+
+- 其他目录为 certbot 的注册账号信息
+- `archive/YOUR_DOMAIN/` ： 存储 YOUR_DOMAIN 域名申请过的历史证书
+- `live/YOUR_DOMAIN/` ： 存储 YOUR_DOMAIN 域名当前有效证书的链接文件
+
+之后会用到的只有两个文件：
+
+- `/etc/letsencrypt/live/YOUR_DOMAIN/fullchain.pem`
+- `/etc/letsencrypt/live/YOUR_DOMAIN/privkey.pem`
+
+```sh
+# 下载项目源码 
+git clone https://github.com/EXP-Tools/trojan-docker /usr/local/trojan-docker 
+cd /usr/local/trojan-docker 
+# 构建 docker 镜像 
+# password 为之后客户端连接 trojan 的密码 
+# domain 为前面准备好的域名 
+password=YOUR_PASSWORD domain=YOUR_DOMAIN docker-compose build 
+# 刷新证书有效期，并复制宿主机的 HTTPS 证书到 docker 容器 
+# 建议把此脚本设置到 crontab 定时执行 
+./renew_cert.sh 
+# 在后台启动 trojan 服务 
+docker-compose up -d
+```
+
+最后把 `/usr/local/trojan-docker/nginx/html` 下的内容替换为伪装站点的 HTML 内容即可。
+
+**下面的是 x-ui 的**：
 
 [可以与宝塔共存的一个“魔法”服务器状态监控应用——xui | 爱玩实验室 (iwanlab.com)](https://iwanlab.com/xui/)
 

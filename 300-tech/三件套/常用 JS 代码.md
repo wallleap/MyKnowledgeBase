@@ -1,7 +1,7 @@
 ---
 title: 常用 JS 代码
 date: 2023-08-01 14:52
-updated: 2024-04-09 12:25
+updated: 2024-04-28 10:37
 cover: //cdn.wallleap.cn/img/post/1.jpg
 image-auto-upload: true
 author: Luwang
@@ -139,6 +139,155 @@ function toggleTheme() {
 }
 const toggleButton = document.querySelector("#dark-mode-toggle")
 toggleButton.addEventListener('click', toggleTheme)
+```
+
+## Transition View 暗黑切换动画
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+      --black: #333333;
+      --white: #f5f5f5;
+      --background: var(--white);
+      --foreground: var(--black);
+    }
+
+    :root[data-theme="dark"] {
+      --background: var(--black);
+      --foreground: var(--white);
+    }
+
+    html {
+      background: var(--background);
+      color: var(--foreground);
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    .toggle {
+      position: absolute;
+      cursor: pointer;
+      top: 20px;
+      right: 25px;
+      font-size: 150%;
+    }
+
+    .text {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /**
+      Animated Theme Toggle
+    */
+    ::view-transition-old(root),
+    ::view-transition-new(root) {
+      animation: none;
+      mix-blend-mode: normal;
+    }
+
+    [data-theme="dark"]::view-transition-old(root) {
+      z-index: 1;
+    }
+
+    [data-theme="dark"]::view-transition-new(root) {
+      z-index: 999;
+    }
+
+    ::view-transition-old(root) {
+      z-index: 999;
+    }
+
+    ::view-transition-new(root) {
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="text">Text</div>
+  <span class="toggle">亮</span>
+  <script>
+    /**
+     * 切换主题色，扩散渐变动画
+     * @param {MouseEvent} event 点击事件
+     */
+    function toggleTheme(event) {
+      const willDark = !isDark()
+      event.target.innerText = willDark ? "暗" : "亮"
+      // 浏览器新特性不支持 或者 开启了动画减弱
+      if (!document.startViewTransition || isReducedMotion()) {
+        toggleDark();
+        return;
+      }
+
+      const transition = document.startViewTransition(() => {
+        toggleDark();
+      });
+
+      // 传入点击事件，从点击处开始扩散。否则，从右上角开始扩散
+      const x = event?.clientX ?? window.innerWidth;
+      const y = event?.clientY ?? 0;
+
+      const endRadius = Math.hypot(
+        Math.max(x, innerWidth - x),
+        Math.max(y, innerHeight - y)
+      );
+      void transition.ready.then(() => {
+        const clipPath = [
+          `circle(0px at ${x}px ${y}px)`,
+          `circle(${endRadius}px at ${x}px ${y}px)`
+        ];
+        document.documentElement.animate({
+          clipPath: willDark ? clipPath : [...clipPath].reverse()
+        }, {
+          duration: 500,
+          easing: "ease-in",
+          pseudoElement: willDark ?
+            "::view-transition-new(root)" :
+            "::view-transition-old(root)"
+        });
+      });
+    }
+    /**
+     * 切换主题色，html标签切换dark类
+     */
+    function toggleDark() {
+      document.documentElement.dataset.theme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    }
+
+    /**
+     * 检测用户的系统是否被开启了动画减弱功能
+     * @link https://developer.mozilla.org/zh-CN/docs/Web/CSS/@media/prefers-reduced-motion
+     */
+    function isReducedMotion() {
+      return window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+    }
+
+    /**
+     * 当前主题色是否是暗色
+     */
+    function isDark() {
+      return document.documentElement.dataset.theme === 'dark'
+    }
+    
+    document.querySelector(".toggle").addEventListener("click", function (event) {
+      toggleTheme(event)
+    })
+  </script>
+</body>
+</html>
 ```
 
 ## 文字横向无限滚动

@@ -303,12 +303,13 @@ var ScrollToTopPlugin = class extends import_obsidian2.Plugin {
     }
   }
   getCurrentViewOfType() {
+    var _a;
     let markdownView = this.app.workspace.getActiveViewOfType(import_obsidian2.MarkdownView);
     let currentView = this.app.workspace.getActiveViewOfType(import_obsidian2.View);
     if (markdownView !== null) {
       globalMarkdownView = markdownView;
     } else {
-      if (currentView == null || currentView.file.extension == "md") {
+      if (currentView == null || ((_a = currentView == null ? void 0 : currentView.file) == null ? void 0 : _a.extension) == "md") {
         markdownView = globalMarkdownView;
       }
     }

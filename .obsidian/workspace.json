@@ -13,7 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "300-tech/项目/山竹记账/vue/01-开发环境.md",
+                "file": "300-tech/Ruby/007-进程和线程.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "532b768c2fb1bf33",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "100-person/考公/理论/申论/002-归纳概括题.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -108,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "300-tech/项目/山竹记账/vue/01-开发环境.md"
+                "file": "300-tech/Ruby/007-进程和线程.md"
               }
             }
           },
@@ -167,38 +180,47 @@
       "markdown-importer:打开 Markdown 格式转换器": false,
       "audio-recorder:开始/结束录音": false,
       "workspaces:管理工作区布局": false,
-      "obsidian-weread-plugin:Weread": false,
-      "companion:Toggle completion": false
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "companion:Toggle completion": false,
+      "media-extended:Open media": false,
+      "obsidian-weread-plugin:同步微信读书笔记": false
     }
   },
   "active": "3ea4fe1253b758c3",
   "lastOpenFiles": [
-    "300-tech/项目/山竹记账/1-后端项目.md",
-    "300-tech/项目/山竹记账/rails/00-搭建后端项目.md",
-    "300-tech/项目/山竹记账/2-Vue 实现前端.md",
-    "300-tech/项目/山竹记账/3-用 React 实现前端.md",
-    "300-tech/项目/山竹记账/0-搭建开发环境.md",
-    "300-tech/项目/山竹记账/rails/05-网站部署上线.md",
-    "300-tech/项目/山竹记账/rails/04-后端单元测试 RSpec.md",
-    "300-tech/项目/山竹记账/rails/03-Rails 创建 API.md",
-    "300-tech/项目/山竹记账/rails/02-开始设计 API.md",
-    "300-tech/项目/山竹记账/rails/01-RESTful API.md",
-    "100-person/vim 简单使用教程.md",
-    "100-person/工具/mac 安装 ruby.md",
-    "300-tech/项目/山竹记账/项目简介.md",
-    "100-person/服务器/000-自己服务器配置.md",
-    "100-person/服务器/Trojan + 宝塔面板，完美运行！Nginx 分流，复用 443 端口！.md",
-    "100-person/服务器/xui 与宝塔共存.md",
-    "300-tech/工具/常用 API.md",
-    "300-tech/Node/Node.js 复制至剪贴板.md",
-    "300-tech/课程/036-Vue 起手式.md",
-    "300-tech/课程/035-脚手架的使用.md",
-    "300-tech/课程/034-MVC 架构.md",
-    "300-tech/课程/033-WebPack 的使用和性能优化.md",
-    "300-tech/课程/032-JS 模块化.md",
-    "300-tech/课程/031-ES 新语法.md",
-    "300-tech/课程/029-EventEmitter 和 Promise.md",
-    "300-tech/课程/028-请求、响应、Cookie、跨域.md",
+    "300-tech/Ruby/006-调试.md",
+    "300-tech/Ruby/007-进程和线程.md",
+    "300-tech/Ruby/005-文件操作.md",
+    "300-tech/Ruby/004-Gems.md",
+    "300-tech/Ruby/003-Ruby OOP.md",
+    "100-person/常用 DNS 服务器.md",
+    "300-tech/工具/Shell/005-网络调试和工具.md",
+    "300-tech/Ruby/002-Ruby Basics.md",
+    "300-tech/Ruby/001-Ruby Introduction.md",
+    "300-tech/工具/Shell/007-自定义命令.md",
+    "300-tech/Ruby",
+    "300-tech/工具/Shell/003-Shell 的管理和快捷键.md",
+    "300-tech/工具/Shell/002-日常文件操作.md",
+    "300-tech/工具/Shell/006-系统管理.md",
+    "300-tech/工具/Shell/004-进程控制.md",
+    "300-tech/工具/Shell/001-Shell 介绍.md",
+    "300-tech/鸿蒙/002-ArkTS 组件.md",
+    "300-tech/工具/Shell",
+    "300-tech/鸿蒙/004-ArkTS 路由.md",
+    "300-tech/鸿蒙/010-案例-食物热量.md",
+    "300-tech/鸿蒙/食物热量原型.canvas",
+    "300-tech/鸿蒙/未命名.md",
+    "300-tech/鸿蒙/009-通知.md",
+    "300-tech/鸿蒙/008-数据持久化.md",
+    "300-tech/鸿蒙/007-网络连接.md",
+    "300-tech/鸿蒙/006-Stage 模型.md",
+    "100-person/考公/理论/申论/002-归纳概括题.md",
+    "100-person/考公/理论/申论/001-概述.md",
+    "300-tech/鸿蒙/Drawing 2024-06-19 17.49.56.excalidraw.md",
+    "100-person/考公/理论/申论",
+    "100-person/考公/理论",
+    "100-person/考公",
+    "300-tech/框架/Rails",
     "300-tech/项目/React 博客",
     "100-person/生活",
     "400-design/板绘手绘/学习/imgs/Snipaste_2024-04-18_16-51-04.png",
@@ -212,12 +234,6 @@
     "400-design/视频剪辑",
     "400-design/板绘手绘/学习/imgs/Snipaste_2024-04-17_15-30-40.png",
     "400-design/板绘手绘/学习/imgs",
-    "400-design/板绘手绘/学习",
-    "400-design/板绘手绘",
-    "000-asserts/pdf/陈梓聪_简历_前端开发_4年经验_公开版.pdf",
-    "000-asserts/pdf",
-    "300-tech/SEO",
-    "300-tech/项目/商城",
     "Pasted image 20230803160252.png"
   ]
 }

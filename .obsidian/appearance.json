@@ -3,8 +3,8 @@
   "theme": "moonstone",
   "cssTheme": "",
   "baseFontSize": 18,
-  "interfaceFontFamily": "MiSans,PingFang SC,Inter",
-  "textFontFamily": "MiSans,PingFang SC,Inter",
+  "interfaceFontFamily": "Inter,MiSans,PingFang SC",
+  "textFontFamily": "Inter,MiSans,PingFang SC",
   "monospaceFontFamily": "JetBrains Mono,MiSans,PingFang SC,Inter",
   "enabledCssSnippets": [
     "heading",

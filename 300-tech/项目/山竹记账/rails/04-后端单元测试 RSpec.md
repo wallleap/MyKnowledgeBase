@@ -1,7 +1,7 @@
 ---
 title: 04-后端单元测试 RSpec
 date: 2024-05-13 20:51
-updated: 2024-05-13 22:16
+updated: 2024-05-27 11:21
 ---
 
 一般开发流程：
@@ -101,7 +101,7 @@ RAILS_ENV=test bin/rails db:migrate
 ```yml
 test:
   <<: *default
-  database: magosteen_test
+  database: mangosteen_test
   username: mangosteen
   password: 123456
   host: db-for-mangosteen

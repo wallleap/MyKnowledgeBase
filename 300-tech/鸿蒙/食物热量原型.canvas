@@ -1,0 +1,37 @@
+{
+	"nodes":[
+		{"id":"2092a12dfb45c772","type":"text","text":"进入欢迎页","x":-320,"y":-60,"width":250,"height":60},
+		{"id":"4144f6b441ad88b7","type":"text","text":"加载首选项","x":0,"y":-60,"width":250,"height":60},
+		{"id":"ba8b2cf93edcc387","type":"text","text":"判断是否同意","x":338,"y":-61,"width":250,"height":60,"color":"5"},
+		{"id":"0560a23d46ac7859","type":"text","text":"没有就\n弹出用户协议","x":412,"y":75,"width":250,"height":60},
+		{"id":"52cb83266d4e5579","type":"text","text":"有\n进入首页","x":401,"y":-213,"width":250,"height":60},
+		{"id":"45ba2e639fedf426","type":"text","text":"进入首页","x":1073,"y":-213,"width":250,"height":60},
+		{"id":"364f33e531f74df9","type":"text","text":"判断是否同意","x":763,"y":-66,"width":250,"height":60,"color":"5"},
+		{"id":"bc12ff718e7c4165","type":"text","text":"同意\n保存首选项","x":1073,"y":-66,"width":250,"height":60},
+		{"id":"d2b50ee5fbd7c7d0","type":"text","text":"不同意\n退出 APP","x":943,"y":103,"width":250,"height":60},
+		{"id":"f83779ea91ecb0de","type":"text","text":"获取当前日期","x":1524,"y":-213,"width":250,"height":60},
+		{"id":"ba5f781e38b27a3d","type":"text","text":"加载饮食记录","x":1960,"y":-213,"width":250,"height":60},
+		{"id":"29c1243fd5bd79f3","type":"text","text":"统计热量","x":2344,"y":-347,"width":250,"height":60},
+		{"id":"a9ac066f06769982","type":"text","text":"统计营养素","x":2344,"y":-213,"width":250,"height":60},
+		{"id":"0ea6fab90242daa2","type":"text","text":"分组展示饮食记录","x":2344,"y":-80,"width":250,"height":60},
+		{"id":"cf65551fd72a85f4","x":1524,"y":-400,"width":250,"height":60,"type":"text","text":"选择日期"}
+	],
+	"edges":[
+		{"id":"1c7379f0baedfa42","fromNode":"2092a12dfb45c772","fromSide":"right","toNode":"4144f6b441ad88b7","toSide":"left"},
+		{"id":"4320e7e7036a0bd2","fromNode":"4144f6b441ad88b7","fromSide":"right","toNode":"ba8b2cf93edcc387","toSide":"left"},
+		{"id":"0f484639ccd28800","fromNode":"ba8b2cf93edcc387","fromSide":"bottom","toNode":"0560a23d46ac7859","toSide":"top"},
+		{"id":"f7196a18cfffc88c","fromNode":"ba8b2cf93edcc387","fromSide":"top","toNode":"52cb83266d4e5579","toSide":"bottom"},
+		{"id":"e0ab55f018eb52ce","fromNode":"52cb83266d4e5579","fromSide":"right","toNode":"45ba2e639fedf426","toSide":"left"},
+		{"id":"83a7eb2262f74629","fromNode":"0560a23d46ac7859","fromSide":"right","toNode":"364f33e531f74df9","toSide":"left"},
+		{"id":"9257829440b456ea","fromNode":"364f33e531f74df9","fromSide":"right","toNode":"bc12ff718e7c4165","toSide":"left"},
+		{"id":"c1ec94e49fc34e23","fromNode":"bc12ff718e7c4165","fromSide":"top","toNode":"45ba2e639fedf426","toSide":"bottom"},
+		{"id":"1c3c450ce686648b","fromNode":"364f33e531f74df9","fromSide":"bottom","toNode":"d2b50ee5fbd7c7d0","toSide":"top"},
+		{"id":"d4ed319da452d055","fromNode":"45ba2e639fedf426","fromSide":"right","toNode":"f83779ea91ecb0de","toSide":"left"},
+		{"id":"65af5dd7f6c33ec9","fromNode":"f83779ea91ecb0de","fromSide":"right","toNode":"ba5f781e38b27a3d","toSide":"left"},
+		{"id":"dca0902233c9bac5","fromNode":"ba5f781e38b27a3d","fromSide":"right","toNode":"29c1243fd5bd79f3","toSide":"left"},
+		{"id":"19225025c34c03c1","fromNode":"ba5f781e38b27a3d","fromSide":"right","toNode":"a9ac066f06769982","toSide":"left"},
+		{"id":"561a89d0492427d4","fromNode":"ba5f781e38b27a3d","fromSide":"right","toNode":"0ea6fab90242daa2","toSide":"left"},
+		{"id":"0b188c098ed75036","fromNode":"45ba2e639fedf426","fromSide":"top","toNode":"cf65551fd72a85f4","toSide":"left"},
+		{"id":"a17ad905b30a12c3","fromNode":"cf65551fd72a85f4","fromSide":"right","toNode":"ba5f781e38b27a3d","toSide":"top"}
+	]
+}

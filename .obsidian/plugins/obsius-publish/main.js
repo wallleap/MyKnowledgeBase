@@ -70,6 +70,7 @@ var import_obsidian2 = __toModule(require("obsidian"));
 // src/http.ts
 function http_default(method, url, data = null) {
   return __async(this, null, function* () {
+    var _a;
     const headers = new Headers({
       Accept: "application/json"
     });
@@ -83,7 +84,7 @@ function http_default(method, url, data = null) {
     if (!resp.ok) {
       throw new Error(`Request failed: ${resp.status} - ${yield resp.text()}`);
     }
-    return yield resp.json();
+    return parseInt((_a = resp.headers.get("Content-Length")) != null ? _a : "0") != 0 ? yield resp.json() : null;
   });
 }
 

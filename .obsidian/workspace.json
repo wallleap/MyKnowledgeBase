@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "300-tech/Ruby/007-进程和线程.md",
+                "file": "100-person/服务器/Linux 上部署 Frps 与 Mac 上 Frpc 的配置方案.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "532b768c2fb1bf33",
+            "id": "5bedd6fde99ac468",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "100-person/考公/理论/申论/002-归纳概括题.md",
+                "file": "300-tech/网络/路由器/OpenWrt 开启 IPv6 公网访问全指南.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -34,6 +34,7 @@
             }
           }
         ],
+        "currentTab": 1,
         "stacked": true
       }
     ],
@@ -121,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "300-tech/Ruby/007-进程和线程.md"
+                "file": "300-tech/网络/路由器/OpenWrt 开启 IPv6 公网访问全指南.md"
               }
             }
           },
@@ -186,10 +187,19 @@
       "obsidian-weread-plugin:同步微信读书笔记": false
     }
   },
-  "active": "3ea4fe1253b758c3",
+  "active": "5bedd6fde99ac468",
   "lastOpenFiles": [
-    "300-tech/Ruby/006-调试.md",
+    "100-person/工具/干倒闭百度网盘、阿里云盘，告别乱冲会员.md",
+    "300-tech/网络/路由器/OpenWrt 开启 IPv6 公网访问全指南.md",
+    "300-tech/网络/路由器",
+    "100-person/服务器/Linux 服务器部署内网穿透供 mac 使用.md",
+    "100-person/服务器/Linux 上部署 Frps 与 Mac 上 Frpc 的配置方案.md",
+    "100-person/工具/RIME 小鹤双拼快速设置.md",
+    "100-person/工具/macOS 个性化定制.md",
+    "100-person/工具/打造个性化 GitHub 主页.md",
+    "100-person/工具/国光 mac 设置.md",
     "300-tech/Ruby/007-进程和线程.md",
+    "300-tech/Ruby/006-调试.md",
     "300-tech/Ruby/005-文件操作.md",
     "300-tech/Ruby/004-Gems.md",
     "300-tech/Ruby/003-Ruby OOP.md",
@@ -209,14 +219,6 @@
     "300-tech/鸿蒙/004-ArkTS 路由.md",
     "300-tech/鸿蒙/010-案例-食物热量.md",
     "300-tech/鸿蒙/食物热量原型.canvas",
-    "300-tech/鸿蒙/未命名.md",
-    "300-tech/鸿蒙/009-通知.md",
-    "300-tech/鸿蒙/008-数据持久化.md",
-    "300-tech/鸿蒙/007-网络连接.md",
-    "300-tech/鸿蒙/006-Stage 模型.md",
-    "100-person/考公/理论/申论/002-归纳概括题.md",
-    "100-person/考公/理论/申论/001-概述.md",
-    "300-tech/鸿蒙/Drawing 2024-06-19 17.49.56.excalidraw.md",
     "100-person/考公/理论/申论",
     "100-person/考公/理论",
     "100-person/考公",
@@ -233,7 +235,6 @@
     "400-design/板绘手绘/学习/imgs/Snipaste_2024-04-18_11-22-14.png",
     "400-design/视频剪辑",
     "400-design/板绘手绘/学习/imgs/Snipaste_2024-04-17_15-30-40.png",
-    "400-design/板绘手绘/学习/imgs",
     "Pasted image 20230803160252.png"
   ]
 }

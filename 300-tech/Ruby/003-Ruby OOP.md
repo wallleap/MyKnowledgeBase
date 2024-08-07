@@ -1,7 +1,7 @@
 ---
 title: 003-Ruby OOP
 date: 2024-07-16 10:59
-updated: 2024-07-16 10:59
+updated: 2024-08-04 17:36
 ---
 
 ## 面向对象基础
@@ -193,7 +193,6 @@ user.say_hello
 protected :say_hi
 private :say_hey
 ```
-
 
 ## Ruby 的动态特性
 
@@ -553,3 +552,188 @@ puts User.progress
 # progress
 ```
 
+## class_eval
+
+- class_eval 是只有类才能调用的，`Class#class_eval`（对象实例方法用井号）
+- class_eval 会重新**打开当前类**作用域（可以重新定义和覆盖类中的方法）
+
+```rb
+class User
+end
+
+User.class_eval do
+  attr_accessor :name
+  def hello
+    'hello'
+  end
+end
+
+user = User.new
+user.name = 'Tom'
+
+puts user.name # Tom
+puts user.hello # hello
+```
+
+`self` 关键字，定义的时候就绑定了，这样 User 上并没有相应的 self 方法
+
+```rb
+module Management
+  def self.track
+    'track'
+  end
+end
+
+class User
+  include Management
+end
+
+# puts User.track # undefined method `track' for User:Class
+puts Management.track # track
+```
+
+通过放到类上，并且注入，它将会自动执行（并不需要手动执行）
+
+```rb
+module Management
+  def self.included base
+    # 直接放到类上
+    base.extend ClassMethods
+    # 重新打开类
+    base.class_eval do # 自动注入并执行
+      setup_attribute
+    end
+  end
+  
+  module ClassMethods
+    def setup_attribute
+      puts 'setup_attribute'
+    end
+  end
+end
+
+class User
+  include Management
+end
+
+# 输出了 setup_attribute
+```
+
+## instance_eval
+
+- `instance_eval` 是所有类实例的方法
+- 打开的是**当前实例**作用域
+
+```rb
+class User
+end
+
+User.class_eval do
+  def hello
+    'hello'
+  end
+end
+
+User.instance_eval do
+  def hi
+    'hi'
+  end
+end
+
+puts User.hi # 'hi'
+```
+
+User 也是自身的实例
+
+```rb
+a = 'hello'
+a.instance_eval do
+  def to_343
+    self.replace('343')
+  end
+end
+
+puts a.to_343 # 343
+
+# b = 'world'
+# b.to_343 # undefined method `to_343' for "world":String
+```
+
+class_eval 和 instance_eval
+
+```rb
+class User
+end
+
+User.class_eval do
+  def hello
+    'hello'
+  end
+  
+  def self.hi # 和直接在 instance_eval 中直接定义 hi 是一样的
+    'hi'
+  end
+end
+
+User.instance_eval do
+  
+end
+
+puts User.new.hello # hello
+puts User.hi # 'hi'
+```
+
+- 分别打开不同的作用域
+- 后面跟一个代码块（也可以是 `{}`）
+
+## method_missing
+
+在当前作用域上没有找到方法时就会调用 `method_missing` 方法
+
+```rb
+class User
+  def hello
+    'hello'
+  end
+  
+  def method_missing(name, *args)
+    "#{name} undefined, arguments is array #{args}"
+  end
+end
+
+user = User.new
+puts user.hello # hello
+
+puts user.hi('324', 19) # hi undefined, arguments is array ["324", 19]
+```
+
+## 模块作为 namespace（匿名空间）
+
+- Module
+- Class
+- Constants
+
+使用 `::` 来访问
+
+```rb
+module Management
+  COMPANY_NAME = "343"
+  
+  module Track
+    def track
+      'track'
+    end
+  end
+  
+  class User
+    def hello
+      'hello User'
+    end
+  end
+end
+
+puts Management::COMPANY_NAME # 343
+
+include Management::Track
+puts track # track
+```

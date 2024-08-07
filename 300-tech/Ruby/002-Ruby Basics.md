@@ -1,7 +1,7 @@
 ---
 title: 002-Ruby Basics
 date: 2024-07-15 15:52
-updated: 2024-07-16 10:59
+updated: 2024-08-04 18:09
 ---
 
 ## 安装
@@ -472,6 +472,25 @@ end
 p hi # => "2"
 ```
 
+> method 作为参数传递
+
+```rb
+def hi name
+  p 'hi ' + name
+end
+method(:hi) # Method: Object#hi
+method(:hi).call('aa') # hi aa
+hi 'aa' # hi aa
+
+def hi_back v
+  v.call('aa')
+end
+hi_back method(:hi) # hi aa
+hi_back { hi('aa') }
+```
+
+method 是保留了方法的行为（有参数就需要接收参数）
+
 ## Block 代码块
 
 类似于一个方法，可以使用 `do end` 来定义，也可以使用 `{}`
@@ -610,6 +629,8 @@ end
 # => 1 2 3
 ```
 
+## 循环语句
+
 while
 
 ```rb
@@ -622,6 +643,27 @@ end
 ```
 
 Ruby 没有 `++` 和 `--` 操作符
+
+until 后面条件不成立
+
+```rb
+a = 100
+until a == 0
+  puts a
+  a -= 1
+end
+```
+
+loop
+
+```rb
+a = 10
+loop do
+  break if a <= 0
+  puts a
+  a -= 1
+end
+```
 
 Iterators 迭代
 
@@ -637,6 +679,26 @@ end
 # 1 2 3
 
 10.times { |t| p t } # 0~9
+```
+
+循环控制
+
+`break` 跳出循环
+
+```rb
+for x in 1..10
+  break if x == 5
+  puts x
+end
+```
+
+`next` 跳出当前循环，执行下一个
+
+```rb
+for x in 1..10
+  next if x == 6
+  puts x # 不打印 6
+end
 ```
 
 ## 代码块和异常
@@ -1019,6 +1081,36 @@ b = a or 4
 p b # nil
 c = b && 5 # 
 p c # nil
+```
+
+## 其他表达式
+
+=~ 正则表达式匹配到位置
+
+```rb
+/hello/i =~ "hello world" # => 0
+```
+
+!~ 没有匹配到
+
+```rb
+/343/i !~ "hello world" # => true
+```
+
+alias 关键字，设置别名
+
+```rb
+def hello
+  'hello'
+end
+
+alias old_hello hello # 别名新名字 已存在的方法
+def hello
+  'new hello'
+end
+
+puts old_hello
+puts hello
 ```
 
 ## String Hash Array 常用方法

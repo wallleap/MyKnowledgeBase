@@ -1,14 +1,14 @@
 ---
 title: 001-Ruby Introduction
 date: 2024-07-15 14:36
-updated: 2024-07-15 15:52
+updated: 2024-08-04 22:12
 ---
 
 ## 学习路线建议
 
 **Ruby 的学习路线建议**
 
-1. Ruby 高级开发，[https://eggman.tv/c/s-ruby-advanced](https://eggman.tv/c/s-ruby-advanced), 这个课程录的时间有点早，不过 Ruby 从 2.0 到现在的 3.x 变化不大主要是性能的提升，课程里面讲述的内容有点多，催眠向，但是坚持看完肯定收获会不少，早期录的，如有让您不舒服的地方还请见谅！
+1. Ruby 高级开发，[https://eggman.tv/c/s-ruby-advanced](https://eggman.tv/c/s-ruby-advanced), 这个课程录的时间有点早，不过 Ruby 从 2.0 到现在的 3.x 变化不大主要是性能的提升，课程里面讲述的内容有点多，催眠向，但是坚持看完肯定收获会不少，早期录的，如有让您不舒服的地方还请见谅！[eggmantv/ruby_advanced: Ruby高级开发 http://eggman.tv/c/s-ruby-advanced (github.com)](https://github.com/eggmantv/ruby_advanced)
 2. Ruby 日常，[https://eggman.tv/c/s-learning-ruby-everyday](https://eggman.tv/c/s-learning-ruby-everyday), 内容不长，看的会比较快，之前本来计划这个专题是周更的，后来搁置了。
 3. Ruby 元编程，[https://eggman.tv/c/s-ruby-meta-programming](https://eggman.tv/c/s-ruby-meta-programming), 高级主题，不建议实际开发中经常用，但是要了解
 4. Ruby 元编程实战, [https://eggman.tv/c/s-ruby-metaprogramming-in-action](https://eggman.tv/c/s-ruby-metaprogramming-in-action), 不多说了，学习了上面的，这个不学其实也行
@@ -16,7 +16,7 @@ updated: 2024-07-15 15:52
 
 **Ruby on Rails 学习路线**
 
-1. Ruby on Rails 高级开发，[https://eggman.tv/c/s-rails-advanced](https://eggman.tv/c/s-rails-advanced), 同上面的**Ruby 高级开发**，都是早期录的，催眠但干货多
+1. Ruby on Rails 高级开发，[https://eggman.tv/c/s-rails-advanced](https://eggman.tv/c/s-rails-advanced), 同上面的**Ruby 高级开发**，都是早期录的，催眠但干货多（搭配 https://guides.rubyonrails.org/getting_started.html 一起看）[eggmantv/rails_advanced](https://github.com/eggmantv/rails_advanced)
 2. Rails 实战之 B2C 商城开发, [https://eggman.tv/c/s-master-rails-by-actions](https://eggman.tv/c/s-master-rails-by-actions), 实战为主，建议结合上面的一起看
 3. Rails 5 源码分析, [https://eggman.tv/c/s-digging-into-rails-5-source-code](https://eggman.tv/c/s-digging-into-rails-5-source-code), 虽然 Rails 已经出到 7 了，但是这个还是可以一看的，源码分析的更多目的是为了学习代码的设计理念和扩展思路，并不是让你也这样写代码，关键是你也这样写代码，别的小伙伴可能就看不懂了
 4. 其他的根据兴趣随便看吧

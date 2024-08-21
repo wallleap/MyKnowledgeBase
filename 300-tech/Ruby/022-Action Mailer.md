@@ -1,11 +1,12 @@
 ---
 title: 022-Action Mailer
-date: 2024-08-09 17:47
-updated: 2024-08-09 17:48
+date: 2024-08-09T05:47:00+08:00
+updated: 2024-08-21T10:32:31+08:00
+dg-publish: false
 ---
 
 - 用来发送 Email
-- SMTP 协议
+- SMTP 简单邮件传输 协议
 - 像使用 controller/view 一样来发送邮件
 
 ## 配置
@@ -94,8 +95,6 @@ Email 类型
 - Text 类型 signup.text.erb
 - HTML 类型 signup.html.erb
 
-
-
 ## 发送 Email
 
 ```rb
@@ -103,6 +102,3 @@ UserMailer.signup(@user).deliver_now
 
 UserMailer.signup(@user).deliver_later
 ```
-
-
-

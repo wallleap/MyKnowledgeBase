@@ -1,23 +1,24 @@
 ---
 title: 0-PPT学习
-date: 2022-12-12 15:27
-updated: 2023-06-01 14:09
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2022-12-12T03:27:00+08:00
+updated: 2024-08-21T10:34:16+08:00
+dg-publish: false
 aliases:
   - 0-PPT学习
-rating: 10
-tags:
-  - PPT
+author: Luwang
 category: office
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 10
 source: #
+tags:
+  - PPT
 url: //myblog.wallleap.cn/post/
 ---
 

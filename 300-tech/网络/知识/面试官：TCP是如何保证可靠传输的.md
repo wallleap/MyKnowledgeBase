@@ -1,24 +1,25 @@
 ---
 title: 面试官：TCP是如何保证可靠传输的
-date: 2023-08-04 11:24
-updated: 2023-08-04 11:25
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-08-04T11:24:00+08:00
+updated: 2024-08-21T10:32:40+08:00
+dg-publish: false
 aliases:
   - 面试官：TCP是如何保证可靠传输的
-rating: 1
-tags:
-  - TCP
-  - Network
+author: Luwang
 category: Network
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: //juejin.cn/post/7263113750105555001
+tags:
+  - TCP
+  - Network
 url: //myblog.wallleap.cn/post/1
 ---
 

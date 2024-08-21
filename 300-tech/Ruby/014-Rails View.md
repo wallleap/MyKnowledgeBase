@@ -1,7 +1,8 @@
 ---
 title: 014-Rails View
-date: 2024-08-06 18:16
-updated: 2024-08-07 12:09
+date: 2024-08-06T06:16:00+08:00
+updated: 2024-08-21T10:32:31+08:00
+dg-publish: false
 ---
 
 ## View 的原理

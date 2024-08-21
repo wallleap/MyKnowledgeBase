@@ -1,23 +1,24 @@
 ---
 title: 000-如何在 Vue 2 项目中使用 Vite
-date: 2023-07-10 14:22
-updated: 2023-07-10 18:18
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-07-10T02:22:00+08:00
+updated: 2024-08-21T10:33:31+08:00
+dg-publish: false
 aliases:
   - 000-如何在 Vue 2 项目中使用 Vite
-rating: 1
-tags:
-  - 项目
+author: Luwang
 category: 分类
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: #
+tags:
+  - 项目
 url: //myblog.wallleap.cn/post/1
 ---
 

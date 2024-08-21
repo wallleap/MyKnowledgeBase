@@ -1,7 +1,8 @@
 ---
 title: 021-Active Support
-date: 2024-08-09 16:53
-updated: 2024-08-09 17:47
+date: 2024-08-09T04:53:00+08:00
+updated: 2024-08-21T10:32:31+08:00
+dg-publish: false
 ---
 
 内置的 Gem 包 activesupport，它扩展了 Ruby 的内置类，并且提供了更多底层的功能

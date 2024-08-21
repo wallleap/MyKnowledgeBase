@@ -1,24 +1,25 @@
 ---
 title: Vue 3 源码导读
-date: 2023-08-04 17:47
-updated: 2023-08-04 17:48
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-08-04T05:47:00+08:00
+updated: 2024-08-21T10:32:34+08:00
+dg-publish: false
 aliases:
   - Vue 3 源码导读
-rating: 1
-tags:
-  - Vue
-  - web
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: #
+tags:
+  - Vue
+  - web
 url: //myblog.wallleap.cn/post/1
 ---
 

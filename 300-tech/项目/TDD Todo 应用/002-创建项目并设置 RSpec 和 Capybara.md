@@ -1,7 +1,8 @@
 ---
 title: 002-创建项目并设置 RSpec 和 Capybara
-date: 2024-08-08 23:05
-updated: 2024-08-09 18:36
+date: 2024-08-08T11:05:00+08:00
+updated: 2024-08-21T10:32:43+08:00
+dg-publish: false
 ---
 
 ## 创建项目

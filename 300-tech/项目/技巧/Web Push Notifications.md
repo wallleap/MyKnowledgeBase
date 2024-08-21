@@ -1,7 +1,8 @@
 ---
-title: "Web Push Notifications: 保存推送的subscription信息"
-date: 2024-08-08 22:59
-updated: 2024-08-08 23:00
+title: Web Push Notifications
+date: 2024-08-08T10:59:00+08:00
+updated: 2024-08-21T10:32:44+08:00
+dg-publish: false
 ---
 
 ## Web Push Notifications: 介绍，环境搭建和 server keys 的使用

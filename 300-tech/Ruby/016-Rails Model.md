@@ -1,7 +1,8 @@
 ---
 title: 016-Rails Model
-date: 2024-08-07 14:59
-updated: 2024-08-08 22:36
+date: 2024-08-07T02:59:00+08:00
+updated: 2024-08-21T10:32:31+08:00
+dg-publish: false
 ---
 
 ## CoC

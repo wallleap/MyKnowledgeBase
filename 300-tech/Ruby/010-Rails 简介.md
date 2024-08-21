@@ -1,10 +1,13 @@
 ---
 title: 010-Rails 简介
-date: 2024-08-04 20:05
-updated: 2024-08-04 22:58
+date: 2024-08-04T08:05:00+08:00
+updated: 2024-08-21T10:32:30+08:00
+dg-publish: false
 ---
 
 ## Ruby on Rails
+
+[Ruby on Rails — A web-app framework that includes everything needed to create database-backed web applications according to the Model-View-Controller (MVC) pattern.](https://rubyonrails.org/)
 
 - Web application framework Web 开发框架
 - Written in Ruby
@@ -23,6 +26,39 @@ updated: 2024-08-04 22:58
 - 友盟
 - Twitch
 - 无数的创业公司以及国内很多大公司的新项目
+
+## 全栈框架
+
+full-stack framework
+
+Rendering HTML templates, updating databases, sending and receiving emails, maintaining live pages via WebSockets, enqueuing jobs for asynchronous work, storing uploads in the cloud, providing solid security protections for common attacks. Rails does it all and so much more.
+
+- Model → Active Records
+- Controllers → Action Controller、Action Dispatch
+- View → Action Views
+- Route → Action Dispatch
+
+## Rails 信条
+
+[Ruby on Rails — The Rails Doctrine](https://rubyonrails.org/doctrine)
+
+## 快速开始
+
+- 指南/教程：[Ruby on Rails Guides](https://guides.rubyonrails.org/)
+- 仓库：[rails/rails: Ruby on Rails](https://github.com/rails/rails)
+- API 文档：[Ruby on Rails API](https://api.rubyonrails.org/)
+- 更新日志：[Ruby on Rails — Blog](https://rubyonrails.org/blog/)
+- 默认前端框架：[HTML Over The Wire | Hotwire (hotwired.dev)](https://hotwired.dev/)
+
+其他教程
+
+- [關於 Rails 實戰聖經 - Rails 實戰聖經 (ihower.tw)](<https://ihower.tw/rails/>
+- [《应用 Rails 进行敏捷 Web 开发》](http://book.douban.com/subject/1839273/) 中文已更新至第四版，使用 Rails 3.0。 英文版本已经更新到 Agile Web Development with Rails 5，使用 Rails 5.0，书中部分内容已经重写，英语好的还是建议阅读 Rails 5.0 英文版。
+- [《Rails 实践》](http://rails-practice.com/)
+- [《Ruby on Rails 实战圣经 Rails 3 Edition》](http://ihower.tw/rails3/index.html)
+- [《Ruby on Rails 实战圣经 Rails 4 + Ruby 2.1 Edition》](http://ihower.tw/rails4/) 在线中文资料，作者 [](https://twitter.com/ihower)[_@_ihower](https://ruby-china.org/ihower "@ihower")，[博客](http://ihower.tw/blog/)。
+- [《Ruby on Rails Tutorial》](http://ruby.railstutorial.org/) [在线中文版](http://railstutorial-china.org/)，翻译：[](https://twitter.com/andor_chen)[_@_andor_chen](https://ruby-china.org/andor_chen "@andor_chen")
+- [《Objects on Rails》](http://objectsonrails.com/)
 
 ## 快速创建一个 Rails 项目
 

@@ -1,23 +1,24 @@
 ---
 title: 根据 push 的 md 文件自动创建 issue
-date: 2023-08-10 17:23
-updated: 2023-08-10 17:43
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-08-10T05:23:00+08:00
+updated: 2024-08-21T10:32:46+08:00
+dg-publish: false
 aliases:
   - 根据 push 的 md 文件自动创建 issue
-rating: 1
-tags:
-  - blog
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: #
+tags:
+  - blog
 url: https://obsius.site/19040o4a525y0t3m712a
 ---
 

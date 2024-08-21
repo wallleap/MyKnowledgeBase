@@ -1,22 +1,23 @@
 ---
 title: nohup和&后台运行，进程查看及终止
-date: 2022-11-22 09:29
-updated: 2022-11-22 10:24
-cover: //cdn.wallleap.cn/img/post/1.jpg
-author: Luwang
-comments: true
+date: 2022-11-22T09:29:00+08:00
+updated: 2024-08-21T10:32:40+08:00
+dg-publish: false
 aliases:
   - nohup和&后台运行，进程查看及终止
-rating: 10
-tags:
-  - Linux
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 10
 source: //www.cnblogs.com/baby123/p/6477429.html
+tags:
+  - Linux
 url: null
 ---
 
@@ -58,7 +59,7 @@ nohup /usr/local/node/bin/node /www/im/chat.js >> /usr/local/node/output.log 2>&
 
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/202211220930459.png)
 
-**进程号7585**
+**进程号 7585**
 
 ## 3. 查看运行的后台进程
 
@@ -83,7 +84,6 @@ ps -aux|grep chat.js
 注：
 
 - 用 `ps -def | grep` 查找进程很方便，最后一行总是会 `grep` 自己
-
 - 用 `grep -v` 参数可以将 `grep` 命令排除掉
 
 ```sh
@@ -92,7 +92,7 @@ ps -aux|grep chat.js| grep -v grep
 
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/202211220930462.png)
 
-再用awk提取一下进程 ID　
+再用 awk 提取一下进程 ID　
 
 ```sh
 ps -aux|grep chat.js| grep -v grep | awk '{print $2}'
@@ -118,7 +118,7 @@ netstat -ap|grep 8090
 
 ![](https://cdn.wallleap.cn/img/pic/illustrtion/202211220930465.png)
 
-查看到进程id之后，使用netstat命令查看其占用的端口
+查看到进程 id 之后，使用 netstat 命令查看其占用的端口
 
 ```sh
 netstat -nap|grep 7779

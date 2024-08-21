@@ -1,23 +1,24 @@
 ---
 title: 作业帮APP13.0
-date: 2023-10-13 09:52
-updated: 2023-10-13 10:02
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-10-13T09:52:00+08:00
+updated: 2024-08-21T10:33:59+08:00
+dg-publish: false
 aliases:
   - 作业帮APP13.0-全新体验设计升级
-rating: 1
-tags:
-  - design
+author: Luwang
 category: design
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: https://www.zcool.com.cn/article/ZMTE4NjA0NA==.html
+tags:
+  - design
 url: //myblog.wallleap.cn/post/1
 ---
 

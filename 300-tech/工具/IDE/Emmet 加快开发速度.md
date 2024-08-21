@@ -1,22 +1,23 @@
 ---
 title: Emmet 加快开发速度
-date: 2022-11-15 14:40
-updated: 2022-11-15 14:40
-cover: //cdn.wallleap.cn/img/post/1.jpg
-author: Luwang
-comments: true
+date: 2022-11-15T02:40:00+08:00
+updated: 2024-08-21T10:32:39+08:00
+dg-publish: false
 aliases:
   - 文章别名
-rating: 10
-tags:
-  - blog
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 10
 source: null
+tags:
+  - blog
 url: null
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: OpenWrt 开启 IPv6 公网访问全指南
-date: 2024-08-01 09:25
-updated: 2024-08-01 09:25
+date: 2024-08-01T09:25:00+08:00
+updated: 2024-08-21T11:06:55+08:00
+dg-publish: false
 ---
 
 [OpenWrt 开启 IPv6 公网访问全指南 - 晨鹤部落格 (chenhe.me)](https://chenhe.me/post/openwrt-config-ipv6-public-access)

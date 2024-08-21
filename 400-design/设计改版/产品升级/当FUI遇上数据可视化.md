@@ -1,23 +1,24 @@
 ---
 title: 当FUI遇上数据可视化
-date: 2023-10-13 11:18
-updated: 2023-10-13 11:19
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-10-13T11:18:00+08:00
+updated: 2024-08-21T10:33:59+08:00
+dg-publish: false
 aliases:
   - 当FUI遇上数据可视化
-rating: 1
-tags:
-  - design
+author: Luwang
 category: design
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: https://www.zcool.com.cn/work/ZNTI0MDY0NDQ=.html
+tags:
+  - design
 url: //myblog.wallleap.cn/post/1
 ---
 
@@ -55,18 +56,4 @@ url: //myblog.wallleap.cn/post/1
 
 \* 作品已申请专利和版权，请勿抄袭，欢迎探讨交流
 
-https://www.bilibili.com/video/BV1Kq4y1A7pQ?t=6.1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<https://www.bilibili.com/video/BV1Kq4y1A7pQ?t=6.1>

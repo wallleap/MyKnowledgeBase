@@ -1,24 +1,25 @@
 ---
 title: 001-使用 Vue-cli 创建项目
-date: 2023-08-15 17:56
-updated: 2023-08-15 17:56
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-08-15T05:56:00+08:00
+updated: 2024-08-21T10:33:32+08:00
+dg-publish: false
 aliases:
   - 001-使用 Vue-cli 创建项目
-rating: 1
-tags:
-  - Vue
-  - web
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: #
+tags:
+  - Vue
+  - web
 url: //myblog.wallleap.cn/post/1
 ---
 
@@ -189,6 +190,7 @@ CLI 服务是构建于 webpack he webpack-dev-server 之上的，包含了
 额外配置：项目根目录下新建 `vue.config.js`
 
 ![](https://cdn.wallleap.cn/img/pic/illustration/202308161035533.png)
-![webpack 配置](https://cdn.wallleap.cn/img/pic/illustration/202308161041317.png)
-![](https://cdn.wallleap.cn/img/pic/illustration/202308161043095.png)
 
+![webpack 配置](https://cdn.wallleap.cn/img/pic/illustration/202308161041317.png)
+
+![](https://cdn.wallleap.cn/img/pic/illustration/202308161043095.png)

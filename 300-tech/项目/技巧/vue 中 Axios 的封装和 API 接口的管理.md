@@ -1,24 +1,25 @@
 ---
 title: vue 中 Axios 的封装和 API 接口的管理
-date: 2023-08-06 23:13
-updated: 2023-08-06 23:16
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-08-06T11:13:00+08:00
+updated: 2024-08-21T10:32:44+08:00
+dg-publish: false
 aliases:
   - vue 中 Axios 的封装和 API 接口的管理
-rating: 1
-tags:
-  - Vue
-  - web
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: #
+tags:
+  - Vue
+  - web
 url: //myblog.wallleap.cn/post/1
 ---
 

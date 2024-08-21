@@ -1,24 +1,25 @@
 ---
 title: VuePress 搭建组件库文档
-date: 2022-11-10 15:20
-updated: 2022-11-10 15:23
-cover: //cdn.wallleap.cn/img/pic.jpg
-author: Luwang
-comments: true
+date: 2022-11-10T03:20:00+08:00
+updated: 2024-08-21T10:32:44+08:00
+dg-publish: false
 aliases:
   - 文档系统
-rating: 10
-tags:
-  - web
-  - 文档
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/pic.jpg
+description: 文章描述
 keywords:
   - web
   - VuePress
   - 组件库
   - 文档
-description: 文章描述
+rating: 10
 source: //juejin.cn/user/1169536104532829
+tags:
+  - web
+  - 文档
 url: null
 ---
 
@@ -26,7 +27,7 @@ url: null
 
 [65岁退休Coder![lv-4](https://cdn.wallleap.cn/img/pic/illustrtion/202210091748626.png)](https://juejin.cn/user/1169536104532829)
 
-### 前言
+## 前言
 
 前段时间弄了组件库 demo 以及私有 npm 包托管的一些内容，是时候需要一个在线文档了。也算是走了一个组件库开发的闭环，留下点内容，方便自己也希望能给小伙伴们一些帮助。
 
@@ -45,7 +46,7 @@ url: null
 - [预览](https://link.juejin.cn/?target=https%3A%2F%2Fshuqingx.github.io%2Fvue-comp-test%2F)
 - [源码](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2FShuQingX%2Fvue-comp-test)
 
-### 开始
+## 开始
 
 1，创建 `comp-vuepress` 项目并执行 `npm init -y`。
 
@@ -72,7 +73,7 @@ npm install vuepress -D
 
 ![1.png](https://cdn.wallleap.cn/img/pic/illustrtion/202210091748836.webp)
 
-### 基本配置
+## 基本配置
 
 在文档目录下创建一个 `.vuepress` 的文件夹，所有 VuePress 相关的文件都将会被放在这里。你的项目结构可能是这样：
 
@@ -95,7 +96,7 @@ module.exports = {
 复制代码
 ```
 
-### 导航栏
+## 导航栏
 
 [导航栏](https://link.juejin.cn/?target=https%3A%2F%2Fvuepress.vuejs.org%2Fzh%2Ftheme%2Fdefault-theme-config.html%23%E5%AF%BC%E8%88%AA%E6%A0%8F) 配置主要就两种方式，一级导航和下拉列表导航。修改 `config.js`。
 
@@ -124,7 +125,7 @@ module.exports = {
 
 ![2.png](https://cdn.wallleap.cn/img/pic/illustrtion/202210091748557.webp)
 
-#### 小插曲（路由）
+### 小插曲（路由）
 
 经过上面的配置相信会有一些小伙伴点击了 “ 指南 ” ，发现 404 了。主要是 `/guide/` 我们并没有配置，而 VuePress 遵循 **约定优于配置** 的原则。我们需要新建一个 guide 目录。
 
@@ -146,13 +147,13 @@ module.exports = {
 
 `README.md` 就像 JavaScript 中的 index.js 一样，有没有。
 
-### 侧边栏
+## 侧边栏
 
-想要使 [侧边栏（Sidebar）](https://link.juejin.cn/?target=https%3A%2F%2Fvuepress.vuejs.org%2Fzh%2Ftheme%2Fdefault-theme-config.html%23%E4%BE%A7%E8%BE%B9%E6%A0%8F)生效，需要配置 `themeConfig.sidebar`，基本的配置，需要一个包含了多个链接的数组：
+想要使 [侧边栏（Sidebar）](https://link.juejin.cn/?target=https%3A%2F%2Fvuepress.vuejs.org%2Fzh%2Ftheme%2Fdefault-theme-config.html%23%E4%BE%A7%E8%BE%B9%E6%A0%8F) 生效，需要配置 `themeConfig.sidebar`，基本的配置，需要一个包含了多个链接的数组：
 
 > 总体来说侧边栏大致分为两大类，一种根据标题生成，一种根据配置生成。根据配置生成的方式比较灵活，强烈建议反复查阅文档。
 
-#### 配置生成侧边栏
+### 配置生成侧边栏
 
 1，首先在 `guide` 中创建 `Button.md` `Card.md` 文件。
 
@@ -193,7 +194,7 @@ module.exports = {
 
 ![3.png](https://cdn.wallleap.cn/img/pic/illustrtion/202210091748664.webp)
 
-#### 标题生成侧边栏
+### 标题生成侧边栏
 
 默认情况下，侧边栏会自动地显示由当前页面的标题（headers）组成的链接，并按照页面本身的结构进行嵌套，你可以通过 `themeConfig.sidebarDepth` 来修改它的行为。
 
@@ -214,7 +215,7 @@ sidebarDepth: 2
 
 ![4.png](https://cdn.wallleap.cn/img/pic/illustrtion/202210091748092.webp)
 
-### 首页
+## 首页
 
 经过上面的折腾，至此我们的 `guide` 相关的侧边栏，导航栏都已经完成了。紧接着就搞一个和 `VuePress` 一样的首页吧。
 
@@ -243,7 +244,7 @@ footer: MIT Licensed | Copyright © 2018-present Evan You
 复制代码
 ```
 
-#### 小插曲 (静态资源)
+### 小插曲 (静态资源)
 
 此时当你查看服务的时候，必然会出现图片没有显示的问题。随后把 `homeImage` 的值进行更改，但前提要在 `.vuepress` 中新建一个 `public` 文件夹存储咱们的静态资源。
 
@@ -268,7 +269,7 @@ footer: MIT Licensed | Copyright © 2018-present Evan You
 
 ![5.png](https://cdn.wallleap.cn/img/pic/illustrtion/202210091748231.webp)
 
-#### 小插曲（样式）
+### 小插曲（样式）
 
 此时我们发现图片显示的有点太大了，不够协调。并且我也不想要 Vue 的这种绿色，当然 `VuePress` 还是提供了方案的。
 
@@ -333,11 +334,11 @@ $MQMobileNarrow = 419px
 
 - 假设我们想要修改一些变量直接在 `palette.styl` 中进行覆盖即可。
 
-### markdown 语法拓展
+## markdown 语法拓展
 
 [语法拓展](https://link.juejin.cn/?target=https%3A%2F%2Fvuepress.vuejs.org%2Fzh%2Fguide%2Fmarkdown.html) 相信 markdown 的语法，大部分小伙伴都是了解一二的，这里是 `VuePress` 中的一些拓展语法，大部分语法都是比较简单的，这里重点看下文件导入。
 
-#### 小插曲（components、md in Vue）
+### 小插曲（components、md in Vue）
 
 文件导入之前我们需要了解一个小知识：
 
@@ -363,7 +364,7 @@ components/guide/demo1.vue` 在使用时则是 `<guide-demo1></guide-demo1>
 复制代码
 ```
 
-#### 代码块导入
+### 代码块导入
 
 假设我们此时要完善 `Button` 组件的文档。首先创建 `guide/button/demo1.js` 文件夹存放 demo ，接着随意输入一些代码。然后再 `Button.md` 中进行导入操作 导入的语法为 `<<< @/xxx/xx/x`
 
@@ -372,9 +373,9 @@ components/guide/demo1.vue` 在使用时则是 `<guide-demo1></guide-demo1>
 
 ![7.png](https://cdn.wallleap.cn/img/pic/illustrtion/202210091748108.webp)
 
-### 引入外部组件（应用级别配置）
+## 引入外部组件（应用级别配置）
 
-**官方：** 由于 VuePress 是一个标准的 Vue 应用，你可以通过创建一个 `.vuepress/enhanceApp.js`文件来做一些应用级别的配置，当该文件存在的时候，会被导入到应用内部。`enhanceApp.js` 应该 `export default`一个钩子函数，并接受一个包含了一些应用级别属性的对象作为参数。你可以使用这个钩子来安装一些附加的 Vue 插件、注册全局组件，或者增加额外的路由钩子等。
+**官方：** 由于 VuePress 是一个标准的 Vue 应用，你可以通过创建一个 `.vuepress/enhanceApp.js` 文件来做一些应用级别的配置，当该文件存在的时候，会被导入到应用内部。`enhanceApp.js` 应该 `export default` 一个钩子函数，并接受一个包含了一些应用级别属性的对象作为参数。你可以使用这个钩子来安装一些附加的 Vue 插件、注册全局组件，或者增加额外的路由钩子等。
 
 ```js
 // 使用异步函数也是可以的
@@ -425,7 +426,7 @@ npm install async-validator@1.11.5
 
 ![8.png](https://cdn.wallleap.cn/img/pic/illustrtion/202210091748744.webp)
 
-### 插件
+## 插件
 
 > [插件](https://link.juejin.cn/?target=https%3A%2F%2Fvuepress.vuejs.org%2Fzh%2Fplugin%2F%23%E6%A0%B7%E4%BE%8B) 可以使用官方或者社区的插件，也可以根据自己的需求开发适合自己的插件。[开发插件](https://link.juejin.cn/?target=https%3A%2F%2Fvuepress.vuejs.org%2Fzh%2Fplugin%2Fwriting-a-plugin.html)
 
@@ -450,7 +451,7 @@ module.exports = {
 
 再推荐小伙伴们安装一个非官方插件，用于代码预览 `vuepress-plugin-demo-container` [如何使用？](https://link.juejin.cn/?target=https%3A%2F%2Fcalebman.github.io%2Fvuepress-plugin-demo-container%2Fzh%2F)
 
-### 组件库文档编写
+## 组件库文档编写
 
 小伙伴去 element 的 [Button](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2FElemeFE%2Felement%2Fblob%2Fdev%2Fexamples%2Fdocs%2Fzh-CN%2Fbutton.md%3Fplain%3D1) 把里面的文档复制下来放到咱们自己的 `Button.md` 中。
 
@@ -458,9 +459,9 @@ module.exports = {
 
 ![QQ20220214-153524-HD.gif](https://cdn.wallleap.cn/img/pic/illustrtion/202210091748734.webp)
 
-### 国际化
+## 国际化
 
-如果要实现国际化配置，项目结构应该是下面这样。 接着把 `en/guide/Button.md` 注入[英文文档](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2FElemeFE%2Felement%2Fblob%2Fdev%2Fexamples%2Fdocs%2Fen-US%2Fbutton.md%3Fplain%3D1)。
+如果要实现国际化配置，项目结构应该是下面这样。 接着把 `en/guide/Button.md` 注入 [英文文档](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2FElemeFE%2Felement%2Fblob%2Fdev%2Fexamples%2Fdocs%2Fen-US%2Fbutton.md%3Fplain%3D1)。
 
 ```arduino
 .
@@ -569,15 +570,15 @@ modeule.exports = {
 
 ![12.gif](https://cdn.wallleap.cn/img/pic/illustrtion/202210091748196.webp)
 
-### 发布
+## 发布
 
-#### 打包
+### 打包
 
 忙活了大半天终于打包了。执行之前配置的打包命令 `npm run docs:build`。可能有些小伙伴打包环节会遇到以下错误。
 
 ![13.png](https://cdn.wallleap.cn/img/pic/illustrtion/202210091748382.webp)
 
-原因就是 静态HTML 是通过 Node 渲染，咱们在注册 element 组件时机不太行。可以将 `enhanceApp.js` 修改成如下：
+原因就是 静态 HTML 是通过 Node 渲染，咱们在注册 element 组件时机不太行。可以将 `enhanceApp.js` 修改成如下：
 
 ```js
 import 'element-ui/lib/theme-chalk/index.css';
@@ -595,7 +596,7 @@ export default async ({ Vue, options, router, siteData, isServer }) => {
 
 打包完成之后的文件在 `/docs/.vuepress/dist`
 
-#### 发布到 githubPages
+### 发布到 githubPages
 
 1，登录到 github 创建 Repository
 

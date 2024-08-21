@@ -1,7 +1,8 @@
 ---
 title: 搭建 Github Pages & Issues 动态博客
-date: 2024-03-25 12:28
-updated: 2024-03-25 12:30
+date: 2024-03-25T12:28:00+08:00
+updated: 2024-08-21T10:32:45+08:00
+dg-publish: false
 ---
 
 本文简要介绍了使用 Github Pages + Github API + 前端代码，无需自有服务器，搭建动态博客的一种解决方案。

@@ -1,23 +1,24 @@
 ---
 title: 网易CC直播品牌焕新-设计语言及UI升级分析
-date: 2023-10-12 17:22
-updated: 2023-10-12 17:34
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-10-12T05:22:00+08:00
+updated: 2024-08-21T10:33:59+08:00
+dg-publish: false
 aliases:
   - 网易CC直播品牌焕新-设计语言及UI升级分析
-rating: 1
-tags:
-  - design
+author: Luwang
 category: design
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: https://www.zcool.com.cn/work/ZNTI3MjM3Njg=.html
+tags:
+  - design
 url: //myblog.wallleap.cn/post/1
 ---
 

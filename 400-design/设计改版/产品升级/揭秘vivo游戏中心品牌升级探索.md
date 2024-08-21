@@ -1,23 +1,24 @@
 ---
 title: 揭秘vivo游戏中心品牌升级探索
-date: 2023-10-12 15:55
-updated: 2023-10-12 16:15
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-10-12T03:55:00+08:00
+updated: 2024-08-21T10:33:59+08:00
+dg-publish: false
 aliases:
   - 揭秘vivo游戏中心品牌升级探索
-rating: 1
-tags:
-  - design
+author: Luwang
 category: design
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: https://mp.weixin.qq.com/s/PRMTx8CeVFVtNqejjISL5w
+tags:
+  - design
 url: //myblog.wallleap.cn/post/1
 ---
 

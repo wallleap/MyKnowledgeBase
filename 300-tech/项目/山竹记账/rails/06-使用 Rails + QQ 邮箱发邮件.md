@@ -1,7 +1,8 @@
 ---
 title: 06-使用 Rails + QQ 邮箱发邮件
-date: 2024-05-25 21:17
-updated: 2024-05-25 22:09
+date: 2024-05-25T09:17:00+08:00
+updated: 2024-08-21T10:33:32+08:00
+dg-publish: false
 ---
 
 后端代码：[https://github.com/FrankFang/OEzuTHAqbftv/commits/master](https://github.com/FrankFang/OEzuTHAqbftv/commits/master)
@@ -144,7 +145,3 @@ end
 ```
 
 重新测试
-
-
-
-

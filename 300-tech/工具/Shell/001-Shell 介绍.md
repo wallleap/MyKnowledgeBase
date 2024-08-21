@@ -1,7 +1,8 @@
 ---
 title: 001-Shell 介绍
-date: 2024-07-15 12:41
-updated: 2024-07-15 12:47
+date: 2024-07-15T12:41:00+08:00
+updated: 2024-08-21T10:32:40+08:00
+dg-publish: false
 ---
 
 查看 Linux 和 mac 下默认的 Shell

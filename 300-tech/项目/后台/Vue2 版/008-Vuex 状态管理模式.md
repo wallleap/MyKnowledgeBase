@@ -1,23 +1,24 @@
 ---
 title: 008-Vuex 状态管理模式
-date: 2023-06-20 18:43
-updated: 2023-06-28 18:25
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-06-20T06:43:00+08:00
+updated: 2024-08-21T10:33:31+08:00
+dg-publish: false
 aliases:
   - 008-Vuex 状态管理模式
-rating: 1
-tags:
-  - 项目
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: #
+tags:
+  - 项目
 url: //myblog.wallleap.cn/post/1
 ---
 

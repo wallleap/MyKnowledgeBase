@@ -1,23 +1,24 @@
 ---
 title: 京东APP9.0 新升级新体验
-date: 2023-10-12 14:23
-updated: 2023-10-12 14:52
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-10-12T02:23:00+08:00
+updated: 2024-08-21T10:33:59+08:00
+dg-publish: false
 aliases:
   - 京东APP9.0 新升级新体验
-rating: 1
-tags:
-  - design
+author: Luwang
 category: design
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: https://mp.weixin.qq.com/s?src=11&timestamp=1697091822&ver=4829&signature=gJBZkRYGCwng8dRUryAXYGLZZLmaXNFuElXlc0-b1Jv3j5m9Bru7AON14uI65428bwGNhCZRf6qtDQOqMMwKMw2HatEawGQOkIou6Hps1mqekPXauwE7vyPHFgHcFRnK&new=1
+tags:
+  - design
 url: //myblog.wallleap.cn/post/1
 ---
 

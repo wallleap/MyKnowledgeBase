@@ -1,32 +1,33 @@
 ---
 title: 规范化 Commit 提交信息
-date: 2022-11-11 16:50
-updated: 2022-11-11 16:50
-cover: //cdn.wallleap.cn/img/post/1.jpg
-author: Luwang
-comments: true
+date: 2022-11-11T04:50:00+08:00
+updated: 2024-08-21T10:32:06+08:00
+dg-publish: false
 aliases:
   - 文章别名
-rating: 10
-tags:
-  - blog
+author: Luwang
 category: 分类
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 10
 source: null
+tags:
+  - blog
 url: null
 ---
 
-文章转载自[小康博客](https://www.antmoe.com/)
+文章转载自 [小康博客](https://www.antmoe.com/)
 
 写此文的目的仅仅是为了在 `commit` 操作时方便快速查找表情符号。因此参考互联网中同类型文章整理此文。
 
 ## 使用
 
-在使用命令行提交 `commit` 消息时，可以通过`:关键字:` 的方式进行使用表情。
+在使用命令行提交 `commit` 消息时，可以通过 `:关键字:` 的方式进行使用表情。
 
 ```
 git commit -m ":tada: Initial commit"
@@ -114,7 +115,7 @@ git commit -m ":tada: Initial commit"
 
 > 用于说明 `git commit` 的类别，只允许使用下面的标识。
 >
-> 以下表格来自[阿里技术](https://zhuanlan.zhihu.com/p/182553920?utm_source=org.mozilla.firefox)
+> 以下表格来自 [阿里技术](https://zhuanlan.zhihu.com/p/182553920?utm_source=org.mozilla.firefox)
 
 |     标识     |                                                             含义                                                             |
 | :--------: | :------------------------------------------------------------------------------------------------------------------------: |
@@ -190,11 +191,8 @@ vscode 中 `Git-commit-plugin` 插件可以快速生成提交模板。
 ## 文章参考
 
 - [gitmoji](https://gitmoji.carloscuesta.me/)
-
 - [Git 提交时的 emoji 表情使用指南](https://blog.huqing.site/201902/8da9/)
-
 - [git commit 规范指南](https://segmentfault.com/a/1190000009048911)
-
 - [如何规范你的 Git commit？](https://zhuanlan.zhihu.com/p/182553920?utm_source=org.mozilla.firefox)
 
 > 本文转载自：[规范化 Commit 提交信息 | 小康博客 (antmoe.com)](https://www.antmoe.com/posts/40e311db/)

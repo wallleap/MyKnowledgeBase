@@ -1,23 +1,24 @@
 ---
 title: JS 中的文档注释
-date: 2023-08-10 17:51
-updated: 2023-08-11 11:20
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-08-10T05:51:00+08:00
+updated: 2024-08-21T10:32:39+08:00
+dg-publish: false
 aliases:
   - JS 中的文档注释
-rating: 1
-tags:
-  - blog
+author: Luwang
 category: 分类
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: //www.jsdoc.com.cn
+tags:
+  - blog
 url: //myblog.wallleap.cn/post/1
 ---
 

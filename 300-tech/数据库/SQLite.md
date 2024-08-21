@@ -1,23 +1,24 @@
 ---
 title: SQLite
-date: 2024-01-29 10:37
-updated: 2024-01-29 11:24
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2024-01-29T10:37:00+08:00
+updated: 2024-08-21T10:32:34+08:00
+dg-publish: false
 aliases:
   - SQLite
-rating: 1
-tags:
-  - SQLite
+author: Luwang
 category: 数据库
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: 
+tags:
+  - SQLite
 url: //myblog.wallleap.cn/post/1
 ---
 

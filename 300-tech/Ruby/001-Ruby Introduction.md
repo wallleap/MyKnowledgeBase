@@ -1,8 +1,11 @@
 ---
 title: 001-Ruby Introduction
-date: 2024-07-15 14:36
-updated: 2024-08-04 22:12
+date: 2024-07-15T02:36:00+08:00
+updated: 2024-08-21T10:32:30+08:00
+dg-publish: false
 ---
+
+[Wiki · Ruby China (ruby-china.org)](https://ruby-china.org/wiki)
 
 ## 学习路线建议
 
@@ -16,7 +19,9 @@ updated: 2024-08-04 22:12
 
 **Ruby on Rails 学习路线**
 
-1. Ruby on Rails 高级开发，[https://eggman.tv/c/s-rails-advanced](https://eggman.tv/c/s-rails-advanced), 同上面的**Ruby 高级开发**，都是早期录的，催眠但干货多（搭配 https://guides.rubyonrails.org/getting_started.html 一起看）[eggmantv/rails_advanced](https://github.com/eggmantv/rails_advanced)
+[Rails 上的 Ruby - Rails 理论 --- Ruby on Rails — The Rails Doctrine](https://rubyonrails.org/doctrine)
+
+1. Ruby on Rails 高级开发，[https://eggman.tv/c/s-rails-advanced](https://eggman.tv/c/s-rails-advanced), 同上面的**Ruby 高级开发**，都是早期录的，催眠但干货多（搭配 <https://guides.rubyonrails.org/getting_started.html> 一起看）[eggmantv/rails_advanced](https://github.com/eggmantv/rails_advanced)
 2. Rails 实战之 B2C 商城开发, [https://eggman.tv/c/s-master-rails-by-actions](https://eggman.tv/c/s-master-rails-by-actions), 实战为主，建议结合上面的一起看
 3. Rails 5 源码分析, [https://eggman.tv/c/s-digging-into-rails-5-source-code](https://eggman.tv/c/s-digging-into-rails-5-source-code), 虽然 Rails 已经出到 7 了，但是这个还是可以一看的，源码分析的更多目的是为了学习代码的设计理念和扩展思路，并不是让你也这样写代码，关键是你也这样写代码，别的小伙伴可能就看不懂了
 4. 其他的根据兴趣随便看吧
@@ -42,6 +47,15 @@ updated: 2024-08-04 22:12
 	- 团队合作
 
 Everything is an Object、Lightweight、Cross platform
+
+## 书籍
+
+- [《Introduction to Programming with Ruby》](https://launchschool.com/books/ruby) Launch School 写的一本给新手看的入门书，涵盖最简单的编程概念和和练习及讲解。具体请看这个话题：[https://ruby-china.org/topics/19914](https://ruby-china.org/topics/19914)
+- [《Programming Ruby》](http://book.douban.com/subject/2032343/) 著名的镐头书，推荐先看这本，内容活泼易懂。前半部分涵盖了 Ruby 的方方面面，后半部分是函数库参考，所以不要被它的厚度所吓到。
+- [《Ruby 编程语言》](http://book.douban.com/subject/3329887/) 本书的作者之一是松本行弘，Ruby 的缔造者。Ruby 开发者的必看书籍，被称为 Ruby 版的 K&R（K&R 指 [《The C Programming Language》](http://book.douban.com/subject/1139336/)，中文名《C 程序设计语言》，计算机史上的经典著作，其赞誉相当之高）。
+- [《Ruby 元编程》](http://book.douban.com/subject/7056800/)
+- [《Metaprogramming Ruby》](http://book.douban.com/subject/4086938/)
+- [《Ruby User’s Guide 简体中文版》](https://github.com/BadTudou/RubyUsersGuide-zh)
 
 ## 代码演示
 

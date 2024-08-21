@@ -1,16 +1,20 @@
 ---
 title: README
-date: 2023-05-21 19:06
-updated: 2024-03-25 11:05
+date: 2023-05-21T07:06:00+08:00
+updated: 2024-08-21T09:27:47+08:00
+dg-publish: true
+dg-home: true
 ---
 
 ## Inbox —— All in this . MOC
 
 > ✨ Luwang 的个人知识库
 
-[![](https://img.shields.io/badge/GitHub-MyKownlegeBase-blue?style=for-the-badge&logo=github)](https://github.com/wallleap/MyKnowledgeBase)  [![GITBOOK: GARDEN (shields.io)](https://img.shields.io/badge/GitBook-garden-orange?style=for-the-badge&logo=gitbook)](https://wallleap.gitbook.io/garden/)
+[![](https://img.shields.io/badge/GitHub-MyKownlegeBase-blue?style=for-the-badge&logo=github)](https://github.com/wallleap/MyKnowledgeBase)  [![GITBOOK: GARDEN (shields.io)](https://img.shields.io/badge/GitBook-garden-orange?style=for-the-badge&logo=gitbook)](https://wallleap.gitbook.io/garden/) [![Obsidian: GARDEN (shields.io)](https://img.shields.io/badge/Obsidian-garden-purple?style=for-the-badge&logo=vercel)](https://ob.vonne.me)
 
 使用 GitHub 仓库进行备份，Obsidian 进行本地管理，GitBook 网上阅读，图片使用 PicGo + COS 图床
+
+Digital Garden：[01 Getting started (ole.dev)](https://dg-docs.ole.dev/getting-started/01-getting-started/)
 
 本知识库约定：
 
@@ -61,16 +65,16 @@ updated: 2024-03-25 11:05
 		- [GitHub emoji](100-person/笔记/GitHub%20emoji.md)
 	- 工具
 		- [常用工具和软件](100-person/工具/常用工具和软件.md)
-		- [打造个性化 GitHub 主页](100-person/工具/打造个性化%20GitHub%20主页.md)
-		- [翻翻教程](100-person/工具/翻翻教程.md)
-		- [个人输入法调教之 Rime](100-person/工具/个人输入法调教之%20Rime.md)
-		- [自由输入法 RIME 简明配置指南](100-person/工具/自由输入法%20RIME%20简明配置指南.md)
-		- [RIME 小鹤双拼快速设置](100-person/工具/RIME%20小鹤双拼快速设置.md)
-		- [mac 打包 DMG](100-person/工具/mac%20打包%20DMG.md)
-		- [macOS 个性化定制](100-person/工具/macOS%20个性化定制)
+		- [打造个性化 GitHub 主页](打造个性化%20GitHub%20主页.md)
+		- [翻翻教程](翻翻教程.md)
+		- [个人输入法调教之 Rime](个人输入法调教之%20Rime.md)
+		- [自由输入法 RIME 简明配置指南](自由输入法%20RIME%20简明配置指南.md)
+		- [RIME 小鹤双拼快速设置](RIME%20小鹤双拼快速设置.md)
+		- [mac 打包 DMG](mac%20打包%20DMG.md)
+		- [macOS 个性化定制](macOS%20个性化定制.md)
 	- [备忘录](100-person/备忘录.md)
 	- [常用推荐](100-person/常用推荐.md)
-	- [Vim 简单使用教程](100-person/Vim%20简单使用教程.md)
+	- [vim 简单使用教程](vim%20简单使用教程.md)
 - 生活
 
 #### 工作
@@ -96,59 +100,59 @@ updated: 2024-03-25 11:05
 	- 三件套
 		- HTML
 			- [常用 meta](常用%20meta.md)
-			- [HTML](300-tech/三件套/HTML.md)
+			- [HTML](HTML.md)
 		- CSS
 			- [CSS 世界笔记](CSS%20世界笔记.md)
 			- [用 CSS 实现固定宽高比](用%20CSS%20实现固定宽高比.md)
 			- [使用 CSS 计数器更改有序列表序号样式](使用%20CSS%20计数器更改有序列表序号样式.md)
 			- [只要一行代码，实现五种 CSS 经典布局](只要一行代码，实现五种%20CSS%20经典布局.md)
-			- [用 HTML + CSS 制作前端简历](300-tech/三件套/用%20HTML%20+%20CSS%20制作前端简历.md)
+			- [用 HTML + CSS 制作前端简历](用%20HTML%20+%20CSS%20制作前端简历.md)
 		- JavaScript
 			- [规范 JavaScript 命名](规范%20JavaScript%20命名.md)
 			- [手写 JS 常用 API](手写%20JS%20常用%20API.md)
 			- [ES 6 入门教程大纲](ES%206%20入门教程大纲.md)
 			- [ES 6 入门教程-阮一峰](ES%206%20入门教程-阮一峰.md)
 			- [老姚浅谈：怎么学 JavaScript？](老姚浅谈：怎么学%20JavaScript？.md)
-			- [重新认识 JavaScript 中的 Date](300-tech/%E4%B8%89%E4%BB%B6%E5%A5%97/%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%86%20JavaScript%20%E4%B8%AD%E7%9A%84%20Date.md)
+			- [重新认识 JavaScript 中的 Date](重新认识%20JavaScript%20中的%20Date.md)
 	- 框架
 		- Vue
 		- React
 		- UI
-		- [小程序笔记](300-tech/框架/小程序笔记.md)
-	- [web 前端知识体系](300-tech/web%20前端知识体系.md)
-	- [鱼皮-前端学习路线](300-tech/鱼皮-前端学习路线.md)
-	- [前端面试押题-方方版](300-tech/前端面试押题-方方版.md)
-	- [前端编码规范](300-tech/前端编码规范.md)
+		- [小程序笔记](小程序笔记.md)
+	- [web 前端知识体系](web%20前端知识体系.md)
+	- [鱼皮-前端学习路线](鱼皮-前端学习路线.md)
+	- [前端面试押题-方方版](前端面试押题-方方版.md)
+	- [前端编码规范](前端编码规范.md)
 - 课程
-	- [000-如何提问](300-tech/课程/000-如何提问.md)
-	- [000-学习路线](300-tech/课程/000-学习路线.md)
-	- [001-初学 Web](300-tech/课程/001-初学%20Web.md)
-	- [002-HTML](300-tech/课程/002-HTML.md)
-	- [003-Git 学习](300-tech/课程/003-Git%20学习.md)
-	- [004-接触 CSS](300-tech/课程/004-接触%20CSS.md)
-	- [005-深入 CSS](300-tech/课程/005-深入%20CSS.md)
-	- [006-布局相关](300-tech/课程/006-布局相关.md)
-	- [007-CSS 补充](300-tech/课程/007-CSS%20补充.md)
-	- [008-JS 基本概念](300-tech/课程/008-JS%20基本概念.md)
-	- [009-数字和字符串](300-tech/课程/009-数字和字符串.md)
-	- [010-数组和对象基本使用](300-tech/课程/010-数组和对象基本使用.md)
-	- [011-流程控制语句](300-tech/课程/011-流程控制语句.md)
-	- [012-函数相关](300-tech/课程/012-函数相关.md)
-	- [013-数组](300-tech/课程/013-数组.md)
-	- [014-Symbol、Set、Map、WeakMap](300-tech/课程/014-Symbol、Set、Map、WeakMap.md)
-	- [015-正则表达式](300-tech/课程/015-正则表达式.md)
-	- [016-浏览器渲染机制](300-tech/课程/016-浏览器渲染机制.md)
-	- [017-DOM 操作](300-tech/课程/017-DOM%20操作.md)
-	- [018-JS 事件](300-tech/课程/018-JS%20事件.md)
-	- [019-BOM](300-tech/课程/019-BOM.md)
-	- [020-内存图1](300-tech/课程/020-内存图1.md)
-	- [021-内存图2-调用栈](300-tech/课程/021-内存图2-调用栈.md)
+	- [000-如何提问](000-如何提问.md)
+	- [000-学习路线](000-学习路线.md)
+	- [001-初学 Web](001-初学%20Web.md)
+	- [002-HTML](002-HTML.md)
+	- [003-Git 学习](003-Git%20学习.md)
+	- [004-接触 CSS](004-接触%20CSS.md)
+	- [005-深入 CSS](005-深入%20CSS.md)
+	- [006-布局相关](006-布局相关.md)
+	- [007-CSS 补充](007-CSS%20补充.md)
+	- [008-JS 基本概念](008-JS%20基本概念.md)
+	- [009-数字和字符串](009-数字和字符串.md)
+	- [010-数组和对象基本使用](010-数组和对象基本使用.md)
+	- [011-流程控制语句](011-流程控制语句.md)
+	- [012-函数相关](012-函数相关.md)
+	- [013-数组](013-数组.md)
+	- [014-Symbol、Set、Map、WeakMap](014-Symbol、Set、Map、WeakMap.md)
+	- [015-正则表达式](015-正则表达式.md)
+	- [016-浏览器渲染机制](016-浏览器渲染机制.md)
+	- [017-DOM 操作](017-DOM%20操作.md)
+	- [018-JS 事件](018-JS%20事件.md)
+	- [019-BOM](019-BOM.md)
+	- [020-内存图1](020-内存图1.md)
+	- [021-内存图2-调用栈](021-内存图2-调用栈.md)
 	- [033-WebPack 的使用和性能优化](033-WebPack%20的使用和性能优化.md)
 	- [Webpack 性能优化](300-tech/课程/Webpack%20性能优化.md)
 	- [036-Vue 起手式](036-Vue%20起手式.md)
 	- [037-Vue 的构造选项](037-Vue%20的构造选项.md)
 - 工具
-	- [Git 操作](Git%20操作.md)
+	- [Git 常用操作](Git%20常用操作.md)
 	- [规范化 Commit 提交信息](规范化%20Commit%20提交信息.md)
 	- [如何规范你的 Git commit？](如何规范你的%20Git%20commit？.md)
 	- [面向 Coding 的 Git](面向%20Coding%20的%20Git.md)
@@ -159,9 +163,9 @@ updated: 2024-03-25 11:05
 	- [iTerm2](iTerm2.md)
 	- [nohup和&后台运行，进程查看及终止](nohup和&后台运行，进程查看及终止.md)
 	- [Emmet 加快开发速度](Emmet%20加快开发速度.md)
-	- [macOS 安装 NVM](300-tech/工具/macOS%20安装%20NVM.md)
-	- [Frp + 服务器远程登录 windows](300-tech/工具/Frp%20+%20服务器远程登录%20windows.md)
-	- [win11 安装 arch 子系统](300-tech/工具/win11%20安装%20arch%20子系统.md)
+	- [macOS 安装 NVM](macOS%20安装%20NVM.md)
+	- [Frp + 服务器远程登录 windows](Frp%20+%20服务器远程登录%20windows.md)
+	- [win11 安装 arch 子系统](win11%20安装%20arch%20子系统.md)
 	- [手把手教你快速搭建一个代码在线编辑预览工具](手把手教你快速搭建一个代码在线编辑预览工具.md)
 	- [除了 Markdown 编辑器，你还需要会用程序来处理它](除了%20Markdown%20编辑器，你还需要会用程序来处理它.md)
 - 源码
@@ -325,7 +329,7 @@ git push -f
 - <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>m</kbd>  思维导图
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd>  打开调试功能
 
-↓ 以下的是插件生成的，只能在 Obsidian 中查看 ↓
+↓ 以下的是插件生成的，只能在 Obsidian 和 Garden 中查看 ↓
 
 ### 三天内修改的文档
 

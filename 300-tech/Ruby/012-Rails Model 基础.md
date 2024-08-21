@@ -1,7 +1,8 @@
 ---
 title: 012-Rails Model 基础
-date: 2024-08-05 13:39
-updated: 2024-08-06 15:25
+date: 2024-08-05T01:39:00+08:00
+updated: 2024-08-21T10:32:31+08:00
+dg-publish: false
 ---
 
 ORM 概念：Object Relational Model
@@ -717,8 +718,6 @@ end
 </li>
 ```
 
-
-
 ### Controller Filter
 
 使用场景
@@ -764,4 +763,3 @@ class UsersController < ApplicationController
   end
 end
 ```
-

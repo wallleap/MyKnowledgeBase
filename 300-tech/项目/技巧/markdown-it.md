@@ -1,7 +1,8 @@
 ---
 title: markdown-it
-date: 2024-03-25 09:27
-updated: 2024-03-25 09:30
+date: 2024-03-25T09:27:00+08:00
+updated: 2024-08-21T10:32:44+08:00
+dg-publish: false
 ---
 
 Markdown-it 是一个 javascript markdown 解析器，导出一个函数，可以生成纯 HTML，人们可以随意使用。如 GitHub 页面所述，它还具有大量插件和功能。

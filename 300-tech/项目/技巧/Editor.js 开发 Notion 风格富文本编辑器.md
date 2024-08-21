@@ -1,24 +1,25 @@
 ---
 title: Editor.js 开发 Notion 风格富文本编辑器
-date: 2024-01-10 10:31
-updated: 2024-01-10 10:31
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2024-01-10T10:31:00+08:00
+updated: 2024-08-21T10:32:43+08:00
+dg-publish: false
 aliases:
   - Editor.js 开发 Notion 风格富文本编辑器
-rating: 1
-tags:
-  - web
-  - JavaScript
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: 
+tags:
+  - web
+  - JavaScript
 url: //myblog.wallleap.cn/post/1
 ---
 
@@ -28,17 +29,13 @@ url: //myblog.wallleap.cn/post/1
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5b160ee67e2345d9bbf4351547c5a7ae~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.gif)
 
-
 ## 介绍
 
 Editor.js 亮点
 
 - **用户界面友好**：Editor.js 提供了一个直观且易于使用的用户界面，能够轻松地创建和编辑文档
-
 - **模块化编辑**： 使用块级元素（blocks）的方式组织文本，每个块负责处理不同类型的内容，易于添加新功能或定制编辑器，如段落、标题
-
 - **可扩展性**： Editor.js 具有可插拔的 API 插件，可以方便地扩展功能，添加自定义的插件和内容
-
 - **跨平台兼容性**： 编辑器输出简洁的 json 数据，可以解析转换嵌入到不同的平台和应用程序中，支持跨平台。
 
 Editor.js 每一个 block 块时可编辑由 div `contenteditable` 属性实现，工作区由单独的块组成

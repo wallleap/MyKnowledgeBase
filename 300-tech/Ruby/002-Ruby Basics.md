@@ -1,7 +1,8 @@
 ---
 title: 002-Ruby Basics
-date: 2024-07-15 15:52
-updated: 2024-08-04 18:09
+date: 2024-07-15T03:52:00+08:00
+updated: 2024-08-21T10:32:30+08:00
+dg-publish: false
 ---
 
 ## 安装

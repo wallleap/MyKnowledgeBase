@@ -1,23 +1,24 @@
 ---
 title: 美团外卖更新Logo，袋鼠只露出了脑袋
-date: 2023-10-12 16:33
-updated: 2023-10-12 16:37
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-10-12T04:33:00+08:00
+updated: 2024-08-21T10:33:59+08:00
+dg-publish: false
 aliases:
   - 美团外卖更新Logo，袋鼠只露出了脑袋
-rating: 1
-tags:
-  - design
+author: Luwang
 category: design
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: https://www.digitaling.com/articles/637594.html
+tags:
+  - design
 url: //myblog.wallleap.cn/post/1
 ---
 

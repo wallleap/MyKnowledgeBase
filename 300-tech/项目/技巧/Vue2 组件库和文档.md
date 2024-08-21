@@ -1,18 +1,23 @@
+---
+title: Vue2 组件库和文档
+date: 2023-05-03T10:07:07+08:00
+updated: 2024-08-21T10:32:44+08:00
+dg-publish: false
+---
+
 基于 Vue 2.6 搭建 UI 组件库 VuePress 搭建文档
 
 [![img](https://cdn.wallleap.cn/img/pic/illustrtion/202210091752360.webp)](https://juejin.cn/user/1011206427512045)
 
 [zhangyanling77![lv-3](https://cdn.wallleap.cn/img/pic/illustrtion/202210091752245.png)](https://juejin.cn/user/1011206427512045)
 
-在日常业务开发中我们大都会自己封装组件，可能是业务组件，也可能是UI组件。当然，已经有很多优秀的开源UI组件库，比如`Ant Design`、`Element UI`、`Material UI`等，也基本能够满足我们的日常开发。然而，同一个世界，却不是同一个设计师，不同的公司UI设计师有着自己不同的设计风格，那么针对这种情况就需要自己封装实现一套符合自己公司设计理念的UI组件库。
+在日常业务开发中我们大都会自己封装组件，可能是业务组件，也可能是 UI 组件。当然，已经有很多优秀的开源 UI 组件库，比如 `Ant Design`、`Element UI`、`Material UI` 等，也基本能够满足我们的日常开发。然而，同一个世界，却不是同一个设计师，不同的公司 UI 设计师有着自己不同的设计风格，那么针对这种情况就需要自己封装实现一套符合自己公司设计理念的 UI 组件库。
 
-本文就如何从零搭建一个UI组件库及文档的过程做个简要的描述。文章内容涉及到组件库搭建的流程、工具、配置等，参考了`Element UI`和`iView`的做法。
+本文就如何从零搭建一个 UI 组件库及文档的过程做个简要的描述。文章内容涉及到组件库搭建的流程、工具、配置等，参考了 `Element UI` 和 `iView` 的做法。
 
-UI组件库地址：[zyl-ui](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2Fzhangyanling77%2Fzyl-ui)
+UI 组件库地址：[zyl-ui](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2Fzhangyanling77%2Fzyl-ui)
 
 文档地址：[zyl-docs](https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2Fzhangyanling77%2Fzyl-docs)
-
-
 
 ## 项目搭建
 
@@ -43,7 +48,7 @@ vue create zyl-ui
 复制代码
 ```
 
-选择CSS预处理器
+选择 CSS 预处理器
 
 ```csharp
 ? Pick a CSS pre-processor (PostCSS, Autoprefixer and CSS Modules are supported by default):
@@ -135,7 +140,7 @@ Vue.use(zylUI)
 
 > 借鉴 `Element UI`，实现按钮的基本用法、带图标的按钮、加载状态按钮等功能。
 
-API设计
+API 设计
 
 | 参数     | 说明           | 类型    | 可选值                                      | 默认值  |
 | -------- | -------------- | ------- | ------------------------------------------- | ------- |
@@ -248,7 +253,7 @@ export default {
 复制代码
 ```
 
-这样，简单的一个button组件就开发完毕了。为了保证我们的组件能够正常且稳定使用，还需要添加单元测试。
+这样，简单的一个 button 组件就开发完毕了。为了保证我们的组件能够正常且稳定使用，还需要添加单元测试。
 
 ### 搭建测试环境
 
@@ -292,7 +297,7 @@ package.json
 
 ### 编写单元测试
 
-以button为例，编写单元测试。
+以 button 为例，编写单元测试。
 
 ```javascript
 import {shallowMount} from '@vue/test-utils'; // vue提供的快速测试的方法
@@ -324,7 +329,7 @@ npm run test
 
 ### 组件打包
 
-当组件库运行测试全部通过后，表示我们的组件是可正常使用的，那么就可以打包组件库了。注意，我们打包的格式可以是 UMD，CommonJS也可以是ES Module。
+当组件库运行测试全部通过后，表示我们的组件是可正常使用的，那么就可以打包组件库了。注意，我们打包的格式可以是 UMD，CommonJS 也可以是 ES Module。
 
 - 配置打包命令
 
@@ -355,7 +360,7 @@ npm link
 复制代码
 ```
 
-## VuePress搭建文档
+## VuePress 搭建文档
 
 VuePress 是 Vue 驱动的静态网站生成器。支持在 Markdown 中使用 Vue 组件，简洁，高性能。当然你也可以使用其他的文档生成器，如 Docz、Storybook 等。
 
@@ -372,7 +377,7 @@ npm install vuepress -D
 复制代码
 ```
 
-- 配置scripts
+- 配置 scripts
 
 ```
 package.json
@@ -383,7 +388,7 @@ package.json
 复制代码
 ```
 
-- 初始化docs
+- 初始化 docs
 
 在项目根目录下建一个 docs 目录
 
@@ -454,25 +459,25 @@ module.exports = {
 
 - 客户端应用的增强文件 `enhanceApp.js`
 
-  > 这个文件用于添加组件Demo展示的优化的配置
+	> 这个文件用于添加组件 Demo 展示的优化的配置
 
-  安装
+	安装
 
-  ```css
+	```css
   npm install element-ui highlight.js node-sass sass-loader --save
   复制代码
   ```
 
-  link开发的组件库 zyl-ui
+	link 开发的组件库 zyl-ui
 
-  ```bash
+	```bash
   npm link zyl-ui
   复制代码
   ```
 
-  `.vuepress/enhanceApp.js`
+	`.vuepress/enhanceApp.js`
 
-  ```javascript
+	```javascript
   import Vue from 'vue';
   import ElementUI from 'element-ui'; // 全局引入element-ui
   import 'element-ui/lib/theme-chalk/index.css';
@@ -498,11 +503,11 @@ module.exports = {
   复制代码
   ```
 
-`styles/palette.styl` 文件用于覆盖 vuepress 的默认样式，`components/demo-block.vue`文件主要是对默认主题Demo展示的样式的重写及展示逻辑的一些定义。代码过长，这里不做赘述。
+`styles/palette.styl` 文件用于覆盖 vuepress 的默认样式，`components/demo-block.vue` 文件主要是对默认主题 Demo 展示的样式的重写及展示逻辑的一些定义。代码过长，这里不做赘述。
 
-### 编写对应组件的Markdown文件
+### 编写对应组件的 Markdown 文件
 
-以button组件为例，在 `docs/components` 下建 `button.md` 文件
+以 button 组件为例，在 `docs/components` 下建 `button.md` 文件
 
 ```bash
 # Button 按钮
@@ -555,7 +560,7 @@ tests
 
 1. name
 
-它是发布到 npm 上的包名，也是安装时的包名。请保证它的唯一性，可以到npm上先搜索一下，是否已经存在。
+它是发布到 npm 上的包名，也是安装时的包名。请保证它的唯一性，可以到 npm 上先搜索一下，是否已经存在。
 
 1. version
 
@@ -576,4 +581,4 @@ npm publish # 发布，zyl-ui根目录下执行
 
 ## 结语
 
-本文主要简要介绍了基于Vue的UI组件库搭建及基于VuePress搭建文档的过程。涉及到项目的组织方式、组件的开发流程、单元测试、打包、文档、发布等方面。
+本文主要简要介绍了基于 Vue 的 UI 组件库搭建及基于 VuePress 搭建文档的过程。涉及到项目的组织方式、组件的开发流程、单元测试、打包、文档、发布等方面。

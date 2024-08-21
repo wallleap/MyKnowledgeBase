@@ -1,7 +1,8 @@
 ---
-title: 032-Rails 创建 API
-date: 2023-05-03 22:07
-updated: 20243-510- 20:4907 11:33
+title: 03-Rails 创建 API
+date: 2023-05-03T10:07:00+08:00
+updated: 2024-08-21T10:33:32+08:00
+dg-publish: false
 ---
 
 Rails 路由，namespace

@@ -1,7 +1,8 @@
 ---
 title: 020-Rails Environments
-date: 2024-08-09 14:59
-updated: 2024-08-09 16:43
+date: 2024-08-09T02:59:00+08:00
+updated: 2024-08-21T10:32:31+08:00
+dg-publish: false
 ---
 
 [Rails的加载](https://eggman.tv/players/how-rails-loading-and-executing)
@@ -378,5 +379,3 @@ Loading development environment (Rails 7.0.8.4)
 ```
 
 也可以使用第三方 Gem 让 hash 能够变成可访问链形式调用（`AppConfig.domain`）
-
-

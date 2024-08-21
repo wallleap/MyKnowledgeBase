@@ -1,7 +1,8 @@
 ---
 title: 01-RESTful API
-date: 2023-05-03 22:07
-updated: 2024-05-13 20:47
+date: 2023-05-03T10:07:00+08:00
+updated: 2024-08-21T10:33:32+08:00
+dg-publish: false
 ---
 
 后端返回 API 有多种风格

@@ -1,24 +1,25 @@
 ---
 title: Node.js 事件循环机制：解析 JavaScript 异步魔力的核心
-date: 2023-08-03 15:47
-updated: 2023-08-03 15:49
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-08-03T03:47:00+08:00
+updated: 2024-08-21T10:32:30+08:00
+dg-publish: false
 aliases:
   - Node.js 事件循环机制：解析 JavaScript 异步魔力的核心
-rating: 1
-tags:
-  - Node
-  - web
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: #
+tags:
+  - Node
+  - web
 url: //myblog.wallleap.cn/post/1
 ---
 
@@ -39,7 +40,7 @@ url: //myblog.wallleap.cn/post/1
 > 这样的好处是：操作系统完全没有创建线程和销毁线程的时间开销。
 
 > 弊端是：
-> 
+>
 > 1.  无法利用多核 CPU。
 > 2.  错误会引起整个应用无法继续调用异步 I/O。
 > 3.  大量计算占用 CPU 导致无法继续调用异步 I/O。

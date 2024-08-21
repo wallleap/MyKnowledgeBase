@@ -1,7 +1,8 @@
 ---
 title: 06-封装 Vite SVG Sprites 插件
-date: 2024-05-16 14:38
-updated: 2024-05-16 14:39
+date: 2024-05-16T02:38:00+08:00
+updated: 2024-08-21T10:33:32+08:00
+dg-publish: false
 ---
 
 安装两个依赖
@@ -83,4 +84,3 @@ Git 命令
 ```sh
 git diff # 展示当前未提交的变动
 ```
-

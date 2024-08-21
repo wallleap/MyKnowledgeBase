@@ -1,23 +1,24 @@
 ---
 title: 图片取色 UI
-date: 2024-02-22 20:50
-updated: 2024-02-23 10:42
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2024-02-22T08:50:00+08:00
+updated: 2024-08-21T10:32:45+08:00
+dg-publish: false
 aliases:
   - 图片取色 UI
-rating: 1
-tags:
-  - web
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: 
+tags:
+  - web
 url: //myblog.wallleap.cn/post/1
 ---
 

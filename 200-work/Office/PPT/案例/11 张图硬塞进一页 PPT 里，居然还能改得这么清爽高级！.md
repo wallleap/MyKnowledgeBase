@@ -1,23 +1,24 @@
 ---
 title: 11 张图硬塞进一页 PPT 里，居然还能改得这么清爽高级！
-date: 2023-08-03 16:51
-updated: 2023-08-03 17:02
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-08-03T04:51:00+08:00
+updated: 2024-08-21T10:34:16+08:00
+dg-publish: false
 aliases:
   - 11 张图硬塞进一页 PPT 里，居然还能改得这么清爽高级！
-rating: 1
-tags:
-  - PPT
+author: Luwang
 category: PPT
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: #
+tags:
+  - PPT
 url: //myblog.wallleap.cn/post/1
 ---
 

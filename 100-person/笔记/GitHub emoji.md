@@ -1,23 +1,24 @@
 ---
 title: GitHub emoji
-date: 2023-03-15 18:22
-updated: 2023-03-15 18:22
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-03-15T06:22:00+08:00
+updated: 2024-08-21T10:34:35+08:00
+dg-publish: false
 aliases:
   - GitHub emoji
-rating: 1
-tags:
-  - 笔记
+author: Luwang
 category: life
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: //github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
+tags:
+  - 笔记
 url: //myblog.wallleap.cn/post/1
 ---
 

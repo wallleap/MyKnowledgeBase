@@ -1,7 +1,8 @@
 ---
 title: IndexedDB
-date: 2024-03-25 09:31
-updated: 2024-03-25 09:31
+date: 2024-03-25T09:31:00+08:00
+updated: 2024-08-21T10:32:34+08:00
+dg-publish: false
 ---
 
 ## IndexedDB

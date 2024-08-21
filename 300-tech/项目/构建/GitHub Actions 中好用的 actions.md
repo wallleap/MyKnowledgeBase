@@ -1,23 +1,24 @@
 ---
 title: GitHub Actions 中好用的 actions
-date: 2023-07-25 15:17
-updated: 2023-07-25 15:18
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-07-25T03:17:00+08:00
+updated: 2024-08-21T10:32:45+08:00
+dg-publish: false
 aliases:
   - GitHub Actions 中好用的 actions
-rating: 1
-tags:
-  - blog
+author: Luwang
 category: 分类
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: #
+tags:
+  - blog
 url: //myblog.wallleap.cn/post/1
 ---
 

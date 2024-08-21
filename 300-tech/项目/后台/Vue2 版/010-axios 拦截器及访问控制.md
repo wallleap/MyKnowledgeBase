@@ -1,23 +1,24 @@
 ---
 title: 010-axios 拦截器及访问控制
-date: 2023-06-25 20:10
-updated: 2023-06-25 21:57
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-06-25T08:10:00+08:00
+updated: 2024-08-21T10:33:31+08:00
+dg-publish: false
 aliases:
   - 010-axios 请求拦截器
-rating: 1
-tags:
-  - 项目
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: #
+tags:
+  - 项目
 url: //myblog.wallleap.cn/post/1
 ---
 

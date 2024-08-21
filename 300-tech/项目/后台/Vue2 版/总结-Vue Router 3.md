@@ -1,23 +1,24 @@
 ---
 title: 总结-Vue Router 3
-date: 2023-07-20 19:40
-updated: 2023-07-21 00:02
-cover: //cdn.wallleap.cn/img/pic.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-07-20T07:40:00+08:00
+updated: 2024-08-21T10:33:32+08:00
+dg-publish: false
 aliases:
   - 总结-Vue Router 3
-rating: 10
-tags:
-  - 项目
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/pic.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 10
 source: #
+tags:
+  - 项目
 url: #
 ---
 

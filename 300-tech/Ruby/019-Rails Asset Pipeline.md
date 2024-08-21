@@ -1,7 +1,8 @@
 ---
 title: 019-Rails Asset Pipeline
-date: 2024-08-09 12:33
-updated: 2024-08-09 14:58
+date: 2024-08-09T12:33:00+08:00
+updated: 2024-08-21T10:32:31+08:00
+dg-publish: false
 ---
 
 Rails 管理和部署静态资源的一种方式

@@ -1,7 +1,8 @@
 ---
 title: release 后缀
-date: 2024-03-22 23:24
-updated: 2024-03-22 23:24
+date: 2024-03-22T11:24:00+08:00
+updated: 2024-08-21T10:32:06+08:00
+dg-publish: false
 ---
 
 - **darwin**, 可以理解成 MacOS

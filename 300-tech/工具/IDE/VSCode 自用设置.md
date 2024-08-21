@@ -1,22 +1,23 @@
 ---
 title: VSCode 自用设置
-date: 2022-11-15 14:54
-updated: 2023-09-06 10:16
-cover: //cdn.wallleap.cn/img/post/1.jpg
-author: Luwang
-comments: true
+date: 2022-11-15T02:54:00+08:00
+updated: 2024-08-21T10:32:39+08:00
+dg-publish: false
 aliases:
   - 文章别名
-rating: 10
-tags:
-  - blog
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 10
 source: null
+tags:
+  - blog
 url: null
 ---
 
@@ -261,7 +262,6 @@ Format Document ——> <kbd>Alt</kbd> + <kbd>F</kbd>
 为了统一团队的 vscode 配置，我们可以在项目的根目录下建立 `.vscode` 目录，在里面放置一些配置内容，比如：
 
 - `settings.json`：工作空间设置、代码格式化配置、插件配置。
-
 - `sftp.json`：ftp 文件传输的配置。
 
 `.vscode` 目录里的配置只针对当前项目范围内生效。将 `.vscode` 提交到代码仓库，大家统一配置时，会非常方便。

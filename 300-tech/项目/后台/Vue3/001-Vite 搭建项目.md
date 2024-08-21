@@ -1,24 +1,25 @@
 ---
 title: 001-Vite 搭建项目
-date: 2023-08-16 10:44
-updated: 2023-08-16 10:44
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-08-16T10:44:00+08:00
+updated: 2024-08-21T10:33:32+08:00
+dg-publish: false
 aliases:
   - 001-Vite 搭建项目
-rating: 1
-tags:
-  - Vue
-  - web
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: #
+tags:
+  - Vue
+  - web
 url: //myblog.wallleap.cn/post/1
 ---
 
@@ -32,4 +33,3 @@ Vite 是前端开发构建工具,  支持 TypeScript、JSX、CSS、热加载、�
 - 打包时使用 Rollup 打包
 
 ![](https://cdn.wallleap.cn/img/pic/illustration/202308162137759.png)
-

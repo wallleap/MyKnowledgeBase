@@ -1,36 +1,37 @@
 ---
 title: vant4 源码
-date: 2022-11-15 13:52
-updated: 2022-11-15 14:18
-cover: //cdn.wallleap.cn/img/post/1.jpg
-author: Luwang
-comments: true
+date: 2022-11-15T01:52:00+08:00
+updated: 2024-08-21T10:32:34+08:00
+dg-publish: false
 aliases:
   - 分析 vant4 源码，如何用 vue3 + ts 开发一个瀑布流滚动加载的列表组件？
-rating: 10
-tags:
-  - 源码
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 10
 source: //juejin.cn/post/7165661072785932296
+tags:
+  - 源码
 url: null
 ---
 
-本文为稀土掘金技术社区首发签约文章，14天内禁止转载，14天后未获授权禁止转载，侵权必究！
+本文为稀土掘金技术社区首发签约文章，14 天内禁止转载，14 天后未获授权禁止转载，侵权必究！
 
 ## 1. 前言
 
-大家好，我是[若川](https://link.juejin.cn/?target=https%3A%2F%2Flxchuan12.gitee.io "https://lxchuan12.gitee.io")。我倾力持续组织了一年[每周大家一起学习200行左右的源码共读活动](https://juejin.cn/post/7079706017579139102 "https://juejin.cn/post/7079706017579139102")，感兴趣的可以[点此扫码加我微信 `ruochuan12` 参与](https://juejin.cn/pin/7005372623400435725 "https://juejin.cn/pin/7005372623400435725")。另外，想学源码，极力推荐关注我写的专栏[《学习源码整体架构系列》](https://juejin.cn/column/6960551178908205093 "https://juejin.cn/column/6960551178908205093")，目前是掘金关注人数（4.1k+人）第一的专栏，写有20余篇源码文章。
+大家好，我是 [若川](https://link.juejin.cn/?target=https%3A%2F%2Flxchuan12.gitee.io "https://lxchuan12.gitee.io")。我倾力持续组织了一年 [每周大家一起学习200行左右的源码共读活动](https://juejin.cn/post/7079706017579139102 "https://juejin.cn/post/7079706017579139102")，感兴趣的可以 [点此扫码加我微信 `ruochuan12` 参与](https://juejin.cn/pin/7005372623400435725 "https://juejin.cn/pin/7005372623400435725")。另外，想学源码，极力推荐关注我写的专栏 [《学习源码整体架构系列》](https://juejin.cn/column/6960551178908205093 "https://juejin.cn/column/6960551178908205093")，目前是掘金关注人数（4.1k+ 人）第一的专栏，写有 20 余篇源码文章。
 
 我们开发业务时经常会使用到组件库，一般来说，很多时候我们不需要关心内部实现。但是如果希望学习和深究里面的原理，这时我们可以分析自己使用的组件库实现。有哪些优雅实现、最佳实践、前沿技术等都可以值得我们借鉴。
 
 相比于原生 `JS` 等源码。我们或许更应该学习，正在使用的组件库的源码，因为有助于帮助我们写业务和写自己的组件。
 
-如果是 `Vue` 技术栈，开发移动端的项目，大多会选用 `vant` 组件库，目前（2022-11-13） `star` 多达 `20.4k`。我们可以挑选 `vant` 组件库学习，我会写一个[组件库源码系列专栏](https://juejin.cn/column/7140264842954276871 "https://juejin.cn/column/7140264842954276871")，欢迎大家关注。
+如果是 `Vue` 技术栈，开发移动端的项目，大多会选用 `vant` 组件库，目前（2022-11-13） `star` 多达 `20.4k`。我们可以挑选 `vant` 组件库学习，我会写一个 [组件库源码系列专栏](https://juejin.cn/column/7140264842954276871 "https://juejin.cn/column/7140264842954276871")，欢迎大家关注。
 
 - [vant 4 即将正式发布，支持暗黑主题，那么是如何实现的呢](https://juejin.cn/post/7158239404484460574 "https://juejin.cn/post/7158239404484460574")
 - [跟着 vant4 源码学习如何用 vue3+ts 开发一个 loading 组件，仅88行代码](https://juejin.cn/post/7160465286036979748 "https://juejin.cn/post/7160465286036979748")
@@ -87,11 +88,11 @@ pnpm dev
 - 如何计算滚动到了底部
 - 如何触发事件加载更多
 
-带着问题我们直接找到 list demo 文件：`vant/packages/vant/src/list/demo/index.vue`。为什么是这个文件，我在上篇文章[跟着 vant4 源码学习如何用 vue3+ts 开发一个 loading 组件，仅88行代码](https://juejin.cn/post/7160465286036979748#heading-3 "https://juejin.cn/post/7160465286036979748#heading-3")分析了其原理，感兴趣的小伙伴点击查看。这里就不赘述了。
+带着问题我们直接找到 list demo 文件：`vant/packages/vant/src/list/demo/index.vue`。为什么是这个文件，我在上篇文章 [跟着 vant4 源码学习如何用 vue3+ts 开发一个 loading 组件，仅88行代码](https://juejin.cn/post/7160465286036979748#heading-3 "https://juejin.cn/post/7160465286036979748#heading-3") 分析了其原理，感兴趣的小伙伴点击查看。这里就不赘述了。
 
 ### 3.1 利用 demo 调试
 
-组件源码中的 `TS` 代码我不会过多解释。没学过 `TS` 的小伙伴，推荐学这个[TypeScript 入门教程](https://link.juejin.cn/?target=http%3A%2F%2Fts.xcatliu.com%2F "http://ts.xcatliu.com/")。 另外，`vant` 使用了 [@vue/babel-plugin-jsx](https://link.juejin.cn/?target=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40vue%2Fbabel-plugin-jsx "https://www.npmjs.com/package/@vue/babel-plugin-jsx") 插件来支持 `JSX、TSX`。
+组件源码中的 `TS` 代码我不会过多解释。没学过 `TS` 的小伙伴，推荐学这个 [TypeScript 入门教程](https://link.juejin.cn/?target=http%3A%2F%2Fts.xcatliu.com%2F "http://ts.xcatliu.com/")。 另外，`vant` 使用了 [@vue/babel-plugin-jsx](https://link.juejin.cn/?target=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2F%40vue%2Fbabel-plugin-jsx "https://www.npmjs.com/package/@vue/babel-plugin-jsx") 插件来支持 `JSX、TSX`。
 
 ```
 // vant/packages/vant/src/list/demo/index.vue
@@ -194,7 +195,7 @@ declare module 'vue' {
 }
 ```
 
-`withInstall` 函数在上篇文章[5.1 withInstall 给组件对象添加 install 方法](https://juejin.cn/post/7160465286036979748#heading-10 "https://juejin.cn/post/7160465286036979748#heading-10") 也有分析，这里就不赘述了。
+`withInstall` 函数在上篇文章 [5.1 withInstall 给组件对象添加 install 方法](https://juejin.cn/post/7160465286036979748#heading-10 "https://juejin.cn/post/7160465286036979748#heading-10") 也有分析，这里就不赘述了。
 
 我们可以在这些文件，任意位置加上 `debugger` 调试源码。
 
@@ -356,7 +357,7 @@ export function useExpose<T = Record<string, any>>(apis: T) {
 }
 ```
 
-通过 `ref` 可以获取到 `List` 实例并调用实例方法，详见[组件实例方法](https://link.juejin.cn/?target=https%3A%2F%2Fvant-contrib.gitee.io%2Fvant%2Fv4%2F%23%2Fzh-CN%2Fadvanced-usage%23zu-jian-shi-li-fang-fa "https://vant-contrib.gitee.io/vant/v4/#/zh-CN/advanced-usage#zu-jian-shi-li-fang-fa")。
+通过 `ref` 可以获取到 `List` 实例并调用实例方法，详见 [组件实例方法](https://link.juejin.cn/?target=https%3A%2F%2Fvant-contrib.gitee.io%2Fvant%2Fv4%2F%23%2Fzh-CN%2Fadvanced-usage%23zu-jian-shi-li-fang-fa "https://vant-contrib.gitee.io/vant/v4/#/zh-CN/advanced-usage#zu-jian-shi-li-fang-fa")。
 
 > `Vant` 中的许多组件提供了实例方法，调用实例方法时，我们需要通过 `ref` 来注册组件引用信息，引用信息将会注册在父组件的 `$refs` 对象上。注册完成后，我们可以通过 `this.$refs.xxx` 访问到对应的组件实例，并调用上面的实例方法。
 
@@ -766,8 +767,8 @@ emit('load');
 
 ## 9. 加源码共读群交流
 
-最后可以持续关注我[@若川](https://juejin.cn/user/1415826704971918 "https://juejin.cn/user/1415826704971918")。我会写一个[组件库源码系列专栏](https://juejin.cn/column/7140264842954276871 "https://juejin.cn/column/7140264842954276871")，欢迎大家关注。
+最后可以持续关注我 [@若川](https://juejin.cn/user/1415826704971918 "https://juejin.cn/user/1415826704971918")。我会写一个 [组件库源码系列专栏](https://juejin.cn/column/7140264842954276871 "https://juejin.cn/column/7140264842954276871")，欢迎大家关注。
 
-我倾力持续组织了一年[每周大家一起学习200行左右的源码共读活动](https://juejin.cn/post/7079706017579139102 "https://juejin.cn/post/7079706017579139102")，感兴趣的可以[点此扫码加我微信 `ruochuan12` 参与](https://juejin.cn/pin/7005372623400435725 "https://juejin.cn/pin/7005372623400435725")。
+我倾力持续组织了一年 [每周大家一起学习200行左右的源码共读活动](https://juejin.cn/post/7079706017579139102 "https://juejin.cn/post/7079706017579139102")，感兴趣的可以 [点此扫码加我微信 `ruochuan12` 参与](https://juejin.cn/pin/7005372623400435725 "https://juejin.cn/pin/7005372623400435725")。
 
-另外，想学源码，极力推荐关注我写的专栏[《学习源码整体架构系列》](https://juejin.cn/column/6960551178908205093 "https://juejin.cn/column/6960551178908205093")，目前是掘金关注人数（4.1k+人）第一的专栏，写有20余篇源码文章。
+另外，想学源码，极力推荐关注我写的专栏 [《学习源码整体架构系列》](https://juejin.cn/column/6960551178908205093 "https://juejin.cn/column/6960551178908205093")，目前是掘金关注人数（4.1k+ 人）第一的专栏，写有 20 余篇源码文章。

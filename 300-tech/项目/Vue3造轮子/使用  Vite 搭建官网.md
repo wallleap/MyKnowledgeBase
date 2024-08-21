@@ -1,24 +1,25 @@
 ---
 title: 使用  Vite 搭建官网
-date: 2023-08-17 13:54
-updated: 2023-08-17 13:54
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-08-17T01:54:00+08:00
+updated: 2024-08-21T10:32:43+08:00
+dg-publish: false
 aliases:
   - 使用  Vite 搭建官网
-rating: 1
-tags:
-  - Vue
-  - web
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: #
+tags:
+  - Vue
+  - web
 url: //myblog.wallleap.cn/post/1
 ---
 
@@ -202,7 +203,7 @@ const router = createRouter()
 
 在引入的时候输入 `his` 提示三个分别是
 
-- `createMemoryHistory` 内存型路由 
+- `createMemoryHistory` 内存型路由
 - `createWebHashHistory` Hash 型路由
 - `createWebHistory` History 型路由
 

@@ -1,7 +1,8 @@
 ---
 title: 015-Rails Controller
-date: 2024-08-07 12:09
-updated: 2024-08-07 12:31
+date: 2024-08-07T12:09:00+08:00
+updated: 2024-08-21T10:32:31+08:00
+dg-publish: false
 ---
 
 ## Controller
@@ -106,9 +107,7 @@ class UsersController < ApplicationController
 end
 ```
 
-
 ## 异常处理
-
 
 日志
 
@@ -245,4 +244,3 @@ end
   <li class="nav-item"><%= link_to "登录", new_session_path, class: "nav-link" %></li>
 <% end -%>
 ```
-

@@ -1,3 +1,9 @@
+---
+title: 除了 Markdown 编辑器，你还需要会用程序来处理它
+date: 2023-05-03T10:07:07+08:00
+updated: 2024-08-21T10:32:45+08:00
+dg-publish: false
+---
 
 随着 wordpress 和静态网站的流行，markdown 被用的越来越多。我们已经介绍过很多 Markdown 编辑器，但是有时候你也需要用程序来处理 Markdown 文本。
 
@@ -23,7 +29,7 @@ image: /img/pencils-762555_640.jpg
 
 ### **[marked](https://github.com/chjj/marked)**
 
-`marked` 是最早用 `node.js `开发的 `markdown` 解析器，同时提供 `CLI` 命令调用和 `node.js API` 调用。
+`marked` 是最早用 `node.js ` 开发的 `markdown` 解析器，同时提供 `CLI` 命令调用和 `node.js API` 调用。
 
 `CLI` 调用代码示例
 
@@ -57,7 +63,7 @@ marked.setOptions({
 });
 ```
 
-生成的代码已经包含代码高亮标签，最后只需要引入 `highlight.js` 的主题就能显示了，`highlight.js` 所有的颜色主题都在[这里](https://github.com/isagalaev/highlight.js/tree/master/src/styles)
+生成的代码已经包含代码高亮标签，最后只需要引入 `highlight.js` 的主题就能显示了，`highlight.js` 所有的颜色主题都在 [这里](https://github.com/isagalaev/highlight.js/tree/master/src/styles)
 
 ### **[markdown-js](https://github.com/evilstreak/markdown-js)**
 
@@ -112,7 +118,7 @@ heckyesmarkdow 对中文的支持不是非常友好，如果想抓取中文站�
 
 ### **[front-matter](https://github.com/jxson/front-matter)**
 
-`front-matter` 也是用 `node.js `开发的，相比 `markdown` 解析器来说，`fornt-matter` 解析器要简单很多。
+`front-matter` 也是用 `node.js ` 开发的，相比 `markdown` 解析器来说，`fornt-matter` 解析器要简单很多。
 
 示例文件 `example.md`
 

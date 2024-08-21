@@ -1,16 +1,28 @@
+---
+title: 2-部署到 GitHub
+date: 2023-05-03T10:07:07+08:00
+updated: 2024-08-21T10:33:32+08:00
+dg-publish: false
+---
+
 本地运行命令
+
 ```zsh
 npm run build
 ```
 
-/dist 文件夹中修改下 index.html，将用到的路径都改成仓库名+原地址
+/dist 文件夹中修改下 index.html，将用到的路径都改成仓库名 + 原地址
+
 ```html
 <script scr="repo/……"></script>
 ```
 
 之后我们只要把 dist 目录上传到 GitHub 即可
+
 来到 GitHub，新建一个仓库 `save-money`
+
 本地创建 ssh-key，添加到 GitHub
+
 ```zsh
 cd dist # dist 目录
 git init
@@ -26,17 +38,20 @@ git push -f origin master:master # 自己分支
 如果不想手动加 repo，可以去 vite 官网搜索 `publish base path`
 
 运行命令
+
 ```zsh
 cd .. # 项目目录
 npm run build --  --base=repo-name # 不要忘记 --
 ```
 
 或者在 package.json 中修改，如果修改了仓库名，记得把 repo-name 修改为新的
+
 ```zsh
 "build": "tsc && vite build --base=repo-name"
 ```
 
 新建 /bin/deploy_to_github.sh 输入如下内容
+
 ```zsh
 #!/usr/bin/env bash
 rm -rf dist
@@ -51,16 +66,19 @@ cd .. # 或者 cd -
 ```
 
 下次就可以直接运行
+
 ```zsh
 sh ./bin/deploy_to_github.sh
 ```
 
 给这个文件权限
+
 ```zsh
 chmod +x bin/deploy_to_github.sh
 ```
 
 就可以不需要用 sh
+
 ```zsh
 bin/deploy_to_github.sh
 ```

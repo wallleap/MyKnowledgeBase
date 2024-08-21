@@ -1,23 +1,24 @@
 ---
 title: 网易CC直播-全新品牌UI升级
-date: 2023-10-12 11:19
-updated: 2023-10-12 11:26
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-10-12T11:19:00+08:00
+updated: 2024-08-21T10:33:59+08:00
+dg-publish: false
 aliases:
   - 网易CC直播-全新品牌UI升级
-rating: 1
-tags:
-  - design
+author: Luwang
 category: design
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: https://mp.weixin.qq.com/s?src=11&timestamp=1697080775&ver=4829&signature=kjCyj85PQkc9ULp0pcl4ZUHmidnrVimMZognp3J5GkLe-vphvQDvtfvaVOFFgKSV-GqBrqhZZlXQV6FhrTAVgDQyIbiblxbS0VvtTJFe3eSNqErtaEUH3ps96JGWZld6&new=1
+tags:
+  - design
 url: //myblog.wallleap.cn/post/1
 ---
 

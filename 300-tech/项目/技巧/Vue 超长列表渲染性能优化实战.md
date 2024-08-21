@@ -1,24 +1,25 @@
 ---
 title: Vue 超长列表渲染性能优化实战
-date: 2023-08-04 18:01
-updated: 2023-08-04 18:02
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-08-04T06:01:00+08:00
+updated: 2024-08-21T10:32:43+08:00
+dg-publish: false
 aliases:
   - Vue 超长列表渲染性能优化实战
-rating: 1
-tags:
-  - Vue
-  - web
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: #
+tags:
+  - Vue
+  - web
 url: //myblog.wallleap.cn/post/1
 ---
 

@@ -1,24 +1,25 @@
 ---
 title: 面向未来的前端构建工具-Vite
-date: 2023-08-04 11:18
-updated: 2023-08-04 11:21
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-08-04T11:18:00+08:00
+updated: 2024-08-21T10:32:46+08:00
+dg-publish: false
 aliases:
   - 面向未来的前端构建工具-Vite
-rating: 1
-tags:
-  - Vite
-  - web
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: #
+tags:
+  - Vite
+  - web
 url: //myblog.wallleap.cn/post/1
 ---
 

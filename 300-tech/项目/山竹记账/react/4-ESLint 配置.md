@@ -1,13 +1,23 @@
+---
+title: 4-ESLint 配置
+date: 2023-05-03T10:07:07+08:00
+updated: 2024-08-21T10:33:32+08:00
+dg-publish: false
+---
+
 可以直接使用 antfu 的 eslint -config
+
 地址：<https://github.com/antfu/eslint-config>
 
 项目中安装
+
 ```zsh
 # 局部安装
 npm install -D eslint @antfu/eslint-config
 ```
 
 添加配置文件 `.eslintrc`，输入一下内容，保存
+
 ```json
 {
   "extends": "@antfu"
@@ -15,6 +25,7 @@ npm install -D eslint @antfu/eslint-config
 ```
 
 配置 VSCode 自动修复
+
 创建文件 `.vscode/settings.json`
 
 ```json
@@ -40,7 +51,9 @@ window.console.log(a)
 ```
 
 浮上去，然后选择这行/这个文件不使用 ESLint
+
 需要关闭可以到配置文件中加上，其他不需要的也像这样加到这里设置为 `off`
+
 ```
 {
 	"extends": "@antfu",
@@ -51,7 +64,9 @@ window.console.log(a)
 ```
 
 如果没有安装插件，需要命令行使用和修复
+
 `package.json` 中加入
+
 ```json
 {
   "scripts": {
@@ -62,6 +77,7 @@ window.console.log(a)
 ```
 
 在终端执行
+
 ```zsh
 npm run lint
 npm run lint:fix

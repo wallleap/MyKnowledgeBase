@@ -1,23 +1,24 @@
 ---
 title: 排版 PPT 时，我基本离不开这个思路
-date: 2023-08-03 17:13
-updated: 2023-08-03 17:24
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-08-03T05:13:00+08:00
+updated: 2024-08-21T10:34:16+08:00
+dg-publish: false
 aliases:
   - 排版 PPT 时，我基本离不开这个思路
-rating: 1
-tags:
-  - PPT
+author: Luwang
 category: PPT
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: #
+tags:
+  - PPT
 url: //myblog.wallleap.cn/post/1
 ---
 

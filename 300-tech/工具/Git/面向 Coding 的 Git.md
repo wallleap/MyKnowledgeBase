@@ -1,24 +1,25 @@
 ---
 title: 面向 Coding 的 Git
-date: 2023-02-27 10:31
-updated: 2023-02-27 11:14
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-02-27T10:31:00+08:00
+updated: 2024-08-21T10:32:06+08:00
+dg-publish: false
 aliases:
   - 面向 Coding 的 Git
-rating: 1
-tags:
-  - tool
-  - Git
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: null
+tags:
+  - tool
+  - Git
 url: //myblog.wallleap.cn/post/1
 ---
 
@@ -161,6 +162,7 @@ git commit --amend
 ```
 
 [![image-20220305222413228](https://cdn.wallleap.cn/img/pic/illustration/202302271031144.png)](https://file.acs.pw/picGo/2022/03/05/20220305222413.png)
+
 **修改老旧 commit**
 
 > 修改老旧 commit 的 message, 需要使用其上一个 commitId。
@@ -410,4 +412,3 @@ git stash list
 ## 常用命令脑图
 
 ![](https://cdn.wallleap.cn/img/pic/illustration/202302271134599.svg)
-

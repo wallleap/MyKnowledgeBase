@@ -1,35 +1,36 @@
 ---
 title: vite3+vue3+ts+pinia + Naive UI 项目实战 —— 国际化配置
-date: 2023-08-04 18:03
-updated: 2023-08-04 18:03
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-08-04T06:03:00+08:00
+updated: 2024-08-21T10:32:44+08:00
+dg-publish: false
 aliases:
   - vite3+vue3+ts+pinia + Naive UI 项目实战 —— 国际化配置
-rating: 1
-tags:
-  - Vue
-  - web
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: #
+tags:
+  - Vue
+  - web
 url: //myblog.wallleap.cn/post/1
 ---
 
-_**本文正在参加[「金石计划 . 瓜分6万现金大奖」](https://juejin.cn/post/7162096952883019783 "https://juejin.cn/post/7162096952883019783")**_
+***本文正在参加 [「金石计划 . 瓜分6万现金大奖」](https://juejin.cn/post/7162096952883019783 "https://juejin.cn/post/7162096952883019783")***
 
 > 接上篇 [《项目创建与初始配置》](https://juejin.cn/post/7171841238948118536 "https://juejin.cn/post/7171841238948118536") 继续搭建我们的后台项目。
 
 因为项目是给设在新加坡、马来西亚的海外自提站使用的后台，所以国际化的配置必不可少。需要切换语言的内容主要分为两部分：
 
-1.  我们自己添加的文案内容，需要用到 vue-i18n-next；
-2.  naive ui 的组件，可以使用 `n-config-provider` 配置。
+1. 我们自己添加的文案内容，需要用到 vue-i18n-next；
+2. naive ui 的组件，可以使用 `n-config-provider` 配置。
 
 ## vue-i18n-next
 
@@ -65,11 +66,11 @@ export default i18n
 
 下面对传入 `createI18n()` 的配置对象做些说明：
 
--   **legacy**：默认为 `true`，但如果使用的是 Composition API 则需要定义为 `false`，否则会报类似下面的错误：
+- **legacy**：默认为 `true`，但如果使用的是 Composition API 则需要定义为 `false`，否则会报类似下面的错误：
 
 ![](https://cdn.wallleap.cn/img/pic/illustration/202308041803073.png)
 
--   **locale**：当前要展示的语言。值为之前用户的语言选择，从浏览器缓存中读取。如果缓存中没有数据，则通过 `navigator.language` 获取浏览器使用的语言：
+- **locale**：当前要展示的语言。值为之前用户的语言选择，从浏览器缓存中读取。如果缓存中没有数据，则通过 `navigator.language` 获取浏览器使用的语言：
 
 ```
 // src\lang\index.ts
@@ -100,7 +101,7 @@ export enum LANG_VALUE {
 }
 ```
 
--   **messages**：不同语言对应的翻译文件：
+- **messages**：不同语言对应的翻译文件：
 
 中文翻译包：
 
@@ -134,7 +135,7 @@ app.use(i18n)
 
 ### vue 文件
 
--   **在 `<script lang="ts" setup>` 中使用**
+- **在 `<script lang="ts" setup>` 中使用**
 
 下面以侧边导航菜单中，对每条导航的名称的配置为例。从 vue-i18n 中导入 `useI18n`，然后进行调用生成 `i18n` 实例，再从里面解构得到 `t` 方法，在第 6 行进行使用 —— `t(route.meta.title)`，`route.meta.title` 是我在路由里配置的内容，其值就是在语言翻译文件中定义的那些 key，比如 `'baoguochuku'` 等：
 
@@ -152,7 +153,7 @@ const menuOptions: MenuOption[] = modulesRoutes.map(route => ({
 
 这里注意下 label 的值得写成 getter 的形式，如果是写成 `label: t(route.meta.title)` 这样直接赋值，则切换语言时是没有效果的。
 
--   **在 `<template>` 中使用**
+- **在 `<template>` 中使用**
 
 使用方法与之前在 vue2 中一样：
 
@@ -195,7 +196,7 @@ if (!axios.isCancel(error)) {
 
 ## naive ui 组件
 
-对于 naive ui 的组件，默认情况下均为英语，如果想改为中文，需要在根组件 src\\App.vue 中使用 n-config-provider 对语言进行配置，将用于设置全局语言的 `locale` 设为从 naive ui 导入的`zhCN` ，设置全局日期语言的 `date-locale` 为从 naive ui 导入的 `dateZhCN`：
+对于 naive ui 的组件，默认情况下均为英语，如果想改为中文，需要在根组件 src\\App.vue 中使用 n-config-provider 对语言进行配置，将用于设置全局语言的 `locale` 设为从 naive ui 导入的 `zhCN` ，设置全局日期语言的 `date-locale` 为从 naive ui 导入的 `dateZhCN`：
 
 ```
 <!-- src\App.vue -->
@@ -417,4 +418,3 @@ export default defineConfig({
 ## 效果
 
 至此，本项目的国际化配置就完成了。最后来看一下效果（目前只做了部分文案的初步翻译）
-

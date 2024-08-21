@@ -1,23 +1,24 @@
 ---
 title: vant 4 即将正式发布，支持暗黑主题，那么是如何实现的呢
-date: 2023-08-04 09:33
-updated: 2023-08-04 09:42
-cover: //cdn.wallleap.cn/img/post/1.jpg
-image-auto-upload: true
-author: Luwang
-comments: true
+date: 2023-08-04T09:33:00+08:00
+updated: 2024-08-21T10:32:34+08:00
+dg-publish: false
 aliases:
   - vant 4 即将正式发布，支持暗黑主题，那么是如何实现的呢
-rating: 1
-tags:
-  - web
+author: Luwang
 category: web
+comments: true
+cover: //cdn.wallleap.cn/img/post/1.jpg
+description: 文章描述
+image-auto-upload: true
 keywords:
   - 关键词1
   - 关键词2
   - 关键词3
-description: 文章描述
+rating: 1
 source: //juejin.cn/post/7158239404484460574
+tags:
+  - web
 url: //myblog.wallleap.cn/post/1
 ---
 

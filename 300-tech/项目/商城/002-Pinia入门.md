@@ -1,7 +1,8 @@
 ---
-title: 2. Pinia入门
-date: 2024-03-19 10:36
-updated: 2024-03-19 11:12
+title: 002-Pinia入门
+date: 2024-03-19T10:36:00+08:00
+updated: 2024-08-21T10:32:43+08:00
+dg-publish: false
 ---
 
 Pinia 是 Vue 的专属状态管理库，可以实现跨组件或页面共享状态，是 vuex 状态管理工具的替代品，和 Vuex 相比，具备以下优势

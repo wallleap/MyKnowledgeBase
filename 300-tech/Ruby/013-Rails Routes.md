@@ -1,7 +1,8 @@
 ---
 title: 013-Rails Routes
-date: 2024-08-06 16:13
-updated: 2024-08-06 18:14
+date: 2024-08-06T04:13:00+08:00
+updated: 2024-08-21T10:32:31+08:00
+dg-publish: false
 ---
 
 ## Routes

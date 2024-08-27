@@ -1,7 +1,7 @@
 ---
-title: vue 双向数据绑定原理
+title: Vue 双向数据绑定原理
 date: 2023-08-04T05:54:00+08:00
-updated: 2024-08-21T10:33:31+08:00
+updated: 2024-08-22T02:18:43+08:00
 dg-publish: false
 aliases:
   - vue 双向数据绑定原理

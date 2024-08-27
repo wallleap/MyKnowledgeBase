@@ -10,15 +10,11 @@ dg-publish: false
 1. **创建 `.gitignore` 文件：** 如果还没有 `.gitignore` 文件，可以在项目的根目录创建一个。这个文件用来列出你希望 Git 忽略的文件或目录。
 2. **添加需要忽略的文件：** 在 `.gitignore` 文件中添加你想要排除的文件或目录。例如，如果你想忽略名为 `file.txt` 的文件，只需在 `.gitignore` 中添加一行：
 
-		Copy Code
-		
-		`file.txt`
-		
-3. **更新索引并提交 `.gitignore` 文件：** 执行以下命令更新 Git 索引并提交 `.gitignore` 文件，确保忽略的文件不再被跟踪：
+`file.txt`
 
-		bashCopy Code
-		
-		`git rm --cached file.txt git commit -m "Add file.txt to .gitignore and untrack it"`
+1. **更新索引并提交 `.gitignore` 文件：** 执行以下命令更新 Git 索引并提交 `.gitignore` 文件，确保忽略的文件不再被跟踪：
+
+`git rm --cached file.txt git commit -m "Add file.txt to .gitignore and untrack it"`
 
 ## 方法二：使用 `git update-index`
 
@@ -26,14 +22,10 @@ dg-publish: false
 
 1. **停止跟踪文件：** 使用以下命令停止跟踪已经提交的文件，但保留在工作目录中：
 
-		bashCopy Code
-		
-		`git rm --cached file.txt`
-		
-2. **更新索引并提交：** 更新 Git 索引以停止跟踪该文件，并提交更改：
+  `git rm --cached file.txt`
+  
+1. **更新索引并提交：** 更新 Git 索引以停止跟踪该文件，并提交更改：
 
-		bashCopy Code
-		
-		`git commit -m "Stop tracking file.txt"`
+  `git commit -m "Stop tracking file.txt"`
 
 这两种方法都能够有效地排除已经提交到 Git 的文件，具体选择取决于你是希望排除单个文件还是一组文件。

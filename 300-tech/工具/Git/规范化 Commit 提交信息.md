@@ -1,7 +1,7 @@
 ---
 title: 规范化 Commit 提交信息
 date: 2022-11-11T04:50:00+08:00
-updated: 2024-08-21T10:32:06+08:00
+updated: 2024-08-22T03:56:45+08:00
 dg-publish: false
 aliases:
   - 文章别名
@@ -110,6 +110,8 @@ git commit -m ":tada: Initial commit"
 ```
 <emoji 代码><type>(<scope>): <subject>
 ```
+
+[angular/CONTRIBUTING.md at main · angular/angular (github.com)](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#commit)
 
 ### 参数说明——`<type>`
 

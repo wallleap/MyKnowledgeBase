@@ -97,7 +97,7 @@
 	- [036-Vue 起手式](036-Vue%20起手式.md)
 	- [037-Vue 的构造选项](037-Vue%20的构造选项.md)
 - 工具
-	- [Git 常用操作](Git%20常用操作.md)
+	- [001-Git 常用操作](001-Git%20常用操作.md)
 	- [规范化 Commit 提交信息](规范化%20Commit%20提交信息.md)
 	- [如何规范你的 Git commit？](如何规范你的%20Git%20commit？.md)
 	- [面向 Coding 的 Git](面向%20Coding%20的%20Git.md)

@@ -1,7 +1,7 @@
 ---
 title: VSCode 自用设置
 date: 2022-11-15T02:54:00+08:00
-updated: 2024-08-21T10:32:39+08:00
+updated: 2024-08-21T11:19:55+08:00
 dg-publish: false
 aliases:
   - 文章别名

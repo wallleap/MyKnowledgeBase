@@ -266,6 +266,8 @@ remotePort = 6000
 
 ```sh
 ssh -o Port=6000 test@x.x.x.x
+# 或
+ssh -p 6000 test@x.x.x.x
 ```
 
 frp 将请求发送到 `x.x.x.x:6000` 的流量转发到内网机器的 22 端口。

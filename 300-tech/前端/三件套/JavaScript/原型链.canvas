@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"dc5fc5a38792807f","type":"text","text":"function User() {}\n\nnew Function() Function 的实例","x":-125,"y":-45,"width":365,"height":90,"color":"1"},
+		{"id":"3068d237f0a89c6a","type":"text","text":"所有的原型都是 Object 除了 Object 原型的原型\n\nObject 原型的原型是 null\n\nObject 是函数，是函数就是 new Function 即实例，所以 Object 的隐式原型就指向 Function 原型\n\nFunction 本身是函数，隐形原型指向 Function 原型","x":-375,"y":-1280,"width":1103,"height":318},
+		{"id":"74afb3fe2ef82ba6","type":"text","text":"User 原型\n\nUser.prototype = new Object()","x":-852,"y":-37,"width":330,"height":75,"color":"6"},
+		{"id":"c9c4b9a78c4225aa","type":"text","text":"Object 的原型","x":-812,"y":-692,"width":250,"height":60,"color":"6"},
+		{"id":"506f76cdeb165e5a","type":"text","text":"new User() User 的实例","x":-880,"y":328,"width":387,"height":80,"color":"4"},
+		{"id":"aad9e968b3a959a2","type":"text","text":"null","x":-812,"y":-962,"width":250,"height":64},
+		{"id":"0c107625c3e4a65a","type":"text","text":"Function","x":603,"y":-30,"width":250,"height":60,"color":"1"},
+		{"id":"a955fb67883908ea","type":"text","text":"Function 原型\n\nFunction.prototype = new Object()","x":520,"y":-320,"width":417,"height":80,"color":"6"},
+		{"id":"6b9e1c4ad1c16c9a","type":"text","text":"Object","x":177,"y":-692,"width":365,"height":60,"color":"1"}
+	],
+	"edges":[
+		{"id":"4de4c9fea673996b","fromNode":"dc5fc5a38792807f","fromSide":"left","toNode":"74afb3fe2ef82ba6","toSide":"right","color":"6","label":"User.prototype"},
+		{"id":"68cab9fc410e3e7a","fromNode":"dc5fc5a38792807f","fromSide":"bottom","toNode":"506f76cdeb165e5a","toSide":"top","color":"4"},
+		{"id":"c095e891e78ef24f","fromNode":"506f76cdeb165e5a","fromSide":"top","toNode":"74afb3fe2ef82ba6","toSide":"bottom","label":"隐式原型\n__proto__"},
+		{"id":"604534572ec9b780","fromNode":"0c107625c3e4a65a","fromSide":"left","toNode":"dc5fc5a38792807f","toSide":"right","color":"4"},
+		{"id":"55f09263eb06b64d","fromNode":"0c107625c3e4a65a","fromSide":"top","toNode":"a955fb67883908ea","toSide":"bottom","color":"6","label":"Function.prototype"},
+		{"id":"c321b28406dfd247","fromNode":"dc5fc5a38792807f","fromSide":"top","toNode":"a955fb67883908ea","toSide":"left","label":"隐式原型"},
+		{"id":"1afde21838e6f76d","fromNode":"6b9e1c4ad1c16c9a","fromSide":"left","toNode":"74afb3fe2ef82ba6","toSide":"top","color":"4"},
+		{"id":"489861a35fa651ed","fromNode":"74afb3fe2ef82ba6","fromSide":"top","toNode":"c9c4b9a78c4225aa","toSide":"bottom","label":"隐式原型"},
+		{"id":"aa441a6fe2354d62","fromNode":"6b9e1c4ad1c16c9a","fromSide":"left","toNode":"c9c4b9a78c4225aa","toSide":"right","color":"6","label":"Object.prototype"},
+		{"id":"67afbecd83d3c490","fromNode":"6b9e1c4ad1c16c9a","fromSide":"bottom","toNode":"a955fb67883908ea","toSide":"top","color":"4"},
+		{"id":"749ab84ccba513f4","fromNode":"c9c4b9a78c4225aa","fromSide":"top","toNode":"aad9e968b3a959a2","toSide":"bottom"},
+		{"id":"71c4fba4f815afa0","fromNode":"a955fb67883908ea","fromSide":"left","toNode":"c9c4b9a78c4225aa","toSide":"right","label":"隐式原型"},
+		{"id":"c49c798b81e61168","fromNode":"6b9e1c4ad1c16c9a","fromSide":"right","toNode":"a955fb67883908ea","toSide":"top","label":"隐式原型"},
+		{"id":"fce964dc97383cc5","fromNode":"0c107625c3e4a65a","fromSide":"right","toNode":"a955fb67883908ea","toSide":"right","label":"隐式原型"}
+	]
+}

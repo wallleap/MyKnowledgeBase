@@ -1,11 +1,19 @@
 ---
 title: Git 杂记
 date: 2024-08-22T02:25:26+08:00
-updated: 2024-08-22T02:25:29+08:00
+updated: 2024-09-11T11:31:54+08:00
 dg-publish: false
 ---
 
-### commit 提交完怎么撤回
+## 修改 git 协议
+
+修改 Git 的协议（ssh 替换为 https）
+
+```sh
+git config --global url."https://github.com/".insteadOf "ssh://git@github.com/"
+```
+
+## commit 提交完怎么撤回
 
 ```
 git reset HEAD~1

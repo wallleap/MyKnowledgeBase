@@ -1,7 +1,7 @@
 ---
 title: macOS 安装 NVM
 date: 2023-01-29T02:20:00+08:00
-updated: 2024-08-21T10:32:30+08:00
+updated: 2024-09-24T06:33:22+08:00
 dg-publish: false
 aliases:
   - macOS 安装 NVM
@@ -23,6 +23,8 @@ url: //myblog.wallleap.cn/post/1
 ---
 
 NVM（Node Version Manager）是一个用于在基于 Linux 系统上安装和管理 Node.js 的 shell 脚本。macOS 用户可以使用 `homebrew` 来安装 NVM。 本教程帮助你在 macOS 系统上安装 NVM 并管理 Nodej.is 版本。
+
+[Volta - The Hassle-Free JavaScript Tool Manager](https://volta.sh/) 也可以用于管理 Node 版本
 
 > 前提条件 在 macOS 上使用安装 `homebrew`
 
@@ -108,6 +110,14 @@ nvm use 10
 ```
 
 同样地，你可以安装其他版本，如 Node 其他版本，并在它们之间进行切换。
+
+之后每个项目在新建的时候就应该新建文件 `.nvmrc`，写入使用的 node 版本
+
+```conf
+v12.22.12
+```
+
+进入项目之后直接 `nvm use` 就能使用这个版本的 node
 
 ## 结束
 

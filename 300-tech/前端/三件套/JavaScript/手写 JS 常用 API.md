@@ -86,6 +86,23 @@ Function.prototype.myCall = function(context = window, ...args) {
 }
 ```
 
+不使用 apply bind
+
+```js
+Function.prototype.myCall = function(ctx, ...args) {
+  ctx = (ctx === null || ctx === undefined) ? globalThis : Object(ctx)
+  const key = Symbol('temp)
+  Object.defineProperty(ctx, key, {
+    configurable: true,
+    enumerable: false,
+    value: this
+  })
+  const result = ctx[key](...args)
+  delete ctx[key]
+  return result
+}
+```
+
 ## 四、实现 Object.create 方法 (常用)
 
 ```js

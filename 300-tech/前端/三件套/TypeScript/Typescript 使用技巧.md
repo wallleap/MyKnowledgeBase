@@ -1,7 +1,7 @@
 ---
 title: Typescript 使用技巧
 date: 2024-08-22T02:34:21+08:00
-updated: 2024-08-22T02:35:35+08:00
+updated: 2024-10-14T03:14:26+08:00
 dg-publish: false
 ---
 
@@ -59,7 +59,7 @@ const AnimalMap: Record<AnimalType, AnimalDescription> = {
 const toArray = <T>(element: T) => [element]; // Error in .tsx file.
 ```
 
-TypeScript 泛型写法<T>在 React 中被误认为是 html 标签（类似<div>）
+TypeScript 泛型写法 `<T>` 在 React 中被误认为是 html 标签（类似 `<div>`）
 
 加 extends 可破
 
@@ -94,4 +94,51 @@ const toArray = <T extends {}>(element: T) => [element]; // No errors.
 
 ```
 someVar!.toString();
+```
+
+## typeof、keyof、InstanceType
+
+组件实例
+
+```ts
+const Foo = defineComponent()
+
+type FooInstance = InstanceType<typeof Foo>
+```
+
+例如
+
+```ts
+// useCompRef.ts
+import { ref } from 'vue'
+
+export function useCompRef<T extends abstract new (...args: any) => any>(
+  _comp: T  // 自行推导 typeof ElForm
+) {
+  return ref<InstanceType<T>>()
+}
+```
+
+使用
+
+```ts
+import { ElForm } from 'element-plus'
+import { useCompRef } from 'useCompRef'
+const formRef = useCompRef(ElForm)
+formRef.value?.validate
+```
+
+## 可以是任何类型但不能是 Date
+
+```ts
+function log<T>(x: T extends Date ? never : T) {
+  console.log(x)
+}
+
+type BanDate<T> = T extends Date ? never : T
+function log<T>(x: BanDate<T>) {}
+
+log(new Date())  // 不能传递日期
+
+type BanType<T, E> = T extends E ? never : T
 ```

@@ -1,7 +1,7 @@
 ---
 title: 常用 JS 代码
 date: 2023-08-01T02:52:00+08:00
-updated: 2024-08-21T10:32:36+08:00
+updated: 2024-09-24T02:39:18+08:00
 dg-publish: false
 aliases:
   - 常用 JS 代码

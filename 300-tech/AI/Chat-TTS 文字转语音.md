@@ -1,11 +1,13 @@
 ---
-title: Chat-TTS 文转音
+title: Chat-TTS 文字转语音
 date: 2024-08-26T10:27:04+08:00
-updated: 2024-08-26T10:37:14+08:00
+updated: 2024-08-30T03:43:07+08:00
 dg-publish: false
 ---
 
 [2noise/ChatTTS: A generative speech model for daily dialogue. (github.com)](https://github.com/2noise/ChatTTS)
+
+[Fish Audio: Free Generative AI Text To Speech & Voice Cloning](https://fish.audio/zh-CN/)
 
 项目地址：`https://github.com/Gouryella/ChatTTS-webui`，ChatTTS Webui 是基于 ChatTTS 的浏览器应用，把原来的应用，导入做为一个 `api`，用 `FsstAPI` 写了一个 `server.py` 的后端
 

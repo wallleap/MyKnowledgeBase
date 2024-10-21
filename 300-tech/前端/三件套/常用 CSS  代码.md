@@ -145,3 +145,30 @@ webkit-mask
 ```css
 -webkit-mask: linear-gradient(to bottom, transparent, #000);
 ```
+
+## Clip path
+
+```css
+clip-path: circle(0% at 50% 50%)
+```
+
+## shape-outside
+
+```css
+float: left;
+shape-outside: circle(0% at 50% 50%);
+```
+
+## 文字交融
+
+```css
+.parent {
+  filter: contrast(30);
+}
+.child {
+  /* 过渡下面两个属性的值 */
+  letter-spacing: -4em;
+  filter: blur(5px);
+}
+```
+

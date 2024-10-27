@@ -1,7 +1,7 @@
 ---
 title: Git 杂记
 date: 2024-08-22T02:25:26+08:00
-updated: 2024-09-11T11:31:54+08:00
+updated: 2024-10-21T03:09:12+08:00
 dg-publish: false
 ---
 
@@ -11,6 +11,14 @@ dg-publish: false
 
 ```sh
 git config --global url."https://github.com/".insteadOf "ssh://git@github.com/"
+```
+
+## 同一个分支别人先提交了
+
+不使用 pull，而是加上参数，这样就不是 merge，而是把自己的提交放到别人提交的后面
+
+```sh
+$ git pull --rebase
 ```
 
 ## commit 提交完怎么撤回

@@ -1,13 +1,20 @@
 ---
 title: 手写 Promise
 date: 2024-09-24T05:22:38+08:00
-updated: 2024-09-24T06:23:30+08:00
+updated: 2024-10-21T03:49:27+08:00
 dg-publish: false
 ---
+
+手写 Promise 参考资料：
+
+- Promise A+ 规范
+- MDN 查看 JS 中其他方法
 
 Promise A+ 规范，直接说了 promise 是一个对象或函数，拥有一个 `then` 方法
 
 最核心的构造函数和实例上的 `then` 方法
+
+## 构造函数
 
 ```js
 // 状态常量
@@ -16,11 +23,12 @@ const FULFILLED = 'fulfilled'
 const REJECTED = 'rejected'
 
 class MyPromise {
+  // 私有属性，外面不能用（_ 开头的是之前约定的私有变量）
   #state = PENDING
   #result = undefined
   #handlers = []
 
-  constructor(executor) {
+  constructor(executor) {  // 接收的是个函数 (resolve, reject) => {}
     // 两个属性，状态和结果，可以使用 ES6 的私有属性，这样外部就无法使用
     // this._state = 'pending'
     // this._result = undefined
@@ -28,24 +36,25 @@ class MyPromise {
     // 两个函数，new Promise 传入的函数 调用这两个函数会改变状态和结果
     // 如果写在外面（原型上），那么函数的 this 指向是 window，需要额外 bind
     const resolve = (data) => {
-      this.#changeState(FULFILLED, data)
+      this.#setState(FULFILLED, data)
     }
     const reject = (reason) => {
-      this.#changeState(REJECTED, reason)
+      this.#setState(REJECTED, reason)
     }
     // 手动 throw error 会导致 promise 状态变成 rejected
     try {
-      executor(resolve, reject)
+      executor(resolve, reject)  // 同步的，直接执行
     } catch (error) {  // 只能捕获同步错误，官方也捕获不了异步错误（setTimeout 中手动 throw）
       reject(error)
     }
   }
 
-  #changeState(state, result) {
+  #setState(state, result) {
     // 状态改变后不可逆
     if (this.#state !== PENDING) return
     this.#state = state
     this.#result = result
+    // 还需要执行判断状态 then 的
     this.#run()
   }
 
@@ -122,7 +131,8 @@ class MyPromise {
   }
 
   then(onFulfilled, onRejected) {
-    return new MyPromise((resolve, reject) => {
+    return new MyPromise((resolve, reject) => {  // return 的是新的 promise，不是 this（this 的状态已经确定）
+      // 可能是链式调用，但也可能是分开 p.then 然后再 p.then
       this.#handlers.push({
         onFulfilled,
         onRejected,
@@ -134,6 +144,8 @@ class MyPromise {
   }
 }
 ```
+
+## 其他方法
 
 ES6 还有 catch、finally、resolve、reject 等，查阅官方文档
 

@@ -1,7 +1,7 @@
 ---
-title: 干倒闭百度网盘、阿里云盘，告别乱冲会员
+title: AList 干倒闭百度网盘、阿里云盘，告别乱冲会员
 date: 2024-08-01T09:18:00+08:00
-updated: 2024-08-21T10:34:29+08:00
+updated: 2024-10-25T03:31:16+08:00
 dg-publish: false
 ---
 
@@ -84,3 +84,29 @@ mac 有一个可以设置守护进程的
 使用 ipconfig 查询自己的 ipv6 地址，例如：`2408:8220:134:84fc::ccb`
 
 别人访问你的 alist 网盘只需在浏览器中输入：`http://[2408:8220:134:84fc::ccb]:5244`
+
+## 没有 IPv6
+
+内网穿透
+
+[[使用 Cloudflare Tunnel 做内网穿透，并优选线路]]
+
+已经安装过 cloudflared，直接进入那个 Tunnel，编辑
+
+新建 public hostname
+
+- `alist.vonne.me` → `HTTP localhost:5244`
+
+把相关 TXT 记录解析好
+
+之前已经配置好了 `cdn.wallleap.eu.org` CNAME 到了公共优选域名
+
+那直接在 vonne.me 中删除 alist 解析记录，添加 CNAME 就行
+
+- CNAME `alist.vonne.me` → `cdn.wallleap.eu.org`
+
+现在就可以通过下面链接进行访问
+
+- 优选：`https://alist.vonne.me`
+
+如果还需要直连的话，可以直接在 cloudflared 中多添加一条域名指向同一个服务

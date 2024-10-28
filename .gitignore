@@ -1,1 +1,7 @@
 .obsidian
+
+_book
+dist
+
+.nvmrc
+node_modules

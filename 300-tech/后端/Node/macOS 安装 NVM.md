@@ -1,7 +1,7 @@
 ---
 title: macOS 安装 NVM
 date: 2023-01-29T02:20:00+08:00
-updated: 2024-09-24T06:33:22+08:00
+updated: 2024-10-28T03:29:42+08:00
 dg-publish: false
 aliases:
   - macOS 安装 NVM
@@ -56,7 +56,6 @@ brew install nvm
 
 ```
 mkdir ~/.nvm 
-复制代码
 ```
 
 现在，配置所需的环境变量。在你的 home 中编辑以下配置文件

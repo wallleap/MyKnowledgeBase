@@ -186,5 +186,32 @@ class MyPromise {
       reject(reason)
     })
   }
+
+  static all(proms) {
+    if (value instanceof MyPromise) return value
+    let _resolve, _reject
+    const promise = new MyPromise((resolve, reject) => {
+      _resolve = resolve
+      _reject = reject
+    })
+    const result = []
+    let index = 0
+    let fulfilled = 0
+    for (const prom of proms) {
+      const i = index
+      index++
+      MyPromise.resolve(prom).then((data) => {
+        result[i] = data
+        fulfilled++
+        if (fulfilled === index) {
+          _resolve(result)
+        }
+      }, _reject)
+    }
+    if (index === 0) {
+      _resolve([])
+    }
+    return promise
+  }
 }
 ```

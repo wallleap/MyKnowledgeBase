@@ -1,30 +1,31 @@
+---
+title: http-server在本地启动https服务以及配置域名
+date: 2024-08-29T09:44:15+08:00
+updated: 2024-11-05T13:51:21+08:00
+dg-publish: false
+---
+
 网上搜了一遍后，才发现，看官方文档才是最直接最准确最快速的做法。
 
-1、安装http-server
+1、安装 http-server
 
 ```sh
 npm install --global http-server
 ```
 
-
-
-2、生成证书文件，有两个。一个是cert.pem, 一个是key.pem 
+2、生成证书文件，有两个。一个是 cert.pem, 一个是 key.pem 
 
 ```sh
 openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
 ```
 
+这里成功的文件可以修改地址，最后在启动的时候 -C 后面跟 cert 的路径，-K 后面跟 key 的路径，注意填绝对路径，如 `/usr/local/etc/nginx/ssl/cert.pem`。路径在启动服务的时候对应上就行。默认是生成的当前目录的。
 
-
-这里成功的文件可以修改地址，最后在启动的时候 -C 后面跟cert的路径，-K 后面跟key的路径，注意填绝对路径，如`/usr/local/etc/nginx/ssl/cert.pem`。路径在启动服务的时候对应上就行。默认是生成的当前目录的。
-
- 3、启动服务。启动服务的时候，我的是前端项目，所以会进入到dist目录，里面有index.html的文件夹，运行命令。
+ 3、启动服务。启动服务的时候，我的是前端项目，所以会进入到 dist 目录，里面有 index.html 的文件夹，运行命令。
 
 ```sh
 http-server -S -C cert.pem
 ```
-
-
 
 注意大小写，这里指定目录的时候是大写；用上面代码执行的时候你的两个证书文件都要放在当前目录下，否则的话就要写明证书文件的路径。
 
@@ -33,8 +34,6 @@ http-server -S -C cert.pem
 -C or --cert ssl cert 文件路径 (default: cert.pem)
 -K or --key Path to ssl key file (default: key.pem)
 ```
-
-
 
  看到下面的效果就是启动成功了。
 
@@ -46,23 +45,17 @@ Available on:
 Hit CTRL-C to stop the server
 ```
 
+4、配置域名。这一步其实和 http-server 没有关系，因为我用到也提一下。在某些设定下可以解决后端请求有域名要求，域名限制的问题。
 
-
-4、配置域名。这一步其实和http-server没有关系，因为我用到也提一下。在某些设定下可以解决后端请求有域名要求，域名限制的问题。
-
-配置其实很简单，就是利用host，以为http-server都是在 127.0.0.1 上启动服务的，我们利用host转发过去就好了。
+配置其实很简单，就是利用 host，以为 http-server 都是在 127.0.0.1 上启动服务的，我们利用 host 转发过去就好了。
 
 ```sh
 127.0.0.1 test.jd.com
 ```
 
-
-
-配置上述host就可以在浏览器实现 https://test.jd.com:8080 来访问了。
+配置上述 host 就可以在浏览器实现 <https://test.jd.com:8080> 来访问了。
 
 注意：在最新的谷歌浏览器中，会出现拦截并无法访问的情况。应该是谷歌浏览器安全又升级了，这个换成火狐浏览器，选择高级，接受风险并继续就可以了。根据经验，谷歌浏览器通过忽略安全的方式启动应该也可以，有时间查一下补上吧。
-
- 
 
 http-server 参数说明：
 
@@ -83,10 +76,6 @@ http-server 参数说明：
 -K or --key Path to ssl key file (default: key.pem).
 -r or --robots Provide a /robots.txt (whose content defaults to 'User-agent: \*\\nDisallow: /')
 ```
-
-
-
-
 
 附上原文（[https://www.npmjs.com/package/http-server](https://www.npmjs.com/package/http-server "NPM http-server")）。
 

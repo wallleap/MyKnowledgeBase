@@ -98,6 +98,15 @@ someVar!.toString();
 
 ## typeof、keyof、InstanceType
 
+```ts
+class A {
+  a: number = 1
+  b: string = 'a'  // 实例字段
+}
+
+type AFields = keyof InstanceType<typeof A>
+```
+
 组件实例
 
 ```ts

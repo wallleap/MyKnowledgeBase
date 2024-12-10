@@ -1,11 +1,61 @@
 ---
 title: http-server 在本地启动 https 服务以及配置域名
 date: 2024-08-29T09:44:24+08:00
-updated: 2024-10-11T04:49:21+08:00
+updated: 2024-11-05T13:53:24+08:00
 dg-publish: false
 ---
 
-网上搜了一遍后，才发现，看官方文档才是最直接最准确最快速的做法。
+附上原文（[https://www.npmjs.com/package/http-server](https://www.npmjs.com/package/http-server "NPM http-server")）。
+
+TLS/SSL
+
+---
+
+First, you need to make sure that [openssl](https://github.com/openssl/openssl) is installed correctly, and you have `key.pem` and `cert.pem` files. You can generate them using this command:
+
+```shell
+openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
+```
+
+You will be prompted with a few questions after entering the command. Use `127.0.0.1` as value for `Common name` if you want to be able to install the certificate in your OS's root certificate store or browser so that it is trusted.
+
+This generates a cert-key pair and it will be valid for 3650 days (about 10 years).
+
+Then you need to run the server with `-S` for enabling SSL and `-C` for your certificate file.
+
+```shell
+http-server -S -C cert.pem
+```
+
+If you wish to use a passphrase with your private key you can include one in the openssl command via the -passout parameter (using password of foobar)
+
+e.g. `openssl req -newkey rsa:2048 -passout pass:foobar -keyout key.pem -x509 -days 365 -out cert.pem`
+
+For security reasons, the passphrase will only be read from the `NODE_HTTP_SERVER_SSL_PASSPHRASE` environment variable.
+
+This is what should be output if successful:
+
+```shell
+Starting up http-server, serving ./ through https
+
+http-server settings:
+CORS: disabled
+Cache: 3600 seconds
+Connection Timeout: 120 seconds
+Directory Listings: visible
+AutoIndex: visible
+Serve GZIP Files: false
+Serve Brotli Files: false
+Default File Extension: none
+
+Available on:
+  https://127.0.0.1:8080
+  https://192.168.1.101:8080
+  https://192.168.1.104:8080
+Hit CTRL-C to stop the server
+```
+
+本文转自 <https://www.cnblogs.com/DreamSeeker/p/16468040.html>，如有侵权，请联系删除。
 
 ## 1、安装 http-server
 
@@ -30,6 +80,12 @@ pnpm install -D http-server
 }
 ```
 
+之后运行
+
+```sh
+pnpm run server
+```
+
 ## 2、生成证书文件
 
 有两个。一个是 cert.pem, 一个是 key.pem 
@@ -40,7 +96,7 @@ openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out c
 
 这里成功的文件可以修改地址，最后在启动的时候 -C 后面跟 cert 的路径，-K 后面跟 key 的路径，注意填绝对路径，如 `/usr/local/etc/nginx/ssl/cert.pem`。路径在启动服务的时候对应上就行。默认是生成的当前目录的。
 
-## 2、推荐使用这个生成证书
+## 2、mac 推荐使用这个生成证书
 
 ```sh
 brew install mkcert
@@ -111,58 +167,6 @@ http-server 参数说明：
 -K or --key Path to ssl key file (default: key.pem).
 -r or --robots Provide a /robots.txt (whose content defaults to 'User-agent: \*\\nDisallow: /')
 ```
-
-附上原文（[https://www.npmjs.com/package/http-server](https://www.npmjs.com/package/http-server "NPM http-server")）。
-
-TLS/SSL
-
----
-
-First, you need to make sure that [openssl](https://github.com/openssl/openssl) is installed correctly, and you have `key.pem` and `cert.pem` files. You can generate them using this command:
-
-```shell
-openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
-```
-
-You will be prompted with a few questions after entering the command. Use `127.0.0.1` as value for `Common name` if you want to be able to install the certificate in your OS's root certificate store or browser so that it is trusted.
-
-This generates a cert-key pair and it will be valid for 3650 days (about 10 years).
-
-Then you need to run the server with `-S` for enabling SSL and `-C` for your certificate file.
-
-```shell
-http-server -S -C cert.pem
-```
-
-If you wish to use a passphrase with your private key you can include one in the openssl command via the -passout parameter (using password of foobar)
-
-e.g. `openssl req -newkey rsa:2048 -passout pass:foobar -keyout key.pem -x509 -days 365 -out cert.pem`
-
-For security reasons, the passphrase will only be read from the `NODE_HTTP_SERVER_SSL_PASSPHRASE` environment variable.
-
-This is what should be output if successful:
-
-```shell
-Starting up http-server, serving ./ through https
-
-http-server settings:
-CORS: disabled
-Cache: 3600 seconds
-Connection Timeout: 120 seconds
-Directory Listings: visible
-AutoIndex: visible
-Serve GZIP Files: false
-Serve Brotli Files: false
-Default File Extension: none
-
-Available on:
-  https://127.0.0.1:8080
-  https://192.168.1.101:8080
-  https://192.168.1.104:8080
-Hit CTRL-C to stop the server
-```
-
-本文转自 <https://www.cnblogs.com/DreamSeeker/p/16468040.html>，如有侵权，请联系删除。
 
 ## Node 搭建的服务器
 

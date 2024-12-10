@@ -1,7 +1,7 @@
 ---
-title: JavaScript 中 class 使用
+title: JavaScript 中面向对象编程
 date: 2024-09-11T04:43:26+08:00
-updated: 2024-09-12T11:01:55+08:00
+updated: 2024-11-25T15:52:14+08:00
 dg-publish: false
 ---
 
@@ -201,6 +201,8 @@ class Person {
 - 执行构造函数中的代码
 - 返回这个新的对象
 
+里面什么关键字都没加的成员和方法叫做实例成员/属性和实例方法，附着在**实例**上
+
 如果不需要初始化内容，可以省略构造函数 `class A { method() {} }`
 
 创建实例对象
@@ -276,7 +278,38 @@ summers.canStudyArchery() // true
 summers.#year // SyntaxError
 ```
 
-`static` 关键字声明成员或方法，只能在类上使用，不能在实例上使用
+`static` 关键字声明成员或方法，只能在类上使用，不能在实例上使用（静态属性或方法）
+
+```js
+class Rabbit {
+  furColor  // 实例成员
+  age
+  nickname
+  static total = 0  // 静态成员，不是实例的
+  
+  constructor(furColor, age, nickname) {
+    // this 是实例
+    this.furColor = furColor
+    this.age = age
+    this.nickname = nickname
+    
+    Rabbit.total++
+  }
+
+  jump() {
+    console.log(`${this.nickname} jumped`)
+  }
+}
+
+const r1 = new Rabbit('white', 2, '小白兔')
+const r2 = new Rabbit('gray', 3, '小灰兔')
+r1.jump()
+console.log(r2.nickname)
+console.log(Rabbit.total)
+```
+
+- 实例成员或方法：例如 `const n = new Number(1); n.toString();` 这样的跟实例有关
+- 静态成员或方法：例如 `Number.MAX_VALUE;Number.isNaN(NaN)` 和实例没有关系
 
 `abstract` 抽象类，必须由继承类实现，不能 new（抽象类不能创建实例）
 
@@ -367,4 +400,3 @@ class Good {
 const good = new Good(3, 12)
 console.log(obj.total)
 ```
-

@@ -1,7 +1,7 @@
 ---
 title: Git 追加修改到某个 commit
 date: 2024-05-24T10:04:00+08:00
-updated: 2024-08-21T09:49:30+08:00
+updated: 2025-03-05T10:25:13+08:00
 dg-publish: false
 ---
 
@@ -51,13 +51,13 @@ git push -f origin master:master
 ## 某个很早之前的 commit
 
 ```sh
-git add
+git add file
 git stash
 git log # 找到需要提交的对应上一个 commit id
 git rebase -i 181362549eaa6099f92726d3aede030e8eb396be
 # 这里使用的是 Vim，直接修改对应 commit 前面的 pick 为 edit，保存退出
 git stash pop
-git add
+git add file
 git commit -m "对应的提交信息" --amend
 git rebase --continue
 git push
